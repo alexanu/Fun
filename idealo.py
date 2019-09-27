@@ -330,6 +330,22 @@ for etfSymbol in fundList:
 		myEtf.smartmoneyDotComInfo()
         
 # 9th code block ----------------------------------------------------------------------------------------        
-        
-        
+# Put here smth from morningstar project
+
+
+# 10th code block ----------------------------------------------------------------------------------------        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
