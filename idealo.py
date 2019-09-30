@@ -506,3 +506,79 @@ html = response.content
 soup = BeautifulSoup(html)
 titleslist = soup.find_all('a',{"class" : "tab-link-news"})		    
 		    
+		    
+# 14th code block ----------------------------------------------------------------------------------------------------------    		    
+		    
+finviz_url = "http://finviz.com/screener.ashx?v=111&s=ta_topgainers&f=sh_curvol_o500,sh_price_1to20"
+page = urlopen(finviz_url)
+
+hasNextPage = True
+firstPage = True
+currentPageIndex = 0 # from page 2 onwards 
+text_data = [] # collect all the text data in a list
+
+while hasNextPage: 
+	if not firstPage:
+		finviz_url += "&r=" + str(currentPageIndex)
+		page = urlopen(finviz_url)
+	soup = BeautifulSoup(page, "html.parser")
+        
+        html_data = soup.find_all('td', class_="screener-body-table-nw")
+        counter = 0 
+        for row in html_data:
+            counter+= 1
+            text_data.append(row.get_text())
+
+        firstPage = False
+        if currentPageIndex == 0:
+            currentPageIndex += 21
+        else:
+            currentPageIndex += 20 
+        if counter < 220:
+            hasNextPage = False       
+
+
+# 15th code block ----------------------------------------------------------------------------------------------------------    		    
+		    
+	    
+		    
+req = requests.get("https://finviz.com/quote.ashx?t=FB")
+soup = BeautifulSoup(req.content, 'html.parser')
+table = soup.find_all(lambda tag: tag.name=='table')
+rows = table[8].findAll(lambda tag: tag.name=='tr')
+out=[]
+for i in range(len(rows)):
+	td=rows[i].find_all('td')
+	out=out+[x.text for x in td]
+
+ls=['Ticker','Sector','Sub-Sector','Country']+out[::2]
+
+dict_ls={k:ls[k] for k in range(len(ls))}
+df=pd.DataFrame()
+
+for j in range(len(symbols)):
+	req = requests.get("https://finviz.com/quote.ashx?t="+symbols[j])
+	if req.status_code !=200:
+		continue
+	soup = BeautifulSoup(req.content, 'html.parser')
+	table = soup.find_all(lambda tag: tag.name=='table')
+
+	rows=table[6].findAll(lambda tag: tag.name=='tr')
+	sector=[]
+	for i in range(len(rows)):
+		td=rows[i].find_all('td')
+		sector=sector+[x.text for x in td]
+	sector=sector[2].split('|')
+	rows = table[8].findAll(lambda tag: tag.name=='tr')
+	out=[]
+	for i in range(len(rows)):
+		td=rows[i].find_all('td')
+		out=out+[x.text for x in td]
+	out=[symbols[j]]+sector+out[1::2]
+	out_df=pd.DataFrame(out).transpose()
+	df=df.append(out_df,ignore_index=True)
+
+df=df.rename(columns=dict_ls)
+
+output.put(df)		    
+		    
