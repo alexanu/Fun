@@ -14,14 +14,16 @@ keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "las
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup as bs
 import html5lib
+import requests
 
 import time
 from datetime import datetime 
 import pandas as pd
 import numpy as np
+import csv
+
 import ast
 import re
-
 
 # ----------------------- 1st code block ---------------------------------------
 
@@ -330,22 +332,177 @@ for etfSymbol in fundList:
 		myEtf.smartmoneyDotComInfo()
         
 # 9th code block ----------------------------------------------------------------------------------------        
-# Put here smth from morningstar project
+
+def _download(self, ticker, report_type):
+        url = (r'http://financials.morningstar.com/ajax/' +
+               r'ReportProcess4HtmlAjax.html?&t=' + ticker +
+               r'&region=usa&culture=en-US&cur=USD' +
+               r'&reportType=' + report_type + r'&period=12' +
+               r'&dataType=A&order=asc&columnYear=5&rounding=3&view=raw')
+        with urllib.request.urlopen(url) as response:
+            json_text = response.read().decode(u'utf-8')
+            json_data = json.loads(json_text)
+            result_soup = BeautifulSoup(json_data[u'result'],u'html.parser')
+            left = soup.find(u'div', u'left').div # Left node contains the labels
+	    main = soup.find(u'div', u'main').find(u'div', u'rf_table') # Main node contains the (raw) data
+	    year = main.find(u'div', {u'id': u'Year'})
+	    self._year_ids = [node.attrs[u'id'] for node in year]
+	    period_month = pd.datetime.strptime(year.div.text, u'%Y-%m').month
+	    return pd.DataFrame(self._data,columns=[u'parent_index', u'title'] + list(self._period_range))	
+	
+for report_type, table_name in [(u'is', u'income_statement'), (u'bs', u'balance_sheet'),(u'cf', u'cash_flow')]:
+	frame = self._download(ticker, report_type)
+	result[table_name] = frame
 
 
 # 10th code block ----------------------------------------------------------------------------------------        
 
+    def download(self, ticker, conn = None, region = 'usa', culture = 'en-US'):
+        url = (r'http://financials.morningstar.com/ajax/exportKR2CSV.html?' +
+               r'&callback=?&t={t}&region={reg}&culture={cult}'.format(
+                   t=ticker, reg=region, cult=culture))
+        with urllib.request.urlopen(url) as response:
+            tables = self._parse_tables(response)
+            response_structure = [
+                # Original Name, New pandas.DataFrame Name
+                (u'Financials', u'Key Financials'),
+                (u'Key Ratios -> Profitability', u'Key Margins % of Sales'),
+                (u'Key Ratios -> Profitability', u'Key Profitability'),
+                (u'Key Ratios -> Growth', None),
+                (u'Revenue %', u'Key Revenue %'),
+                (u'Operating Income %', u'Key Operating Income %'),
+
+            frames = self._parse_frames(tables, response_structure)
+
+            return frames
+
+
+# 11th code block ----------------------------------------------------------------------------------------------------------        
+
+def get_soup(url=''):
+	headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+	html=requests.get(url, verify=False,headers=headers).text
+	soup=BeautifulSoup(html, "html.parser")
+	return soup
+
+def get_text(soup=''):
+	text_array=[]
+	for script in soup(["script", "style"]):
+		script.extract()
+	text = soup.get_text()
+	lines = (line.strip() for line in text.splitlines())
+	chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+	text = '\n'.join(chunk for chunk in chunks if chunk)
+	text= text.encode('utf-8','ignore')
+	return text		    
+
+def get_text_element(soup='',TagName='',AttributeName='',AttributeValue=''):
+	text_el=[]
+	if AttributeName and AttributeValue !='':
+		tag=soup(TagName,{AttributeName:AttributeValue})
+		for t in tag:
+			el=t.renderContents()
+			text_el.append(el)	
+	else:
+		tag=soup(TagName)
+		for t in tag:
+			el=t.renderContents()
+			text_el.append(el)
+	for t in text_el:			
+		t=soup.get_text().encode('utf-8-sig').strip()
+	return text_el
+		    
+def get_classes(soup='',TagName='',AttributeName='',AttributeValue=''):
+	classes=soup(TagName,{AttributeName:AttributeValue})
+	return classes		    
+
+		    
+def get_from_bank(link,stock):
+	soup=jscraper.get_soup(url=link['Profile'][0].replace('&t='+stock+':','&t='))
+	Classes=jscraper.get_classes(soup=soup,TagName='tr',AttributeName='class',AttributeValue='text3')
+	DayAvgVol=jscraper.get_text_element(soup=Classes[0],TagName='td')[0]
+	Industry=jscraper.get_text_element(soup=Classes[1],TagName='td')[4]
+	soup3=jscraper.get_soup(url=link['Profile'][2].replace('&t='+stock+':','&t='))
+	Executives=' '.join(jscraper.get_text_element(soup=soup3,TagName='a'))
+	soup5=jscraper.get_soup(url=link['Stocks'][0].replace('&t='+stock+':','&t='))	     
+	Keystats=' '.join(jscraper.get_text_element(soup=soup5,TagName='tbody')).strip().lstrip()
+	Keystats=' '.join(Keystats.split())
+	jsondata={'DayAvgVol':DayAvgVol,'Industry':Industry,'Executives':Executives,'Keystats':Keystats}
+	return jsondata
 
 
 
+# 12th code block ----------------------------------------------------------------------------------------------------------        
+	    
+print datetime.datetime.now()
+print "Finviz Performance Start"
+
+# Overview = 111, Valuation = 121, Financial = 161, Ownership = 131, Performance = 141
+# pagesarray = [111,121,161,131,141]
+
+url = "http://www.finviz.com/screener.ashx?v=141&f=geo_usa"
+response = requests.get(url)
+html = response.content
+soup = BeautifulSoup(html)
+firstcount = soup.find_all('option')
+lastnum = len(firstcount) - 1
+lastpagenum = firstcount[lastnum].attrs['value']
+currentpage = int(lastpagenum)
+
+alldata = []
+templist = []
+
+titleslist = soup.find_all('td',{"class" : "table-top"})
+titleslisttickerid = soup.find_all('td',{"class" : "table-top-s"})
+titleticker = titleslisttickerid[0].text
+titlesarray = []
+for title in titleslist:
+    titlesarray.append(title.text)
+
+titlesarray.insert(1,titleticker)
+i = 0
+currentpage = 21
+while(currentpage > 0):
+    i += 1
+    print str(i) + " page(s) done"
+    secondurl = "http://www.finviz.com/screener.ashx?v=" + str(141) + "&f=geo_usa" + "&r=" + str(currentpage)
+    secondresponse = requests.get(secondurl)
+    secondhtml = secondresponse.content
+    secondsoup = BeautifulSoup(secondhtml)
+    stockdata = secondsoup.find_all('a', {"class" : "screener-link"})
+    stockticker = secondsoup.find_all('a', {"class" : "screener-link-primary"})
+    datalength = len(stockdata)
+    tickerdatalength = len(stockticker)
+
+    while(datalength > 0):
+        templist = [stockdata[datalength - 15].text,stockticker[tickerdatalength-1].text,stockdata[datalength - 14].text,stockdata[datalength - 13].text,stockdata[datalength - 12].text,stockdata[datalength - 11].text,stockdata[datalength - 10].text,stockdata[datalength - 9].text,stockdata[datalength - 8].text,stockdata[datalength - 7].text,stockdata[datalength - 6].text,stockdata[datalength - 5].text,stockdata[datalength - 4].text,stockdata[datalength - 3].text,stockdata[datalength - 2].text,stockdata[datalength - 1].text,]
+        alldata.append(templist)
+        templist = []
+        datalength -= 15
+        tickerdatalength -= 1
+    currentpage -= 20
+
+with open('stockownership.csv', 'wb') as csvfile:
+    ownership = csv.DictWriter(csvfile, delimiter=',', lineterminator='\n', fieldnames=titlesarray)
+    ownership.writeheader()
+
+    for stock in alldata:
+        ownership.writerow({titlesarray[0] : stock[0], 
+			    titlesarray[1] : stock[1],
+			    titlesarray[2] : stock[2],
+			    titlesarray[3] : stock[3],
+			    titlesarray[4] : stock[4]})
+
+print datetime.datetime.now()
+print "Finviz Ownership Completed"
 
 
-
-
-
-
-
-
-
-
-
+		    
+# 13th code block ----------------------------------------------------------------------------------------------------------        
+		    
+url = "http://www.finviz.com/quote.ashx?t=intc"
+response = requests.get(url)
+html = response.content
+soup = BeautifulSoup(html)
+titleslist = soup.find_all('a',{"class" : "tab-link-news"})		    
+		    
