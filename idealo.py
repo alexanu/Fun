@@ -1,82 +1,61 @@
 
-'''
 Parsing tickets:
 
 exampleURL = "https://flug.idealo.de/deals/fernreisen/"
 sourceStruct = "view-source:https://flug.idealo.de/deals/fernreisen/"
 
-mainURL = "https://flug.idealo.de/deals/"
-keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "last-minute", "staedtereisen", "kurzurlaub", "warme-reiseziele"}
-
-
-'''
-
-from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup as bs
 import html5lib
 import requests
 import urllib2
-
-import time
-from datetime import datetime 
-import pandas as pd
-import numpy as np
 import csv
 
 import ast
 import re
 
-url = 'https://flug.idealo.de/deals/fernreisen/'
-soup = urlopen(url).bs
 
 
-print(soup)
+from urllib.request import Request, urlopen
+from bs4 import BeautifulSoup as bs
+
+import time
+import pandas as pd
+import numpy as np
 
 
+mainURL = "https://flug.idealo.de/deals/"
+keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "last-minute", "staedtereisen", "kurzurlaub", "warme-reiseziele"}
 
-price = soup.find_all('span',class_="deals-card-offer-price")
-flight_date = soup.find_all('div',class_="deals-card-date")
-destin = soup.find_all('div',class_="deals-card-destination-container")
-for el1, el2, el3 in [destin, flight_date, price]:
-     print(el1['title'], el2.text.split(" - "), el3.text)
-
-	
-while i<len(price):
-price[i].text    	
+prices = []
+flight_dates = []
+destins = []
+groups =[]
 
 
-etfName = str(etfName.text)
+for keyword in keyWords:
+		url = mainURL+keyword
+		page = urlopen(url)
+		soup = bs(page)
+		trips = soup.find_all('div', class_ = 'deals-card deals-card--default')
+		for trip in trips:
+			price = trip.find('span',class_="deals-card-offer-price").text
+			prices.append(price)
+			flight_date = trip.find('div',class_="deals-card-date").text.split(" - ")
+			flight_dates.append(flight_date)
+			destin = trip.find('div',class_="deals-card-destination-container")['title']
+			destins.append(destin)
+			groups.append(keyword)
 
-flight_date = soup.find_all('div',class_="deals-card-date")
-for elem in flight_date:
-     print(elem.text.split(" - "))
+angebots = pd.DataFrame({'Destination': destins,
+						'Datea': flight_dates,
+						'Price': prices,
+						'Group': groups
+						})
+angebots=angebots[angebots['Destination'].str.contains('Münc')|
+					angebots['Destination'].str.contains('Memm')]
+angebots["Destination"]=angebots["Destination"].str.split(' - ').str[1]
+angebots["Period"]=pd.to_datetime(ang["Datea"].str[0], format='%d.%m.%Y').dt.strftime('%Y-%m')
+angebots.sort_values(by=['Group', 'Period'], inplace=True)
+angebots.to_csv("Travel.csv",sep=";")
 
-
-titlesarray = []
-for title in flight_date:
-    titlesarray.append(title.text)
-
-
-out=[]
-for i in range(len(rows)):
-	td=rows[i].find_all('td')
-	out=out+[x.text for x in td]
-
-
-
-# Lists to store the scraped data in
-price = []
-flight_date = []
-destin = []
-
-trips = soup.find_all('div', class_ = 'deals-card deals-card--default')
-for trip in trips:
-    price = soup.find('span',class_="deals-card-offer-price").text.str()
-    price.append(price)
-
-    flight_date = soup.find('div',class_="deals-card-date").text.split(" - ")
-    flight_date.append(flight_date)
-
-    destin = soup.find('div',class_="deals-card-destination-container")['title']
-    destin.append(destin)
-
+import os
+os.getcwd()
