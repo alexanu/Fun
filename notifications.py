@@ -30,10 +30,10 @@ from twilio.rest import Client
             print(code)
             
             
-            
- # ------------------------------------------------------------------------------------------------------------------------
- 
- import smtplib, os
+# ------------------------------------------------------------------------------------------------------------------------            
+# ------------------------------------------------------------------------------------------------------------------------
+
+import smtplib, os
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
@@ -72,3 +72,47 @@ def send_mail(send_from, send_to, subject, text, files=[], server="localhost", p
     smtp.login(username,password)
     smtp.sendmail(send_from, send_to, msg.as_string())
     smtp.quit()
+
+    
+import pandas
+import urllib2
+from emails import SUBSCRIBE_LIST, email_login, send_mail
+
+def get_ETF_fr_YH(filename):
+    ls_etf = []
+    the_page = urllib2.urlopen('http://finance.yahoo.com/etf/lists/?mod_id=mediaquotesetf&tab=tab3&rcnt=50').read()    
+    splits = the_page.split('<a href=\\"\/q?s=')
+    etf_symbols = [split.split('\\')[0] for split in splits[1:]]
+    for etf in etf_symbols:
+        ls_etf.append(etf)
+    df = pandas.DataFrame({'ETF': ls_etf})
+    df.set_index('ETF').to_csv(filename)
+
+def run(me, password):
+    get_ETF_fr_YH('ETF.csv')
+    send_mail(
+        send_from = 'NoReply@gmail.com', 
+        send_to = SUBSCRIBE_LIST, 
+        subject = 'Suggested ETF', 
+        text = """Hello,
+Attachment includes the ETFs.
+Sincerely,
+""", 
+        files = ['ETF.csv'], 
+        server = 'smtp.gmail.com',
+        username = me,
+        password = password
+    )
+
+if __name__ == '__main__':
+    me, password = email_login()
+    run(me, password)    
+
+    
+    
+# ------------------------------------------------------------------------------------------------------------------------            
+# ------------------------------------------------------------------------------------------------------------------------
+
+
+
+    
