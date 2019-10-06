@@ -11,11 +11,17 @@ keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "las
 
 not_interested = ['Alghero', 'Belgrad', 'Bergen', 'Berlin Tegel', 'Bukarest', 
 				'Cluj', 'Delhi', 'Detroit', 'Düsseldorf', 'Hamburg', 'Jakarta', 
-				'Köln/Bonn', 'London Gatwick', 'London Heathrow', 'London Luton', 
+				'Köln/Bonn', 'Sibiu','London Gatwick', 'London Heathrow', 'London Luton', 
 				'London Stansted', 'Lviv', 'Manchester', 'Monastir', 'München', 
 				'Pittsburgh', 'Podgorica', 'Pristina', 'Rostock', 'Tirana', 
 				'Ankara', 'Antalya', 'Istanbul', 'Istanbul Sabiha Gökcen', 'Izmir', 
 				'Simferopol', 'Sofia', 'Taschkent', 'Ulan Bator', 'Varna', 'Warschau']
+
+
+
+
+
+
 
 
 
@@ -51,23 +57,22 @@ angebots["Destination"]=angebots["Destination"].str.split(' - ').str[1] # after 
 angebots = angebots[~angebots['Destination'].isin(not_interested)] # removing not interesting destinations
 angebots["Period"]=pd.to_datetime(angebots["Dates"].str[0], format='%d.%m.%Y').dt.strftime('%Y-%m') # new column: month of flight
 angebots['Status'] = str(datetime.date.today()) # new column: when the query was done
+
+'''
 angebots.to_csv("Travel.csv", # creating new file
 				sep=";", 
 				index=False) # we need to eliminate the index column
 
-
-
 # angebots.sort_values(by=['Group', 'Period'], inplace=True)
-
-
 '''
+
 angebots.to_csv("Travel.csv", # the file exists already
 				mode='a', # append mode: puts new df in the end of csv
 				sep=";", 
 				header=False, # as we are appending, the file has headers already
 				index=False) # we need to eliminate the index column
 
-
+'''
 ang = angebots.copy()
 ang["Destination"]=ang["Destination"].str.split(' - ').str[1]
 ang['Status'] = str(datetime.date.today())
@@ -77,3 +82,7 @@ ang = ang[~ang['Destination'].isin(not_interested)]
 
 # cities_db_url="https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.5.zip"
 # cities_db = pd.read_csv(cities_db_url)
+
+
+#df['C'] = df.B.map(df.A)
+#print (df)
