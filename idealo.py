@@ -18,13 +18,6 @@ not_interested = ['Alghero', 'Belgrad', 'Bergen', 'Berlin Tegel', 'Bukarest',
 				'Simferopol', 'Sofia', 'Taschkent', 'Ulan Bator', 'Varna', 'Warschau']
 
 
-
-
-
-
-
-
-
 prices = []
 flight_dates = []
 destins = []
@@ -57,6 +50,21 @@ angebots["Destination"]=angebots["Destination"].str.split(' - ').str[1] # after 
 angebots = angebots[~angebots['Destination'].isin(not_interested)] # removing not interesting destinations
 angebots["Period"]=pd.to_datetime(angebots["Dates"].str[0], format='%d.%m.%Y').dt.strftime('%Y-%m') # new column: month of flight
 angebots['Status'] = str(datetime.date.today()) # new column: when the query was done
+angebots["Destination"]=angebots["Destination"].replace({'-': ' ', ',': ''}, regex=True) # some destinations contain bad-for-csv symbols
+
+Regio=pd.read_csv("regio.csv",sep=";", index_col='Destination')
+angebots['Regio'] = angebots.Destination.map(Regio.Regio) # vlookuping region
+
+new=angebots[angebots.isnull().Regio]['Destination'].drop_duplicates() # new destinations
+if len(new)>0:
+	new.to_csv("regio2.csv", # the file exists already
+				mode='a', # append mode: puts new df in the end of csv
+				sep=";", 
+				header=False, # as we are appending, the file has headers already
+				index=False) # we need to eliminate the index column
+
+
+
 
 '''
 angebots.to_csv("Travel.csv", # creating new file
@@ -78,11 +86,17 @@ ang["Destination"]=ang["Destination"].str.split(' - ').str[1]
 ang['Status'] = str(datetime.date.today())
 ang["Period"]=pd.to_datetime(ang["Datea"].str[0], format='%d.%m.%Y').dt.strftime('%Y-%m')
 ang = ang[~ang['Destination'].isin(not_interested)]
-'''
 
 # cities_db_url="https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.5.zip"
 # cities_db = pd.read_csv(cities_db_url)
 
+'''
 
-#df['C'] = df.B.map(df.A)
+Regio=pd.read_csv("regio.csv",sep=";", index_col='Destination')
+ang["Destination"]=ang["Destination"].replace({'-': ' ', ',': ''}, regex=True)
+ang['Regio'] = ang.Destination.map(Regio.Regio)
+
+
+
+
 #print (df)
