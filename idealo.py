@@ -5,12 +5,16 @@ import pandas as pd
 import datetime
 
 
+
+all=pd.read_csv("travel.csv",sep=";") # reading current status
+
+
 mainURL = "https://flug.idealo.de/deals/"
 keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "last-minute", 
 			"staedtereisen", "kurzurlaub", "warme-reiseziele"}
 
 not_interested = ['Alghero', 'Belgrad', 'Bergen', 'Berlin Tegel', 'Bukarest', 
-				'Cluj', 'Delhi', 'Detroit', 'Düsseldorf', 'Hamburg', 'Jakarta', 
+				'Cluj', 'Frankfurt', 'Moskau Scheremetjewo', 'Bremen', 'Prag', 'Delhi', 'Detroit', 'Düsseldorf', 'Hamburg', 'Jakarta', 
 				'Köln/Bonn', 'Sibiu','London Gatwick', 'London Heathrow', 'London Luton', 
 				'London Stansted', 'Lviv', 'Manchester', 'Monastir', 'München', 
 				'Pittsburgh', 'Podgorica', 'Pristina', 'Rostock', 'Tirana', 
@@ -57,17 +61,23 @@ angebots['Regio'] = angebots.Destination.map(Regio.Regio) # vlookuping region
 
 new=angebots[angebots.isnull().Regio]['Destination'].drop_duplicates() # new destinations
 if len(new)>0:
-	new.to_csv("regio2.csv", # the file exists already
+	new.to_csv("regio.csv", # the file exists already
 				mode='a', # append mode: puts new df in the end of csv
 				sep=";", 
 				header=False, # as we are appending, the file has headers already
 				index=False) # we need to eliminate the index column
 
+all.append(angebots, ignore_index = True) # adding new information to the main file below
+
+# calculating the min price for every destination and putting it to separate col
+all['min_price']=all.groupby(["Destination"])["Price"].transform(min)                                                        
+
+
+all[(all.Status == str(datetime.date.today())) & (all['Price'] == all['min_price'])]
 
 
 
-'''
-angebots.to_csv("Travel.csv", # creating new file
+all.to_csv("Travel5.csv", # creating new file
 				sep=";", 
 				index=False) # we need to eliminate the index column
 
@@ -80,7 +90,6 @@ angebots.to_csv("Travel.csv", # the file exists already
 				header=False, # as we are appending, the file has headers already
 				index=False) # we need to eliminate the index column
 
-'''
 ang = angebots.copy()
 ang["Destination"]=ang["Destination"].str.split(' - ').str[1]
 ang['Status'] = str(datetime.date.today())
@@ -92,11 +101,7 @@ ang = ang[~ang['Destination'].isin(not_interested)]
 
 '''
 
-Regio=pd.read_csv("regio.csv",sep=";", index_col='Destination')
-ang["Destination"]=ang["Destination"].replace({'-': ' ', ',': ''}, regex=True)
-ang['Regio'] = ang.Destination.map(Regio.Regio)
+all2 = all.copy()
 
+all2['min_price']=all2.groupby(["Destination"])["Price"].transform(min)                                                        
 
-
-
-#print (df)
