@@ -21,9 +21,9 @@ created_my=[]
 size_my=[]
 own_repo = "Own repo"
 
-for repo in g.get_user().get_repos():
+for repo in g.get_user().get_repos(): # going throung my repos
     ID_my.append(repo.id)
-    if repo.parent is None:
+    if repo.parent is None: # if the repo is mine (i.e. no parent)
         Parent_name.append(repo.name)
         Parent_id.append(repo.id)
         Parent_update.append(repo.updated_at)
@@ -37,10 +37,10 @@ for repo in g.get_user().get_repos():
     created_my.append(repo.created_at)
     size_my.append(repo.size)
     
-for repo in g.get_user().get_starred():
+for repo in g.get_user().get_starred(): # going through starred repos
     ID_my.append(repo.id)
     Parent_name.append(repo.name)
-    Parent_id.append(repo.id)
+    Parent_id.append(repo.id) # the same as ID_my
     Parent_update.append(repo.updated_at)
     Repo_source.append("Star")
     descr_my.append(repo.description)
