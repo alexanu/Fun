@@ -61,9 +61,39 @@ my_repos.to_csv("Repos.csv")
 
 #-------- Searching Github --------------------------------------------------------------
 
+# https://python.gotrained.com/search-github-api/
+
+keywords = "IEX, hedge, oanda, quandl, NYSE, FIX, ETF, " \
+            "market calendar, equity, kelly, arbitrage, backtest, " \
+            "quant, EDGAR, SEC, del Prado, zorro trading"
+keyword = [keyword.strip() for keyword in keywords.split(',')]
+
+exclude_keywords = "ng-zorro, ngx-zorro, ngzorro, CSS, Typescript"
+exclude_keyword = [keyword.strip() for keyword in exclude_keywords.split(',')]
+
+query = '+'.join(keyword) + '+NOT'+ '+'.join(exclude_keyword)+'pushed:>=2019-07-05'+'language:python' +'+in:readme+in:description'
+result = g.search_repositories(query, 'stars', 'desc')
+print(f'Found {result.totalCount} repo(s)')
+
+for repo in result:
+    print(f'{repo.clone_url}, {repo.stargazers_count} stars')
+
+
 repositories = g.search_repositories(query='language:python', sort='updated')
 # query='good-first-issues:>3'     number of issues
 for repo in repositories[1:10]:
     print(repo)
     print(repo.stargazers_count)
 
+# ---------------------------------------------------------------------------------------
+
+def search_github(keywords):
+    query = '+'.join(keywords) + '+in:readme+in:description' # '+in:readme+in:description'  are the qualifiers
+    result = g.search_repositories(query, 'stars', 'desc')
+
+    print(f'Found {result.totalCount} repo(s)')
+
+    for repo in result:
+        print(f'{repo.clone_url}, {repo.stargazers_count} stars')
+
+search_github(keyword)
