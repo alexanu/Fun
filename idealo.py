@@ -8,15 +8,20 @@ import datetime
 
 all=pd.read_csv("travel.csv",sep=";") # reading current status
 
+# Filling in empty regios from previous run
+Regio=pd.read_csv("regio.csv",sep=";", index_col='Destination')
+if len(all[all.isna().any(axis=1)])>0:
+    	all.loc[all.isna().any(axis=1),'Regio']  = all.Destination.map(Regio.Regio) # vlookuping region
 
 mainURL = "https://flug.idealo.de/deals/"
 keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "last-minute", 
 			"staedtereisen", "kurzurlaub", "warme-reiseziele"}
 
-not_interested = ['Alghero', 'Belgrad', 'Bergen', 'Berlin Tegel', 'Bukarest', 
-				'Cluj', 'Frankfurt', 'Moskau Scheremetjewo', 'Bremen', 'Prag', 'Delhi', 'Detroit', 'Düsseldorf', 'Hamburg', 'Jakarta', 
+not_interested = ['Alghero', 'Belgrad', 'Bergen', 'Berlin Tegel', 'Bukarest', 'Banja Luka',
+				'Cluj', 'Frankfurt', 'Kishinev', 'Skopje', 'Moskau Scheremetjewo', 'Bremen', 
+				'Prag', 'Delhi', 'Detroit', 'Hatay', 'Düsseldorf', 'Hamburg', 'Jakarta', 
 				'Köln/Bonn', 'Sibiu','London Gatwick', 'London Heathrow', 'London Luton', 
-				'London Stansted', 'Lviv', 'Manchester', 'Monastir', 'München', 
+				'London Stansted', 'Ohrid', 'Lviv', 'Manchester', 'Monastir', 'München', 
 				'Pittsburgh', 'Podgorica', 'Pristina', 'Rostock', 'Tirana', 
 				'Ankara', 'Antalya', 'Istanbul', 'Istanbul Sabiha Gökcen', 'Izmir', 
 				'Simferopol', 'Sofia', 'Taschkent', 'Ulan Bator', 'Varna', 'Warschau']
@@ -56,7 +61,6 @@ angebots["Period"]=pd.to_datetime(angebots["Dates"].str[0], format='%d.%m.%Y').d
 angebots['Status'] = str(datetime.date.today()) # new column: when the query was done
 angebots["Destination"]=angebots["Destination"].replace({'-': ' ', ',': ''}, regex=True) # some destinations contain bad-for-csv symbols
 
-Regio=pd.read_csv("regio.csv",sep=";", index_col='Destination')
 angebots['Regio'] = angebots.Destination.map(Regio.Regio) # vlookuping region
 
 new=angebots[angebots.isnull().Regio]['Destination'].drop_duplicates() # new destinations
@@ -67,41 +71,73 @@ if len(new)>0:
 				header=False, # as we are appending, the file has headers already
 				index=False) # we need to eliminate the index column
 
-all.append(angebots, ignore_index = True) # adding new information to the main file below
-
+all=all.append(angebots, ignore_index = True) # adding new information to the main file below
+all=all.sort_values(["Regio","Destination"])
 # calculating the min price for every destination and putting it to separate col
-all['min_price']=all.groupby(["Destination"])["Price"].transform(min)                                                        
-
-
-all[(all.Status == str(datetime.date.today())) & (all['Price'] == all['min_price'])]
+all['min_price']=all.groupby(["Destination"])["Price"].transform(min).replace({'[\€,]': '', '[\,00 €,]': ''}, regex=True).astype(float)
 
 
 
-all.to_csv("Travel5.csv", # creating new file
-				sep=";", 
-				index=False) # we need to eliminate the index column
+record_price = all[(all.Status == str(datetime.date.today())) & 
+					(all['Price'] < 1.2*all['min_price']) &
+					(pd.DatetimeIndex(all["Period"]).year==2020)]
+record_price = record_price.drop(['min_price','Status'],axis=1).sort_values(["Regio"])
+
+all['min_price'].apply(type)
+
+
+
+all.to_csv("Travel.csv", # creating new file
+			sep=";", 
+			index=False) # we need to eliminate the index column
 
 # angebots.sort_values(by=['Group', 'Period'], inplace=True)
-'''
 
-angebots.to_csv("Travel.csv", # the file exists already
-				mode='a', # append mode: puts new df in the end of csv
-				sep=";", 
-				header=False, # as we are appending, the file has headers already
-				index=False) # we need to eliminate the index column
 
-ang = angebots.copy()
-ang["Destination"]=ang["Destination"].str.split(' - ').str[1]
-ang['Status'] = str(datetime.date.today())
-ang["Period"]=pd.to_datetime(ang["Datea"].str[0], format='%d.%m.%Y').dt.strftime('%Y-%m')
-ang = ang[~ang['Destination'].isin(not_interested)]
+#all.to_csv("Travel.csv", # the file exists already
+#			mode='a', # append mode: puts new df in the end of csv
+#			sep=";", 
+#			header=False, # as we are appending, the file has headers already
+#			index=False) # we need to eliminate the index column
 
 # cities_db_url="https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.5.zip"
 # cities_db = pd.read_csv(cities_db_url)
 
-'''
+
+
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+email = "oanufriyev@gmail.com"
+password = 'Porosenok4231_'
+send_to_email =["volytska@gmail.COM","oleksandr.anufriyev@allianz.com"]
+subject = 'Record flight prices for yesterday'
+
+ds=str(record_price.to_html())
+messageHTML = 'Flights from Idealo'+ds
+msg = MIMEMultipart('alternative')
+msg['From'] = email
+msg['To'] = ', '.join(send_to_email)
+msg['Subject'] = subject
+
+msg.attach(MIMEText(messageHTML, 'html'))
+
+server = smtplib.SMTP("smtp.gmail.com",587)
+server.starttls()
+server.login(email, password)
+text = msg.as_string()
+server.sendmail(email, send_to_email, text)
+server.quit()
+
+
 
 all2 = all.copy()
 
-all2['min_price']=all2.groupby(["Destination"])["Price"].transform(min)                                                        
+all2['prices']=list(all2.Price.unique())
 
+
+
+all2['prices'] = [list(set(all2['subreddit'].loc[all2['Destination'] == x['Destination']])) 
+    for _, x in df2.iterrows()]
+groupby(["Destination"])
