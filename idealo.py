@@ -109,9 +109,9 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-email = "oanufriyev@gmail.com"
-password = 'Porosenok4231_'
-send_to_email =["volytska@gmail.COM","oleksandr.anufriyev@allianz.com"]
+email = EMAIL1
+password = PASS1
+send_to_email =["XXX","XXXX"]
 subject = 'Record flight prices for yesterday'
 
 ds=str(record_price.to_html())
