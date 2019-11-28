@@ -6,7 +6,8 @@ from github import Github
 import pandas as pd
 import os
 
-
+#api_key=open('api_key.txt','r').read()
+#access_token=open('access_token.txt','r').read().strip()
 g = Github("alexanu", "XXXX")
 
 #-------- Parsing my repos --------------------------------------------------------------
