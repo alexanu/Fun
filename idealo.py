@@ -9,22 +9,23 @@ import datetime
 all=pd.read_csv("travel.csv",sep=";") # reading current status
 
 # Filling in empty regios from previous run
-Regio=pd.read_csv("regio.csv",sep=";", index_col='Destination')
-if len(all[all.isna().any(axis=1)])>0:
-    	all.loc[all.isna().any(axis=1),'Regio']  = all.Destination.map(Regio.Regio) # vlookuping region
+Regio=pd.read_csv("regio.csv",sep=";", index_col='Destination') # reading mapping for regions
+if len(all[all.isna().any(axis=1)])>0: # if there is not-filled region from previous run ...
+    	all.loc[all.isna().any(axis=1),'Regio']  = all.Destination.map(Regio.Regio) # ... vlookup it from updated region mapping
 
 mainURL = "https://flug.idealo.de/deals/"
 keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "last-minute", 
 			"staedtereisen", "kurzurlaub", "warme-reiseziele"}
 
+# not_interested = pd.read_csv("not_interesting.csv")
 not_interested = ['Alghero', 'Belgrad', 'Bergen', 'Berlin Tegel', 'Bukarest', 'Banja Luka',
-				'Cluj', 'Frankfurt', 'Kishinev', 'Skopje', 'Moskau Scheremetjewo', 'Bremen', 
-				'Prag', 'Delhi', 'Detroit', 'Hatay', 'Düsseldorf', 'Hamburg', 'Jakarta', 
-				'Köln/Bonn', 'Sibiu','London Gatwick', 'London Heathrow', 'London Luton', 
-				'London Stansted', 'Ohrid', 'Lviv', 'Manchester', 'Monastir', 'München', 
-				'Pittsburgh', 'Podgorica', 'Pristina', 'Rostock', 'Tirana', 
-				'Ankara', 'Antalya', 'Istanbul', 'Istanbul Sabiha Gökcen', 'Izmir', 
-				'Simferopol', 'Sofia', 'Taschkent', 'Ulan Bator', 'Varna', 'Warschau']
+		   'Cluj', 'Frankfurt', 'Kishinev', 'Skopje', 'Moskau Scheremetjewo', 'Bremen', 
+		   'Prag', 'Delhi', 'Detroit', 'Hatay', 'Düsseldorf', 'Hamburg', 'Jakarta', 
+		   'Köln/Bonn', 'Sibiu','London Gatwick', 'London Heathrow', 'London Luton', 
+		   'London Stansted', 'Ohrid', 'Lviv', 'Manchester', 'Monastir', 'München', 
+		   'Pittsburgh', 'Podgorica', 'Pristina', 'Rostock', 'Tirana', 
+		   'Ankara', 'Antalya', 'Istanbul', 'Istanbul Sabiha Gökcen', 'Izmir', 
+		   'Simferopol', 'Sofia', 'Taschkent', 'Ulan Bator', 'Varna', 'Warschau']
 
 
 prices = []
