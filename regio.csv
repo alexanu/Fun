@@ -1,185 +1,198 @@
-﻿Destination;Regio
-Bangkok;Asia
-Bangkok Don Mueang;Asia
-Hongkong;Asia
-Kuala Lumpur;Asia
-Luzon Clark;Asia
-Manila;Asia
-Phuket;Asia
-Seoul;Asia
-Seoul Incheon;Asia
-Shanghai Pudong;Asia
-Taipei;Asia
-Taipei Songshan;Asia
-Taschkent;Asia
-Tokio Haneda;Asia
-Tokio Narita;Asia
-Calgary;Canada
-Montreal Pierre Elliott Trudeau;Canada
-Toronto;Canada
-Vancouver;Canada
-Athen;Europe
-Barcelona;Europe
-Bari;Europe
-Biarritz;Europe
-Edinburgh;Europe
-Eriwan;Europe
-Faro;Europe
-Fes;Europe
-Florenz;Europe
-Funchal;Europe
-Girona;Europe
-Kiew;Europe
-Korfu;Europe
-Kutaisi;Europe
-Lamezia Terme;Europe
-Lissabon;Europe
-Madrid;Europe
-Mailand Malpensa;Europe
-Mallorca;Europe
-Malta;Europe
-Marseille;Europe
-Olbia;Europe
-Palermo;Europe
-Pisa;Europe
-Ponta Delgada;Europe
-Porto;Europe
-Reykjavik Keflavik;Europe
-Rijeka;Europe
-Stockholm Skavsta;Europe
-Teneriffa Süd;Europe
-Tivat;Europe
-Venedig;Europe
-Zadar;Europe
-Fort de France;Karibik
-Grenada;Karibik
-Quito;Karibik
-Recife;Karibik
-Rio de Janeiro Santos Dumont;Karibik
-Adana;MENA
-Ankara;MENA
-Antalya;MENA
-Dalaman;MENA
-Doha;MENA
-Ercan;MENA
-Istanbul;MENA
-Istanbul Sabiha Gökcen;MENA
-Izmir;MENA
-Jeddah;MENA
-Luxor;MENA
-Marrakesch;MENA
-Muscat;MENA
-Atlanta;USA
-Austin;USA
-Charleston SC;USA
-Cincinnati;USA
-Dallas;USA
-Denver;USA
-Fort Myers;USA
-Houston;USA
-Jacksonville Florida;USA
-Las Vegas;USA
-Los Angeles;USA
-Miami International;USA
-Minneapolis;USA
-New York;USA
-New York La Guardia;USA
-Orlando;USA
-Pensacola;USA
-Philadelphia;USA
-Phoenix;USA
-Portland Oregon;USA
-San Antonio;USA
-San Diego;USA
-San Jose;USA
-Seattle;USA
-Tampa;USA
-Washington DC;USA
-Washington DC National;USA
-Thessaloniki;Europe
-Charlotte;USA
-Hanoi;Asia
-Turin;Europe
-Triest;Europe
-Split;Europe
-Djerba;MENA
-Banjul;MENA
-Kapstadt;MENA
-Liberia Costa Rica;Karibik
-Beijing International;Asia
-Phnom Penh;Asia
-Belem;Karibik
-Perth;Asia
-Kalamata;Europe
-Fort Lauderdale;USA
-Johannesburg;MENA
-Bologna;Europe
-Birmingham;Europe
-Lyon;Europe
-Cagliari;Europe
-Tunis;MENA
-Ancona;Europe
-Dublin;Europe
-Sevilla;Europe
-Rom Fiumicino;Europe
-Dubrovnik;Europe
-San Francisco;USA
-Chania;Europe
-Tel Aviv;MENA
-Kos;Europe
-Kreta Heraklion;Europe
-Karpathos;Europe
-Newark;USA
-West Palm Beach;USA
-Singapur;Asia
-Malaga;Europe
-Ibiza;Europe
-Boa Vista Kap Verde;Karibik
-Mombasa;MENA
-Sansibar;MENA
-Havanna;Karibik
-Varadero;Karibik
-Trondheim;Europe
-Sal;Karibik
-Bali;Asia
-Amman;MENA
-Jerez de la Frontera;Europe
-Kerry County;Europe
-Nairobi;MENA
-Halifax;Europe
-El Paso;USA
-Puerto Plata;Karibik
-Hurghada;MENA
-Saigon;Asia
-Osaka;Asia
-Nizza;Europe
-Bilbao;Europe
-Kairo;MENA
-New Orleans;USA
-Maputo;MENA
-Nassau;Karibik
-Abu Dhabi;MENA
-Addis Abeba;MENA
-Valencia;Europe
-Alicante;Europe
-Santorini;Europe
-Nantes;Europe
-Dubai;MENA
-Marsa Alam;MENA
-Ohrid;Europe
-Hatay;Europe
-Riyadh;MENA
-Lusaka;MENA
-Las Palmas;Europe
-Sharm El Sheikh;MENA
-Oslo;Europe
-Cancun;Karibik
-Santa Cruz Bolivien;Karibik
-Macau;Asia
-Salt Lake City;USA
-Brindisi
-Abidjan
-Oran
-Cebu
-Ottawa
-Sapporo Shin Chitose
+﻿Destination;Symbol;Regio
+Abidjan;Abidjan;Africa
+Addis Abeba;Addis Abeba;Africa
+Banjul;Banjul;Africa
+Djerba;Djerba;Africa
+Johannesburg;Johannesburg;Africa
+Kapstadt;Kapstadt;Africa
+Lusaka;Lusaka;Africa
+Maputo;Maputo;Africa
+Marrakesch;Marrakesch;Africa
+Mombasa;Mombasa;Africa
+Nairobi;Nairobi;Africa
+Oran;Oran;Africa
+Sansibar;Sansibar;Africa
+Tunis;Tunis;Africa
+Bali;Bali;Asia
+Bangkok;Bangkok;Asia
+Bangkok Don Mueang;Bangkok;Asia
+Beijing International;Beijing;Asia
+Cebu;Cebu;Asia
+Hanoi;Hanoi;Asia
+Hongkong;Hongkong;Asia
+Kuala Lumpur;Kuala Lumpur;Asia
+Luzon Clark;Luzon Clark;Asia
+Macau;Macau;Asia
+Manila;Manila;Asia
+Perth;Perth;Asia
+Phnom Penh;Phnom Penh;Asia
+Phuket;Phuket;Asia
+Saigon;Saigon;Asia
+Seoul;Seoul;Asia
+Seoul Incheon;Seoul;Asia
+Shanghai Pudong;Shanghai;Asia
+Singapur;Singapur;Asia
+Taipei;Taipei;Asia
+Taipei Songshan;Taipei;Asia
+Taschkent;Taschkent;Asia
+Calgary;Calgary;Canada
+Montreal Pierre Elliott Trudeau;Montreal;Canada
+Ottawa;Ottawa;Canada
+Toronto;Toronto;Canada
+Vancouver;Vancouver;Canada
+Athen;Athen;Europe
+Birmingham;Birmingham;Europe
+Brindisi;Brindisi;Europe
+Chania;Chania;Europe
+Dublin;Dublin;Europe
+Dubrovnik;Dubrovnik;Europe
+Edinburgh;Edinburgh;Europe
+Eriwan;Eriwan;Europe
+Fes;Fes;Europe
+Halifax;Halifax;Europe
+Hatay;Hatay;Europe
+Kalamata;Kalamata;Europe
+Karpathos;Karpathos;Europe
+Kerry County;Kerry County;Europe
+Kiew;Kiew;Europe
+Korfu;Korfu;Europe
+Kos;Kos;Europe
+Kreta Heraklion;Kreta;Europe
+Kutaisi;Kutaisi;Europe
+Malta;Malta;Europe
+Ohrid;Ohrid;Europe
+Oslo;Oslo;Europe
+Ponta Delgada;Ponta Delgada;Europe
+Reykjavik Keflavik;Reykjavik;Europe
+Rijeka;Rijeka;Europe
+Santorini;Santorini;Europe
+Split;Split;Europe
+Stockholm Skavsta;Stockholm;Europe
+Thessaloniki;Thessaloniki;Europe
+Tivat;Tivat;Europe
+Trondheim;Trondheim;Europe
+Zadar;Zadar;Europe
+Biarritz;Biarritz;Europe France
+Lyon;Lyon;Europe France
+Marseille;Marseille;Europe France
+Nantes;Nantes;Europe France
+Nizza;Nizza;Europe France
+Ancona;Ancona;Europe Italy
+Bari;Bari;Europe Italy
+Bologna;Bologna;Europe Italy
+Cagliari;Cagliari;Europe Italy
+Florenz;Florenz;Europe Italy
+Girona;Girona;Europe Italy
+Lamezia Terme;Lamezia;Europe Italy
+Mailand Malpensa;Mailand;Europe Italy
+Olbia;Olbia;Europe Italy
+Palermo;Palermo;Europe Italy
+Pisa;Pisa;Europe Italy
+Rom Fiumicino;Rom Fiumicino;Europe Italy
+Triest;Triest;Europe Italy
+Turin;Turin;Europe Italy
+Venedig;Venedig;Europe Italy
+Alicante;Alicante;Europe Spain
+Barcelona;Barcelona;Europe Spain
+Bilbao;Bilbao;Europe Spain
+Faro;Faro;Europe Spain
+Funchal;Funchal;Europe Spain
+Ibiza;Ibiza;Europe Spain
+Jerez de la Frontera;Jerez de la Frontera;Europe Spain
+Las Palmas;Las Palmas;Europe Spain
+Lissabon;Lissabon;Europe Spain
+Madrid;Madrid;Europe Spain
+Malaga;Malaga;Europe Spain
+Mallorca;Mallorca;Europe Spain
+Porto;Porto;Europe Spain
+Sevilla;Sevilla;Europe Spain
+Teneriffa Süd;Teneriffa;Europe Spain
+Valencia;Valencia;Europe Spain
+Nagoya;Nagoya;Japan
+Osaka;Osaka;Japan
+Sapporo Shin Chitose;Sapporo Shin Chitose;Japan
+Tokio Haneda;Tokio;Japan
+Tokio Narita;Tokio;Japan
+Belem;Belem;Karibik
+Boa Vista Kap Verde;Kap Verde;Karibik
+Cancun;Cancun;Karibik
+Fort de France;Fort de France;Karibik
+Grenada;Grenada;Karibik
+Havanna;Havanna;Karibik
+Liberia Costa Rica;Liberia Costa Rica;Karibik
+Nassau;Nassau;Karibik
+Puerto Plata;Puerto Plata;Karibik
+Quito;Quito;Karibik
+Recife;Recife;Karibik
+Rio de Janeiro Santos Dumont;Rio de Janeiro;Karibik
+Sal;Sal;Karibik
+Salvador;Salvador;Karibik
+Santa Cruz Bolivien;Santa Cruz Bolivien;Karibik
+Varadero;Varadero;Karibik
+Abu Dhabi;Abu Dhabi;MENA
+Adana;Adana;MENA
+Amman;Amman;MENA
+Ankara;Ankara;MENA
+Antalya;Antalya;MENA
+Dalaman;Dalaman;MENA
+Doha;Doha;MENA
+Dubai;Dubai;MENA
+Dubai World Central;Dubai;MENA
+Ercan;Ercan;MENA
+Hurghada;Hurghada;MENA
+Istanbul;Istanbul;MENA
+Istanbul Sabiha Gökcen;Istanbul;MENA
+Izmir;Izmir;MENA
+Jeddah;Jeddah;MENA
+Kairo;Kairo;MENA
+Luxor;Luxor;MENA
+Marsa Alam;Marsa Alam;MENA
+Muscat;Muscat;MENA
+Riyadh;Riyadh;MENA
+Sharm El Sheikh;Sharm El Sheikh;MENA
+Tel Aviv;Tel Aviv;MENA
+Austin;Austin;USA
+Charleston SC;Charleston;USA
+Cincinnati;Cincinnati;USA
+Dallas;Dallas;USA
+Denver;Denver;USA
+El Paso;El Paso;USA
+Fort Lauderdale;Fort Lauderdale;USA
+Fort Myers;Fort Myers;USA
+Houston;Houston;USA
+Minneapolis;Minneapolis;USA
+New Orleans;New Orleans;USA
+Pensacola;Pensacola;USA
+Phoenix;Phoenix;USA
+Salt Lake City;Salt Lake City;USA
+San Antonio;San Antonio;USA
+Atlanta;Atlanta;USA East
+Charlotte;Charlotte;USA East
+Jacksonville Florida;Jacksonville Florida;USA East
+Miami International;Miami;USA East
+New York;New York;USA East
+New York La Guardia;New York;USA East
+Newark;New York;USA East
+Orlando;Orlando;USA East
+Philadelphia;Philadelphia;USA East
+Portland Oregon;Portland;USA East
+Tampa;Tampa;USA East
+Washington DC;Washington DC;USA East
+Washington DC National;Washington DC;USA East
+West Palm Beach;West Palm Beach;USA East
+Las Vegas;Las Vegas;USA West
+Los Angeles;Los Angeles;USA West
+San Diego;San Diego;USA West
+San Francisco;San Francisco;USA West
+San Jose;San Jose;USA West
+Seattle;Seattle;USA West
+London City
+Menorca
+Santander
+Okinawa
+Yangon
+London City
+Menorca
+Santander
+Okinawa
+Yangon

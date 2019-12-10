@@ -4,11 +4,7 @@ from bs4 import BeautifulSoup as bs
 import pandas as pd
 import datetime
 
-import os
-os.getcwd()
-
 directory = 'c:\\Users\\oanuf\\GitHub\\Fun\\'
-
 
 all=pd.read_csv(directory+"Travel.csv",sep=";") # reading current status
 
@@ -21,17 +17,7 @@ mainURL = "https://flug.idealo.de/deals/"
 keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "last-minute", 
 			"staedtereisen", "kurzurlaub", "warme-reiseziele", "weihnachtsferien", "weihnachten"
 			"beste-urlaubsziele-des-jahres", "osterferien"}
-not_interested.values
 not_interested = pd.read_csv(directory+"not_interesting.csv")
-not_interested = ['Alghero', 'Belgrad', 'Bergen', 'Berlin Tegel', 'Bukarest', 'Banja Luka',
-		   'Cluj', 'Frankfurt', 'Kishinev', 'Skopje', 'Moskau Scheremetjewo', 'Bremen', 
-		   'Prag', 'Delhi', 'Detroit', 'Hatay', 'Düsseldorf', 'Hamburg', 'Jakarta', 
-		   'Köln/Bonn', 'Sibiu','London Gatwick', 'London Heathrow', 'London Luton', 
-		   'London Stansted', 'Ohrid', 'Lviv', 'Manchester', 'Monastir', 'München', 
-		   'Pittsburgh', 'Podgorica', 'Pristina', 'Rostock', 'Tirana', 
-		   'Ankara', 'Antalya', 'Istanbul', 'Istanbul Sabiha Gökcen', 'Izmir', 
-		   'Simferopol', 'Sofia', 'Taschkent', 'Ulan Bator', 'Varna', 'Warschau']
-
 
 prices = []
 flight_dates = []
@@ -69,7 +55,7 @@ angebots = angebots[~angebots['Destination'].isin(not_interested.Destination.val
 angebots["Period"]=pd.to_datetime(angebots["Dates"].str[0], format='%d.%m.%Y').dt.strftime('%Y-%m') # new column: month of flight
 angebots['Status'] = str(datetime.date.today()) # new column: when the query was done
 angebots["Destination"]=angebots["Destination"].replace({'-': ' ', ',': ''}, regex=True) # some destinations contain bad-for-csv symbols
-
+angebots.Price = angebots.Price.str.split('\W+').str[0].astype(int) # split string with "." or "," and take the 1st part
 angebots['Regio'] = angebots.Destination.map(Regio.Regio) # vlookuping region
 
 new=angebots[angebots.isnull().Regio]['Destination'].drop_duplicates() # new destinations
@@ -82,21 +68,24 @@ if len(new)>0:
 
 all=all.append(angebots, ignore_index = True) # adding new information to the main file below
 all=all.sort_values(["Regio","Destination"])
-# calculating the min price for every destination and putting it to separate col
-all['min_price']=all.groupby(["Destination"])["Price"].transform(min).replace({'[\€,]': '', '[\,00 €,]': ''}, regex=True).astype(float)
+all['min_price']=all.groupby(["Destination"])["Price"].transform(min) # calculating the min price for every destination
 
 
+
+type(all.Status[1])
+all[all.Status == str(datetime.date.today())]
+all[all['Price'] < 1.2*all['min_price']]
+all[pd.DatetimeIndex(all["Period"]).year==2020]
 
 record_price = all[(all.Status == str(datetime.date.today())) & 
 					(all['Price'] < 1.2*all['min_price']) &
 					(pd.DatetimeIndex(all["Period"]).year==2020)]
 record_price = record_price.drop(['min_price','Status'],axis=1).sort_values(["Regio"])
 
-all['min_price'].apply(type)
 
 
 
-all.to_csv("Travel.csv", # creating new file
+all.to_csv(directory+"Travel.csv", # creating new file
 			sep=";", 
 			index=False) # we need to eliminate the index column
 
@@ -145,6 +134,9 @@ server.quit()
 all2 = all.copy()
 
 all2['prices']=list(all2.Price.unique())
+
+all.Regio = all.Destination.map(Regio.Regio) 
+all[all.isna().Price]
 
 
 

@@ -570,3 +570,35 @@ df=df.rename(columns=dict_ls)
 
 output.put(df)		    
 		    
+# 15th code block ----------------------------------------------------------------------------------------------------------    		    
+
+def extract_tables(html_string):
+    soup = BeautifulSoup(requests.get(url).text, "lxml")
+    table = soup.find("table")
+
+    result = list()
+
+    if table is not None:
+
+    	# The first tr contains the field names.
+    	headings = [th.get_text() for th in table.find("tr").find_all("th")]
+
+    	datasets = []
+    	for row in table.find_all("tr")[1:]:
+    	    dataset = zip(headings, (td.get_text() for td in row.find_all("td")))
+    	    datasets.append(dataset)
+
+    	for i, dataset in enumerate(datasets):
+            item = dict()
+            for field in dataset:
+                item[field[0].replace('\n', '')] = field[1].replace('\n', '')
+                # print("{0:<20}: {1}".format(field[0].replace('\n', ''), field[1].replace('\n', '')))
+            print('   Save table item ' + str(i))
+            result.append(item)
+
+    else:
+        logger.info('No Table Found')
+
+    return result
+
+
