@@ -186,13 +186,21 @@ San Diego;San Diego;USA West
 San Francisco;San Francisco;USA West
 San Jose;San Jose;USA West
 Seattle;Seattle;USA West
-London City
-Menorca
-Santander
-Okinawa
-Yangon
-London City
-Menorca
-Santander
-Okinawa
-Yangon
+London City;London;Europe
+Menorca;Menorca;Europe Spain
+Santander;Santander;Europe Spain
+Okinawa;Okinawa;Japan
+Yangon;Yangon;Asia
+Paphos;Paphos;Europe
+Entebbe;Entebbe;Africa
+Douala;Douala;Africa
+Rio de Janeiro Galeao;Rio de Janeiro;Karibik
+Dar es Salaam;Dar es Salaam;Africa
+Santiago de Chile;Santiago de Chile;Karibik
+Curacao;Curacao;Karibik
+Lanzarote;Lanzarote;Europe Spain
+Rhodos;Rhodos;Europe
+Beirut;Beirut;MENA
+Sarasota;Sarasota;USA East
+Cork;Cork;Europe
+Cayo Coco;Cayo Coco;Karibik
