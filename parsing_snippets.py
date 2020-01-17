@@ -1,5 +1,6 @@
 
-#Checking the chapters of Zorro
+
+#---------------------------------------------------------------------------------------------------------------------
 
 
 from urllib.request import Request, urlopen
@@ -9,7 +10,6 @@ import requests # get HTML element from URL, this will become the input for BS
 
 # Selenium is a tool designed to automate Web Browser: clicking buttons, input in text fields, etc.
 
-
 import time
 from datetime import datetime 
 import pandas as pd
@@ -18,6 +18,14 @@ import csv
 
 import ast
 import re
+
+# ------------------------------------------------------------------------------------------------------------
+#from freeproxy import from_cyber_syndrome
+#from freeproxy import from_free_proxy_list
+#from freeproxy import from_hide_my_ip
+#from freeproxy import from_xici_dail
+# Building a list of proxies from the 'proxies.txt' files
+proxy_list = open('proxies.txt').read().splitlines()
 
 
 #-------------------------------------------------------------------------------
