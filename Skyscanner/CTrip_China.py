@@ -230,6 +230,16 @@ class Mail():
 
 
 # ----------------------------------------------------------------------------------------------
+def changeFile(__name__):
+    file = open("flightMSG.dat", "wb")
+    file_temp = open("flightMSG_temp.dat", "rb")
+    Dir_temp = pickle.load(file_temp)
+    pickle.dump(Dir_temp, file)
+    file.close()
+    file_temp.close()
+            
+            
+# ----------------------------------------------------------------------------------------------
 
 
 if __name__ == '__main__':
@@ -274,15 +284,13 @@ if __name__ == '__main__':
         Delete = []
         Change = []
         Method_checkEachDict = checkEachDcit.check()
-        Method_Change = method_Change_flightMSGdat.changeFile()
         judgeList = Method_checkEachDict.check(Add, Delete, Change)
-
 
         file_Mail = open("Mail.txt", "w")
         file_Mail.close()
         Mail.writeMail(Add, Delete, Change, FlightDict)
         Mail.SendMail(judgeList)
 
-        Method_Change.changeFile()
+        changeFile()
         print("Sleep for " + str(sleep_time) + " second.")
         sleep(int(sleep_time))
