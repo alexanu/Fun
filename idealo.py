@@ -71,6 +71,16 @@ all=all.sort_values(["Regio","Destination"])
 all['min_price']=all.groupby(["Destination"])["Price"].transform(min) # calculating the min price for every destination
 
 
+all.to_csv(directory+"Travel.csv", # the file exists already
+			mode='a', # append mode: puts new df in the end of csv
+			sep=";", 
+			header=False, # as we are appending, the file has headers already
+			index=False) # we need to eliminate the index column
+
+
+'''
+# cities_db_url="https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.5.zip"
+# cities_db = pd.read_csv(cities_db_url)
 
 type(all.Status[1])
 all[all.Status == str(datetime.date.today())]
@@ -90,17 +100,6 @@ all.to_csv(directory+"Travel.csv", # creating new file
 			index=False) # we need to eliminate the index column
 
 # angebots.sort_values(by=['Group', 'Period'], inplace=True)
-
-
-all.to_csv(directory+"Travel.csv", # the file exists already
-			mode='a', # append mode: puts new df in the end of csv
-			sep=";", 
-			header=False, # as we are appending, the file has headers already
-			index=False) # we need to eliminate the index column
-
-# cities_db_url="https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.5.zip"
-# cities_db = pd.read_csv(cities_db_url)
-
 
 
 import smtplib
