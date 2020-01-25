@@ -1,0 +1,215 @@
+﻿Destination;Symbol;Regio
+Abidjan;Abidjan;Africa
+Addis Abeba;Addis Abeba;Africa
+Banjul;Banjul;Africa
+Djerba;Djerba;Africa
+Johannesburg;Johannesburg;Africa
+Kapstadt;Kapstadt;Africa
+Lusaka;Lusaka;Africa
+Maputo;Maputo;Africa
+Marrakesch;Marrakesch;Africa
+Mombasa;Mombasa;Africa
+Nairobi;Nairobi;Africa
+Oran;Oran;Africa
+Sansibar;Sansibar;Africa
+Tunis;Tunis;Africa
+Bali;Bali;Asia
+Bangkok;Bangkok;Asia
+Bangkok Don Mueang;Bangkok;Asia
+Beijing International;Beijing;Asia
+Cebu;Cebu;Asia
+Hanoi;Hanoi;Asia
+Hongkong;Hongkong;Asia
+Kuala Lumpur;Kuala Lumpur;Asia
+Luzon Clark;Luzon Clark;Asia
+Macau;Macau;Asia
+Manila;Manila;Asia
+Perth;Perth;Asia
+Phnom Penh;Phnom Penh;Asia
+Phuket;Phuket;Asia
+Saigon;Saigon;Asia
+Seoul;Seoul;Asia
+Seoul Incheon;Seoul;Asia
+Shanghai Pudong;Shanghai;Asia
+Singapur;Singapur;Asia
+Taipei;Taipei;Asia
+Taipei Songshan;Taipei;Asia
+Taschkent;Taschkent;Asia
+Calgary;Calgary;Canada
+Montreal Pierre Elliott Trudeau;Montreal;Canada
+Ottawa;Ottawa;Canada
+Toronto;Toronto;Canada
+Vancouver;Vancouver;Canada
+Athen;Athen;Europe
+Birmingham;Birmingham;Europe
+Brindisi;Brindisi;Europe
+Chania;Chania;Europe
+Dublin;Dublin;Europe
+Dubrovnik;Dubrovnik;Europe
+Edinburgh;Edinburgh;Europe
+Eriwan;Eriwan;Europe
+Fes;Fes;Europe
+Halifax;Halifax;Europe
+Hatay;Hatay;Europe
+Kalamata;Kalamata;Europe
+Karpathos;Karpathos;Europe
+Kerry County;Kerry County;Europe
+Kiew;Kiew;Europe
+Korfu;Korfu;Europe
+Kos;Kos;Europe
+Kreta Heraklion;Kreta;Europe
+Kutaisi;Kutaisi;Europe
+Malta;Malta;Europe
+Ohrid;Ohrid;Europe
+Oslo;Oslo;Europe
+Ponta Delgada;Ponta Delgada;Europe
+Reykjavik Keflavik;Reykjavik;Europe
+Rijeka;Rijeka;Europe
+Santorini;Santorini;Europe
+Split;Split;Europe
+Stockholm Skavsta;Stockholm;Europe
+Thessaloniki;Thessaloniki;Europe
+Tivat;Tivat;Europe
+Trondheim;Trondheim;Europe
+Zadar;Zadar;Europe
+Biarritz;Biarritz;Europe France
+Lyon;Lyon;Europe France
+Marseille;Marseille;Europe France
+Nantes;Nantes;Europe France
+Nizza;Nizza;Europe France
+Ancona;Ancona;Europe Italy
+Bari;Bari;Europe Italy
+Bologna;Bologna;Europe Italy
+Cagliari;Cagliari;Europe Italy
+Florenz;Florenz;Europe Italy
+Girona;Girona;Europe Italy
+Lamezia Terme;Lamezia;Europe Italy
+Mailand Malpensa;Mailand;Europe Italy
+Olbia;Olbia;Europe Italy
+Palermo;Palermo;Europe Italy
+Pisa;Pisa;Europe Italy
+Rom Fiumicino;Rom Fiumicino;Europe Italy
+Triest;Triest;Europe Italy
+Turin;Turin;Europe Italy
+Venedig;Venedig;Europe Italy
+Alicante;Alicante;Europe Spain
+Barcelona;Barcelona;Europe Spain
+Bilbao;Bilbao;Europe Spain
+Faro;Faro;Europe Spain
+Funchal;Funchal;Europe Spain
+Ibiza;Ibiza;Europe Spain
+Jerez de la Frontera;Jerez de la Frontera;Europe Spain
+Las Palmas;Las Palmas;Europe Spain
+Lissabon;Lissabon;Europe Spain
+Madrid;Madrid;Europe Spain
+Malaga;Malaga;Europe Spain
+Mallorca;Mallorca;Europe Spain
+Porto;Porto;Europe Spain
+Sevilla;Sevilla;Europe Spain
+Teneriffa Süd;Teneriffa;Europe Spain
+Valencia;Valencia;Europe Spain
+Nagoya;Nagoya;Japan
+Osaka;Osaka;Japan
+Sapporo Shin Chitose;Sapporo Shin Chitose;Japan
+Tokio Haneda;Tokio;Japan
+Tokio Narita;Tokio;Japan
+Belem;Belem;Karibik
+Boa Vista Kap Verde;Kap Verde;Karibik
+Cancun;Cancun;Karibik
+Fort de France;Fort de France;Karibik
+Grenada;Grenada;Karibik
+Havanna;Havanna;Karibik
+Liberia Costa Rica;Liberia Costa Rica;Karibik
+Nassau;Nassau;Karibik
+Puerto Plata;Puerto Plata;Karibik
+Quito;Quito;Karibik
+Recife;Recife;Karibik
+Rio de Janeiro Santos Dumont;Rio de Janeiro;Karibik
+Sal;Sal;Karibik
+Salvador;Salvador;Karibik
+Santa Cruz Bolivien;Santa Cruz Bolivien;Karibik
+Varadero;Varadero;Karibik
+Abu Dhabi;Abu Dhabi;MENA
+Adana;Adana;MENA
+Amman;Amman;MENA
+Ankara;Ankara;MENA
+Antalya;Antalya;MENA
+Dalaman;Dalaman;MENA
+Doha;Doha;MENA
+Dubai;Dubai;MENA
+Dubai World Central;Dubai;MENA
+Ercan;Ercan;MENA
+Hurghada;Hurghada;MENA
+Istanbul;Istanbul;MENA
+Istanbul Sabiha Gökcen;Istanbul;MENA
+Izmir;Izmir;MENA
+Jeddah;Jeddah;MENA
+Kairo;Kairo;MENA
+Luxor;Luxor;MENA
+Marsa Alam;Marsa Alam;MENA
+Muscat;Muscat;MENA
+Riyadh;Riyadh;MENA
+Sharm El Sheikh;Sharm El Sheikh;MENA
+Tel Aviv;Tel Aviv;MENA
+Austin;Austin;USA
+Charleston SC;Charleston;USA
+Cincinnati;Cincinnati;USA
+Dallas;Dallas;USA
+Denver;Denver;USA
+El Paso;El Paso;USA
+Fort Lauderdale;Fort Lauderdale;USA
+Fort Myers;Fort Myers;USA
+Houston;Houston;USA
+Minneapolis;Minneapolis;USA
+New Orleans;New Orleans;USA
+Pensacola;Pensacola;USA
+Phoenix;Phoenix;USA
+Salt Lake City;Salt Lake City;USA
+San Antonio;San Antonio;USA
+Atlanta;Atlanta;USA East
+Charlotte;Charlotte;USA East
+Jacksonville Florida;Jacksonville Florida;USA East
+Miami International;Miami;USA East
+New York;New York;USA East
+New York La Guardia;New York;USA East
+Newark;New York;USA East
+Orlando;Orlando;USA East
+Philadelphia;Philadelphia;USA East
+Portland Oregon;Portland;USA East
+Tampa;Tampa;USA East
+Washington DC;Washington DC;USA East
+Washington DC National;Washington DC;USA East
+West Palm Beach;West Palm Beach;USA East
+Las Vegas;Las Vegas;USA West
+Los Angeles;Los Angeles;USA West
+San Diego;San Diego;USA West
+San Francisco;San Francisco;USA West
+San Jose;San Jose;USA West
+Seattle;Seattle;USA West
+London City;London;Europe
+Menorca;Menorca;Europe Spain
+Santander;Santander;Europe Spain
+Okinawa;Okinawa;Japan
+Yangon;Yangon;Asia
+Paphos;Paphos;Europe
+Entebbe;Entebbe;Africa
+Douala;Douala;Africa
+Rio de Janeiro Galeao;Rio de Janeiro;Karibik
+Dar es Salaam;Dar es Salaam;Africa
+Santiago de Chile;Santiago de Chile;Karibik
+Curacao;Curacao;Karibik
+Lanzarote;Lanzarote;Europe Spain
+Rhodos;Rhodos;Europe
+Beirut;Beirut;MENA
+Sarasota;Sarasota;USA East
+Cork;Cork;Europe
+Cayo Coco;Cayo Coco;Karibik
+Oviedo;Oviedo;Europe Spain
+Daytona Beach;Daytona Beach;USA East
+Boston;Boston;USA East
+Enfidha;Enfidha;Africa
+Bastia;Corsica;Europe
+Samos;Samos;Europe
+Mexico City;Mexico City;Karibik
+Winnipeg;Winnipeg;Canada
+Vilnius;Vilnius;Europe
