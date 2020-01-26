@@ -8,16 +8,22 @@ import sys
 import json
 import ast
 
+api_file = open('SKYSCANNER_API_KEY.txt', 'r')
+YOURAPIKEY = api_file.read()
+api_file.close()
+
+
 def create_session():
     country = 'FR'
-    currency = 'CAD'
+    currency = 'EUR'
     locale = 'fr-FR'
-    originPlace = 'YQB-sky'
-    destinationPlace = 'CDG-sky'
-    departureDate = '2019-12-20'
-    returnDate = '2020-01-03'
+    originPlace = 'MUC-sky'
+    destinationPlace = 'HNL-sky'
+    departureDate = '2020-03-20'
+    returnDate = '2020-04-03'
     cabinClass = 'economy'
-    adults = 1
+    adults = 2
+    children = 1
 
     response = requests.post("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0",
                             headers={
@@ -28,7 +34,7 @@ def create_session():
                             data={
                                 "inboundDate": returnDate,
                                 "cabinClass": cabinClass,
-                                "children": 0,
+                                "children": 1,
                                 "infants": 0,
                                 "country": country,
                                 "currency": currency,
