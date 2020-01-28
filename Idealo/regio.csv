@@ -13,6 +13,10 @@ Nairobi;Nairobi;Africa
 Oran;Oran;Africa
 Sansibar;Sansibar;Africa
 Tunis;Tunis;Africa
+Entebbe;Entebbe;Africa
+Douala;Douala;Africa
+Dar es Salaam;Dar es Salaam;Africa
+Enfidha;Enfidha;Africa
 Bali;Bali;Asia
 Bangkok;Bangkok;Asia
 Bangkok Don Mueang;Bangkok;Asia
@@ -35,11 +39,13 @@ Singapur;Singapur;Asia
 Taipei;Taipei;Asia
 Taipei Songshan;Taipei;Asia
 Taschkent;Taschkent;Asia
+Yangon;Yangon;Asia
 Calgary;Calgary;Canada
 Montreal Pierre Elliott Trudeau;Montreal;Canada
 Ottawa;Ottawa;Canada
 Toronto;Toronto;Canada
 Vancouver;Vancouver;Canada
+Winnipeg;Winnipeg;Canada
 Athen;Athen;Europe
 Birmingham;Birmingham;Europe
 Brindisi;Brindisi;Europe
@@ -72,6 +78,13 @@ Thessaloniki;Thessaloniki;Europe
 Tivat;Tivat;Europe
 Trondheim;Trondheim;Europe
 Zadar;Zadar;Europe
+London City;London;Europe
+Paphos;Paphos;Europe
+Rhodos;Rhodos;Europe
+Cork;Cork;Europe
+Bastia;Corsica;Europe France
+Samos;Samos;Europe
+Vilnius;Vilnius;Europe
 Biarritz;Biarritz;Europe France
 Lyon;Lyon;Europe France
 Marseille;Marseille;Europe France
@@ -106,13 +119,18 @@ Malaga;Malaga;Europe Spain
 Mallorca;Mallorca;Europe Spain
 Porto;Porto;Europe Spain
 Sevilla;Sevilla;Europe Spain
-Teneriffa Süd;Teneriffa;Europe Spain
+Teneriffa;Teneriffa;Europe Spain
 Valencia;Valencia;Europe Spain
+Menorca;Menorca;Europe Spain
+Santander;Santander;Europe Spain
+Lanzarote;Lanzarote;Europe Spain
+Oviedo;Oviedo;Europe Spain
 Nagoya;Nagoya;Japan
 Osaka;Osaka;Japan
 Sapporo Shin Chitose;Sapporo Shin Chitose;Japan
 Tokio Haneda;Tokio;Japan
 Tokio Narita;Tokio;Japan
+Okinawa;Okinawa;Japan
 Belem;Belem;Karibik
 Boa Vista Kap Verde;Kap Verde;Karibik
 Cancun;Cancun;Karibik
@@ -129,6 +147,11 @@ Sal;Sal;Karibik
 Salvador;Salvador;Karibik
 Santa Cruz Bolivien;Santa Cruz Bolivien;Karibik
 Varadero;Varadero;Karibik
+Rio de Janeiro Galeao;Rio de Janeiro;Karibik
+Santiago de Chile;Santiago de Chile;Karibik
+Curacao;Curacao;Karibik
+Cayo Coco;Cayo Coco;Karibik
+Mexico City;Mexico City;Karibik
 Abu Dhabi;Abu Dhabi;MENA
 Adana;Adana;MENA
 Amman;Amman;MENA
@@ -141,7 +164,7 @@ Dubai World Central;Dubai;MENA
 Ercan;Ercan;MENA
 Hurghada;Hurghada;MENA
 Istanbul;Istanbul;MENA
-Istanbul Sabiha Gökcen;Istanbul;MENA
+Istanbul Sabiha Gꢥn;Istanbul;MENA
 Izmir;Izmir;MENA
 Jeddah;Jeddah;MENA
 Kairo;Kairo;MENA
@@ -151,6 +174,8 @@ Muscat;Muscat;MENA
 Riyadh;Riyadh;MENA
 Sharm El Sheikh;Sharm El Sheikh;MENA
 Tel Aviv;Tel Aviv;MENA
+Beirut;Beirut;MENA
+Destination;Symbol;Regio
 Austin;Austin;USA
 Charleston SC;Charleston;USA
 Cincinnati;Cincinnati;USA
@@ -180,36 +205,16 @@ Tampa;Tampa;USA East
 Washington DC;Washington DC;USA East
 Washington DC National;Washington DC;USA East
 West Palm Beach;West Palm Beach;USA East
+Sarasota;Sarasota;USA East
+Daytona Beach;Daytona Beach;USA East
+Boston;Boston;USA East
 Las Vegas;Las Vegas;USA West
 Los Angeles;Los Angeles;USA West
 San Diego;San Diego;USA West
 San Francisco;San Francisco;USA West
 San Jose;San Jose;USA West
 Seattle;Seattle;USA West
-London City;London;Europe
-Menorca;Menorca;Europe Spain
-Santander;Santander;Europe Spain
-Okinawa;Okinawa;Japan
-Yangon;Yangon;Asia
-Paphos;Paphos;Europe
-Entebbe;Entebbe;Africa
-Douala;Douala;Africa
-Rio de Janeiro Galeao;Rio de Janeiro;Karibik
-Dar es Salaam;Dar es Salaam;Africa
-Santiago de Chile;Santiago de Chile;Karibik
-Curacao;Curacao;Karibik
-Lanzarote;Lanzarote;Europe Spain
-Rhodos;Rhodos;Europe
-Beirut;Beirut;MENA
-Sarasota;Sarasota;USA East
-Cork;Cork;Europe
-Cayo Coco;Cayo Coco;Karibik
-Oviedo;Oviedo;Europe Spain
-Daytona Beach;Daytona Beach;USA East
-Boston;Boston;USA East
-Enfidha;Enfidha;Africa
-Bastia;Corsica;Europe
-Samos;Samos;Europe
-Mexico City;Mexico City;Karibik
-Winnipeg;Winnipeg;Canada
-Vilnius;Vilnius;Europe
+Fuerteventura
+Zakynthos
+Memphis
+Porto Alegre

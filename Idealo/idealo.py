@@ -17,7 +17,7 @@ def main():
 			all.loc[all.isna().any(axis=1),'Regio']  = all.Destination.map(Regio.Regio) # ... vlookup it from updated region mapping
 
 	mainURL = "https://flug.idealo.de/deals/"
-	keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "last-minute", 
+	keyWords = {"herbstferien", "fernreisen", "sommerferien", "best-in-europe", "last-minute",
 				"staedtereisen", "kurzurlaub", "warme-reiseziele", "weihnachtsferien", "weihnachten"
 				"beste-urlaubsziele-des-jahres", "osterferien"}
 	not_interested = pd.read_csv(directory+"not_interesting.csv")
