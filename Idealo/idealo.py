@@ -75,11 +75,8 @@ def main():
 	all=all.sort_values(["Regio","Destination"])
 	all['min_price']=all.groupby(["Destination"])["Price"].transform(min) # calculating the min price for every destination
 
-
-	all.to_csv(directory+"Travel.csv", # the file exists already
-				mode='a', # append mode: puts new df in the end of csv
+	all.to_csv(directory+"Travel.csv", # creating new file
 				sep=";", 
-				header=False, # as we are appending, the file has headers already
 				index=False) # we need to eliminate the index column
 
 	print('Done!')
@@ -105,11 +102,12 @@ record_price = all[(all.Status == str(datetime.date.today())) &
 record_price = record_price.drop(['min_price','Status'],axis=1).sort_values(["Regio"])
 
 
+	all.to_csv(directory+"Travel.csv", # the file exists already
+				mode='a', # append mode: puts new df in the end of csv
+				sep=";", 
+				header=False, # as we are appending, the file has headers already
+				index=False) # we need to eliminate the index column
 
-
-all.to_csv(directory+"Travel.csv", # creating new file
-			sep=";", 
-			index=False) # we need to eliminate the index column
 
 # angebots.sort_values(by=['Group', 'Period'], inplace=True)
 
