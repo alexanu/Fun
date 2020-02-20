@@ -1,5 +1,9 @@
+# Source: https://github.com/mixnix/cheapFlights2/tree/master/cheap_flights_pro/outer_libraries
+
+
 import requests
 import json
+from datetime import datetime, timedelta
 
 url = 'https://be.wizzair.com/9.16.2/Api/search/timetable'
 headers = {
@@ -44,10 +48,6 @@ def flights_timetable(departureFromDate="2019-09-06", departureToDate="2019-10-0
 
     return requests.post(url, data=json.dumps(body), headers=headers)
     
-    
-    from datetime import datetime, timedelta
-import json
-from outer_libraries import wizzairApiWrapper
 
 
 def get_30_days_periods(departure_from_date, departure_to_date, returning_from_date, returning_to_date):
@@ -94,13 +94,13 @@ def get_flights(departure_from_date, departure_to_date, target_from_date, target
         # podczas wykonywania requestu trzeba sprawdzic czy exception nie poleci i wydrukowac
         while True:
             try:
-                r = wizzairApiWrapper.flights_timetable(departureFromDate=periods[0],
-                                                        departureToDate=periods[1],
-                                                        targetFromDate=periods[2],
-                                                        targetToDate=periods[3],
-                                                        sourceLocation=source_location,
-                                                        targetLocation=target_location,
-                                                        adultCount=adult_count)
+                r = flights_timetable(departureFromDate=periods[0],
+                                        departureToDate=periods[1],
+                                        targetFromDate=periods[2],
+                                        targetToDate=periods[3],
+                                        sourceLocation=source_location,
+                                        targetLocation=target_location,
+                                        adultCount=adult_count)
                 flights_table['outboundFlights'] += json.loads(r.content)['outboundFlights']
                 flights_table['returnFlights'] += json.loads(r.content)['returnFlights']
                 break
