@@ -60,7 +60,7 @@ def main():
 	angebots["Period"]=pd.to_datetime(angebots["Dates"].str[0], format='%d.%m.%Y').dt.strftime('%Y-%m') # new column: month of flight
 	angebots['Status'] = str(datetime.date.today()) # new column: when the query was done
 	angebots["Destination"]=angebots["Destination"].replace({'-': ' ', ',': ''}, regex=True) # some destinations contain bad-for-csv symbols
-	angebots.Price = angebots.Price.str.split('\W+').str[0].astype(int) # split string with "." or "," and take the 1st part
+	angebots.Price = angebots.Price.str.extract('(\d+)').astype(int) # split string with "." or "," and take the 1st part
 	angebots['Regio'] = angebots.Destination.map(Regio.Regio) # vlookuping region
 
 	new=angebots[angebots.isnull().Regio]['Destination'].drop_duplicates() # new destinations
