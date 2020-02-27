@@ -17,6 +17,18 @@ def openCSV(path):
     with open(path) as filename:
         return list(csv.reader(filter(lambda row: row[0]!='#', filename)))
 
+# File struc:
+#     # Destination Code, Trip Length, City, Country
+#     #
+#     #####################################################
+#     #                   Europe
+#     #####################################################
+#     AMS,10,Amsterdam,Netherlands
+#     ATH,10,Athens,Greece
+#     BCN,10,Barcelona,Spain
+    
+    
+    
 # Takes a list of destinations and turns them into a list of Destination objects
 def destListToObject(list):
     toReturn = []
@@ -24,21 +36,11 @@ def destListToObject(list):
         toReturn.append(Destination(item[0],int(item[1]),item[2],item[3]))
     return toReturn
     
-    
 
-
-import tweepy
 import flightBotKeys as keys
-import collectData, helpers, paths
-import time, datetime, schedule, os
+import time, datetime, schedule, os, sys, locale, timeit
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-
-
-
-import time, datetime, sys, locale, timeit
-import helpers, paths
-from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -60,8 +62,8 @@ class Flight:
     def __str__(self):
         city = 'N/A'
         country = 'N/A'
-        searches = helpers.openCSV(paths.destinationsFile)
-        destinations = helpers.destListToObject(searches)
+        searches = openCSV(paths.destinationsFile)
+        destinations = destListToObject(searches)
         for dest in destinations:
             if dest.dest == self.dest:
                 city = dest.city
@@ -74,17 +76,17 @@ class Flight:
         ret += ' - ' + self.retDate.strftime(dateFormat) + '\n'
         ret += self.getURL()
         return ret
+
     def getURL(self):
         URL_DATE_FORMAT = "%Y-%m-%d"
         URL = 'https://www.google.com/flights/#search;f={};t={};d={};r={}'
         return URL.format(self.dep, self.dest, self.depDate.strftime(URL_DATE_FORMAT),
             self.retDate.strftime(URL_DATE_FORMAT))
+
     def setAverage(self, avg):
         self.avg = avg
         self.percentage = (float(self.price) / self.avg) * 100
-    def tweeted(self):
-        # Call if this flight was tweeted (BEFORE LOGGING)
-        self.tweeted = True
+
     def log(self):
         # .csv format:
         # time, departing airport, price, average price, percentage, tweeted
@@ -99,8 +101,6 @@ class Flight:
                 str(self.avg) + ',' +
                 str(self.tweeted) + '\n')
 
-
-
 # Pass: String in the format 'US$1,000'
 # Returns: String parsed to integer
 def toInt(price):
@@ -108,7 +108,6 @@ def toInt(price):
     ret = price.replace('$','')
     ret = ret.replace(',','')
     return int(ret)
-
 
 
 def getGraph(driver):
@@ -127,11 +126,8 @@ def getGraph(driver):
     element = element.find_element(By.XPATH, priceGraphTabPath)
     element.click()
 
-    # Graph container div
-    graph = element.find_element(By.XPATH, graphContainerPath)
-
-    # Arrow to proceed down the graph
-    arrow = element.find_element(By.XPATH, arrowPath)
+    graph = element.find_element(By.XPATH, graphContainerPath) # Graph container div
+    arrow = element.find_element(By.XPATH, arrowPath) # Arrow to proceed down the graph
 
     return graph, arrow
 
@@ -203,19 +199,6 @@ def collectData(driver, departing, destination, tripLen, lowBound=datetime.date.
     return lowestFlight
 
 
-
-
-
-
-# Authenticates tweepy
-# Returns:
-#   Authenticated tweepy api
-def twitterAuth():
-    # Users should fill these in with their personal keys
-    auth = tweepy.OAuthHandler(keys.CONSUMER_KEY, keys.CONSUMER_SECRET)
-    auth.set_access_token(keys.ACCESS_KEY, keys.ACCESS_SECRET)
-    return tweepy.API(auth)
-
 # Returns either a headless or headed webdriver
 # Parameters:
 #   headless: (Bool) if True, create a headless driver
@@ -236,12 +219,8 @@ def getDriver(headless=True):
 #   cheapest: (list<Flight>) list of cheapest Flight objects
 def search(driver):
     cheapest = []
-
-    # Used to find flights only during the university summer
     summerStart = datetime.date(2018, 5, 5)
     summerEnd = datetime.date(2018, 8, 15)
-
-    # List of destinations
     searches = helpers.openCSV(paths.destinationsFile)
     destinations = helpers.destListToObject(searches)
 
@@ -251,26 +230,9 @@ def search(driver):
         cheapest.append(cheapFlight)
     return cheapest
 
-# Logs list of flights
-# Parameters:
-#   flights: (list<Flight>) list of cheapest Flights
 def log(flights):
     for flight in flights:
         flight.log()
-
-# Tweet out the flight details
-# Parameters:
-#   api: (tweepy.api) validated tweepy
-#   flight: (Flight) flight object to tweet
-#   media: (bool) if True, try to tweet with picture attached
-def tweet(api, flight, media=True):
-    status = str(flight)
-    picPath = './../../private/pics/' + flight.dest + '.jpg'
-    # if a picture for the destination exists, tweet with a picture attached
-    if media and os.path.isfile(picPath):
-        api.update_with_media(filename=picPath, status=status)
-    else:
-        api.update_status(status=status)
 
 if __name__ == '__main__':
     driver = getDriver('headless')
