@@ -249,10 +249,6 @@ def aircheapy(params, get_current_ips_IATA=False, use_threading=True):
     global depart_on_weekend
     global arrive_on_weekend
 
-    assert sys.version_info >= (2, 7), 'Python version should be at least 2.7'
-    assert (not(get_current_ips_IATA and 'from_IATA' in params.keys()) and
-            (not(get_current_ips_IATA is False and 'from_IATA' not in params.keys()))), "Flag 'get_current_ips_IATA' and constant 'from_IATA' are mutually exclusive"
-    
     end_time = datetime.now()
     
     to_IATA = params['to_IATA']
@@ -285,22 +281,8 @@ def aircheapy(params, get_current_ips_IATA=False, use_threading=True):
         minGap = 0
         arrive_on_weekend = False
 
+    from_IATA = params['from_IATA']
     
-    from_IATA={}
-    # getting current ip's iata code
-    if get_current_ips_IATA:
-        g = geocoder.ip('me')
-        r = requests.get("http://iatageo.com/getCode/"+str(g.latlng[0])+"/"+str(g.latlng[1]))
-        if r.status_code == 200:
-            from_IATA[eval(r.content)['IATA']] = str(g[0]).split(',')[0].lstrip('[')
-    else:
-        from_IATA = params['from_IATA']
-        if len(from_IATA) != 1:
-            print("From should be only 1 city, currently "+str(len(from_IATA))+" are given. Exiting.")
-            return
-
-    params['from_IATA'] = from_IATA
-
     dup_check = list(from_IATA.keys())[0]
     if dup_check in list(to_IATA.keys()):
         print('From-To cities same. Skipping:'+to_IATA.pop(dup_check))
