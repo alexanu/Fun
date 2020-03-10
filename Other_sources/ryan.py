@@ -76,3 +76,22 @@ else:
     df = df.drop(columns=['Dep_country_Return', 'Dep_airport_Return', 'Dest_country_Return','Origin_Return'])
 
 
+# ----------------------------------------------------------------------------------------
+
+ 
+
+from bs4 import BeautifulSoup
+from urllib.request import urlopen
+from urllib.error import HTTPError, URLError
+
+try: #load soup
+    src = urlopen('https://flights.ryanair.com/es-es/vuelos-a-londres').read()
+except HTTPError as e:
+    print(e)
+except URLError:
+    print("Server down or incorrect domain")
+else:
+    content = BeautifulSoup(src,'lxml') #parse
+
+for deal in content.find_all('h1'): # find ocurrences of a certain class
+    print('Oferta: ' + deal.text)
