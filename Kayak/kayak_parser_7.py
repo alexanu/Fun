@@ -135,18 +135,6 @@ def compile_data_kayak():
             print("Keine Daten gefunden")
             pass
 
-
-# /html/body/div[1]/div/div[1]/main/div/div[1]/div/div[2]/div/div/div[3]/div[2]/div/div[1]/div/div[1]/div/a/div[3]
-# '//div[@class ="datesWrapper"]'
-#//*[@id="MnWc"]
-# #gaa2 > a > div.datesWrapper
-# #Gi9A > a > div.datesWrapper
-# #xKww > a > div.datesWrapper
-# #iCZV > a > div.datesWrapper
-# /html/body/div[1]/div/div[1]/main/div/div[1]/div/div[2]/div/div/div[3]/div[2]/div/div[1]/div/div[2]/div/a/div[3]
-# /html/body/div[1]/div/div[1]/main/div/div[1]/div/div[2]/div/div/div[3]/div[2]/div/div[1]/div/div[1]/div/a/div[3]
-# f'/html/body/div[1]/div/div[1]/main/div/div[1]/div/div[2]/div/div/div[3]/div[2]/div/div[1]/div/div[{k}]/div/a/div[3]'
-# #v9T5 > a:nth-child(1) > div:nth-child(3)
 #
 
 links = ["https://www.tuifly.com/flugangebote", "https://www.kayak.de/flugangebote"] #,  "https://www.statravel.de/aktuelle-flugangebote.htm"

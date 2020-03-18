@@ -154,3 +154,4 @@ all2['prices'] = [list(set(all2['subreddit'].loc[all2['Destination'] == x['Desti
 groupby(["Destination"])
 '''
 
+

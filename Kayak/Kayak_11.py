@@ -23,14 +23,12 @@ class Flight_Bot:
         try:
             more_results = '//a[@class = "moreButton"]'
             driver.find_element_by_xpath(more_results).click()
-            # Printing these notes during the program helps me quickly check what it is doing
             print('sleeping.....')
             sleep(randint(45,60))
         except:
             pass
     
     def page_scrape(self):
-        """This function takes care of the scraping part"""
         sleep(5)
         xp_sections = '//*[@class="section duration"]'
         sections = driver.find_elements_by_xpath(xp_sections)
