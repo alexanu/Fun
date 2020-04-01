@@ -29,74 +29,6 @@ import numpy as np
 
 
 
-
-
-
-def close_popup():
-    ## CLOSING POPUP
-    try:
-        xp_popup_close = '//button[contains(@id,"dialog-close") and contains(@class, "Button-No-Standard-Style close ")]'
-        driver.find_elements_by_xpath(xp_popup_close)[5].click()
-        print('ALG.1 : SUCCESS')
-    except Exception as e:
-        print("ALG.1 : FAIL")
-        pass
-
-   try:
-        xp_popup_close = '//button[contains(@id,"-dialog-close") and contains(@class, "Button-No-Standard-Style close ")]'
-        button = driver.find_element_by_xpath(xp_popup_close)
-        driver.implicitly_wait(10)
-        ActionChains(driver).move_to_element(button).click(button).perform()
-        print('ALG.2 : SUCCESS')
-    except Exception as e:
-        print("ALG.2 : FAIL")
-        pass
-
-    try:
-        button = driver.find_element_by_name('alert')
-        button.click()
-        sleep(2)
-        # Switch the control to the Alert window
-        obj = driver.switch_to.alert
-        # Dismiss the Alert using
-        obj.dismiss()
-        print('ALG.3 : SUCCESS')
-    except:
-        print('ALG.3 : FAIL')
-        pass
- 
-
-
-
-
-
-def filter_results(soup):
-    """Given a kayak soup, returns the list [price, 1st Departure time, 2nd Departure time]"""
-    output = []
-    for each in soup.find_all(class_ = "flightresult"):
-        # find the price and print it out
-        price = each.find(class_ = "results_price")
-        flight = [price.string.strip()]
-        
-        # find the first leg of the trip
-        leg1 = each.find(class_= "singleleg0")
-        Departure = string.replace(string.replace(leg1.find(class_ = "flightTimeDeparture").string.strip(),'p', 'PM'),'a','AM')
-        flight.append(time.strptime(Departure, "%I:%M%p"))
-                
-        # find the second leg of the trip
-        leg2 = each.find(class_ = "singleleg1")
-        Departure = string.replace(string.replace(leg2.find(class_ = "flightTimeDeparture").string.strip(),'p', 'PM'),'a','AM')
-        flight.append(time.strptime(Departure, "%I:%M%p"))
-
-        # append price and times to return array
-        output.append(flight)
-    return output
-
-
-
-
-
-
 base_url = "http://www.kayak.com/flights/"
 city_from = "SCE"
 city_to = "ATL"
@@ -159,6 +91,8 @@ for url in URLs:
 
 
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+    # headers = {'User-Agent': generate_user_agent(device_type="desktop", os=('mac', 'linux', 'win'))}
+
     # Cookie must be updated every 52 days ca. .
     # Last Cookie: 23 Jan 2020 . On 17 Jan 2020 previous cookie (26 Nov 2019) stopped working
     headers = {
@@ -200,11 +134,71 @@ for url in URLs:
                   '%26po%3D%26personality%3D%26provider%3D%26pageType%3DFD%26id%3DDR2E '
     }
 
+# 1 option ---------------------------------------------------------------------------------
     soup = BeautifulSoup(driver.page_source)
-    results = filter_results(soup)
+    output = []
+    for each in soup.find_all(class_ = "flightresult"):
+        price = each.find(class_ = "results_price")
+        flight = [price.string.strip()]
+        
+        leg1 = each.find(class_= "singleleg0")
+        Departure = string.replace(string.replace(leg1.find(class_ = "flightTimeDeparture").string.strip(),'p', 'PM'),'a','AM')
+        flight.append(time.strptime(Departure, "%I:%M%p"))
+                
+        leg2 = each.find(class_ = "singleleg1")
+        Departure = string.replace(string.replace(leg2.find(class_ = "flightTimeDeparture").string.strip(),'p', 'PM'),'a','AM')
+        flight.append(time.strptime(Departure, "%I:%M%p"))
+
+        output.append(flight)
 
 
+# 2nd option ----------------------------------------------------------------------------------------
 
+    try:
+        r = requests.get(url, headers=headers)
+    except requests.exceptions.ProxyError:
+        return 'FAIL'
+
+    soup = BeautifulSoup(r.text, 'lxml')
+
+    prices = list()
+    operators = list()
+    iata_origin = list()
+    iata_destination = list()
+    currencies = list()
+
+    departure_times = [departure_time.text for departure_time in
+                       soup.find_all('span', attrs={'class': 'depart-time base-time'})]
+    arrival_times = [arrival_time.text for arrival_time in
+                     soup.find_all('span', attrs={'class': 'arrival-time base-time'})]
+
+    regex = re.compile('Common-Booking-MultiBookProvider (.*)multi-row Theme-featured-large(.*)')
+    for price in soup.find_all('div', attrs={'class': regex}):
+        price = price.find('span', attrs={'class': 'price option-text'}).text[1:]
+        prices.append(int(price[:-4]))
+        currencies.append(price[-3:-1])
+
+    for operator in soup.find_all('div', attrs={'class': 'section times'}):
+        operators.append(operator.find('div', attrs={'class': 'bottom'}).text)
+
+    for iata in soup.find_all('div', attrs={'class': 'section duration'}):
+        iata_origin.append(iata.find('div', attrs={'class': 'bottom'}).find('span').text)
+
+    for iata in soup.find_all('div', attrs={'class': 'section duration'}):
+        iata_destination.append(iata.find('div', attrs={'class': 'bottom'}).find_all('span')[2].text)
+
+    data = {
+        'origin': iata_origin,
+        'destination': iata_destination,
+        'date': date,
+        'departure_time': departure_times,
+        'arrival_time': arrival_times,
+        'operator': operators,
+        'currency': currencies,
+        'price': prices
+    }
+
+    df = pd.DataFrame(data)
 
 # https://towardsdatascience.com/if-you-like-to-travel-let-python-help-you-scrape-the-best-fares-5a1f26213086
 
@@ -332,17 +326,48 @@ for url in URLs:
 
 
 
-    for item in results:
-        Departure1 = item[1]
-        latest_departure1 = time.strptime("13:30", "%H:%M")
-        Departure2 = item[2]
-        latest_departure2 = time.strptime("15:00", "%H:%M")  
 
-        #if (Departure1 > latest_departure1) and (Departure2 > latest_departure2):
-        print url
-        print item[0] + ", " + time.strftime("%H:%M", Departure1) + ", " + time.strftime("%H:%M", Departure2)
 
-    driver.close()
+
+
+
+def close_popup():
+    ## CLOSING POPUP
+    try:
+        xp_popup_close = '//button[contains(@id,"dialog-close") and contains(@class, "Button-No-Standard-Style close ")]'
+        driver.find_elements_by_xpath(xp_popup_close)[5].click()
+        print('ALG.1 : SUCCESS')
+    except Exception as e:
+        print("ALG.1 : FAIL")
+        pass
+
+   try:
+        xp_popup_close = '//button[contains(@id,"-dialog-close") and contains(@class, "Button-No-Standard-Style close ")]'
+        button = driver.find_element_by_xpath(xp_popup_close)
+        driver.implicitly_wait(10)
+        ActionChains(driver).move_to_element(button).click(button).perform()
+        print('ALG.2 : SUCCESS')
+    except Exception as e:
+        print("ALG.2 : FAIL")
+        pass
+
+    try:
+        button = driver.find_element_by_name('alert')
+        button.click()
+        sleep(2)
+        # Switch the control to the Alert window
+        obj = driver.switch_to.alert
+        # Dismiss the Alert using
+        obj.dismiss()
+        print('ALG.3 : SUCCESS')
+    except:
+        print('ALG.3 : FAIL')
+        pass
+ 
+
+
+
+
 
 
 
@@ -350,75 +375,4 @@ for url in URLs:
 # Source: https://github.com/lordmalcher/FlightPrices/blob/master/scraper.py
 
 
-
-def get_page(origin, destination, date):
-    url = f'https://www.kayak.pl/flights/{origin}-{destination}/{date}?sort=bestflight_a&fs=stops=0;providers=-ONLY_DIRECT'
-    headers = {
-        'User-Agent': generate_user_agent(device_type="desktop", os=('mac', 'linux', 'win'))
-    }
-
-    print(f'{url}\n{headers}')
-
-    try:
-        r = requests.get(url, headers=headers)
-    except requests.exceptions.ProxyError:
-        return 'FAIL'
-
-    soup = BeautifulSoup(r.text, 'lxml')
-    if soup.find_all('p')[0].getText() == "Please confirm that you are a real KAYAK user.":
-        print("Kayak thinks I'm a bot, which I am ... so let's wait a bit and try again")
-        return 'fail'
-
-    with open(f'requests/request-{origin}-{destination}-{date}.html', 'w', encoding='utf-8') as f:
-        f.write(r.text)
-
-    return 'success'
-
-
-def scrape(origin, destination, date):
-    r = ''
-    with open(f'requests/request-{origin}-{destination}-{date}.html', 'r', encoding='utf-8') as f:
-        r = f.read()
-    soup = BeautifulSoup(r, 'lxml')
-
-    prices = list()
-    operators = list()
-    iata_origin = list()
-    iata_destination = list()
-    currencies = list()
-
-    departure_times = [departure_time.text for departure_time in
-                       soup.find_all('span', attrs={'class': 'depart-time base-time'})]
-    arrival_times = [arrival_time.text for arrival_time in
-                     soup.find_all('span', attrs={'class': 'arrival-time base-time'})]
-
-    regex = re.compile('Common-Booking-MultiBookProvider (.*)multi-row Theme-featured-large(.*)')
-    for price in soup.find_all('div', attrs={'class': regex}):
-        price = price.find('span', attrs={'class': 'price option-text'}).text[1:]
-        prices.append(int(price[:-4]))
-        currencies.append(price[-3:-1])
-
-    for operator in soup.find_all('div', attrs={'class': 'section times'}):
-        operators.append(operator.find('div', attrs={'class': 'bottom'}).text)
-
-    for iata in soup.find_all('div', attrs={'class': 'section duration'}):
-        iata_origin.append(iata.find('div', attrs={'class': 'bottom'}).find('span').text)
-
-    for iata in soup.find_all('div', attrs={'class': 'section duration'}):
-        iata_destination.append(iata.find('div', attrs={'class': 'bottom'}).find_all('span')[2].text)
-
-    data = {
-        'origin': iata_origin,
-        'destination': iata_destination,
-        'date': date,
-        'departure_time': departure_times,
-        'arrival_time': arrival_times,
-        'operator': operators,
-        'currency': currencies,
-        'price': prices
-    }
-
-    df = pd.DataFrame(data)
-
-    return df
 

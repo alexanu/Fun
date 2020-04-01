@@ -5,8 +5,6 @@ https://github.com/atopoxo/AI/blob/37468e0dc7cf15fb8809ece6067f41ba6c45902b/API/
 
 '''
 import time
-import urllib2
-import xml.dom.minidom
 
 kayakKey = ''
 

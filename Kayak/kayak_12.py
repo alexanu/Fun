@@ -19,13 +19,13 @@ def scrape(origin, destination, startdate, days, requests):
     enddate = datetime.strptime(startdate, '%Y-%m-%d').date() + timedelta(days)
     enddate = enddate.strftime('%Y-%m-%d')
 
-    url = "https://www.kayak.com/flights/" + origin + "-" + destination + "/" + startdate + "/" + enddate + "?sort=bestflight_a&fs=cfc=1;stops=0"
-    print("\n" + url)
+    url = "https://www.kayak.com/flights/" + origin + "-" + destination 
+                                           + "/" + startdate + "/" + enddate 
+                                           + "?sort=bestflight_a&fs=cfc=1;stops=0"
 
     chrome_options = webdriver.ChromeOptions()
     #Find your agent by searching "what is my user agent"
     agents = ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"]
-    print("User agent: " + agents[(requests % len(agents))])
     chrome_options.add_argument('--user-agent=' + agents[(requests % len(agents))] + '"')    
     chrome_options.add_experimental_option('useAutomationExtension', False)
     
@@ -74,7 +74,16 @@ def scrape(origin, destination, startdate, days, requests):
     
     meridiem = np.asarray(meridiem)
     meridiem = meridiem.reshape(int(len(meridiem) / 4), 4)
-        
+
+    '''
+    carrier = [carr.text.strip() for carr in soup.find_all("div", {"class": "bottom"})]
+    while '' in carrier:
+        carrier.remove('')
+    carrier = carrier[0::2]  # removes even position carriers because they are empty str
+    '''
+
+
+
     #Get the flight's price
     regex = re.compile('Common-Booking-MultiBookProvider (.*)multi-row Theme-featured-large(.*)')
     price_list = soup.find_all('div', attrs={'class': regex})
@@ -82,7 +91,6 @@ def scrape(origin, destination, startdate, days, requests):
     for div in price_list:
         price.append(int(div.getText().split('\n')[3][1::1]))
         
-    print("Fly to your destination from: " + str(price[0]) + " dollars.")
 
     df = pd.DataFrame({"origin" : origin,
                        "destination" : destination,
@@ -96,35 +104,28 @@ def scrape(origin, destination, startdate, days, requests):
                        "arrtime_o": [m + str(n) for m,n in zip(arrtime[:,1],meridiem[:,3])]
                        })
 
+    today = str(date.today())
+    now_time = str(datetime.now().time())[:-7]
+    df["retrieved_at"] = now_time
+    df["retrieved_on"] = today
+    df["url"] = url
+
+
     results = pd.concat([results, df], sort=False)
     driver.close() #Close the browser
     time.sleep(30) #Wait 30 seconds until the next request
     return "success"
 
-#Create an empty dataframe
-results = pd.DataFrame(columns=['origin','destination','startdate','enddate','deptime_o','arrtime_d','deptime_d','arrtime_o','currency','price'])
+results = pd.DataFrame(columns=['origin','destination',
+                                'startdate','enddate',
+                                'deptime_o','arrtime_d',
+                                'deptime_d','arrtime_o',
+                                'currency','price'])
  
-#Origin input section, as a unique 3-letter IATA code
-origins = input("Enter your origin: ")
-
-#Destinations input section, as a unique 3-letter IATA code
-destinations = list()
-numdest = input("Enter the number of preferable destinations: ")
-for i in range(int(numdest)):
-    dest = input("Enter your preferable destination: ")
-    destinations.append(str(dest))
-print(destinations)
-
-#Start Dates input section, as YYYY-MM-DD
-startdates = list()
-numdate = input("Enter the number of preferable start dates: ")
-for i in range(int(numdate)):
-    date = input("Enter your preferable start dates: ")
-    startdates.append(str(date))
-print(startdates)
-
-requests = 0
-staydays = int(input("Enter the number of days you'll stay in your preferable destination: "))
+origins = ""
+destinations = ["HNL","KBP"]
+startdates = ["01.01.2021","01.09.2020"]
+staydays = 10
 
 for destination in destinations:
     for startdate in startdates:   
@@ -135,13 +136,5 @@ for destination in destinations:
 #Find the minimum price for each Destination-Start Date combination
 results_agg = results.groupby(['destination','startdate'])['price'].min().reset_index().rename(columns={'min':'price'})       
 
-#Visualize results using a heatmap
-heatmap_results = pd.pivot_table(results_agg, values='price', index=['destination'], columns='startdate')
-                     
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-sns.set(font_scale=1.5)
-plt.figure(figsize = (14,6))
-sns.heatmap(heatmap_results, annot=True, annot_kws={"size": 20}, fmt='.0f', cmap="RdYlGn_r")
-plt.show()
+print("-" * 30)
+print("END")
