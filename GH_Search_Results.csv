@@ -1,0 +1,495 @@
+,My_ID,Parent,Parent_ID,Parent_Update,Created,Descrip
+0,264777603,trading-clients,264777603,2020-05-22 12:44:17,2020-05-17 23:41:28,Minimal Alpaca trading API implementation
+1,265278442,Telegram-Chatbot,265278442,2020-05-22 07:57:57,2020-05-19 14:58:20,
+2,266047137,gimme-aws-creds,266047137,2020-05-22 07:41:52,2020-05-22 07:30:55,
+3,266035915,iexam,266035915,2020-05-22 06:46:24,2020-05-22 06:30:19,
+4,263154524,cryptocoin-dashboard,263154524,2020-05-22 03:34:59,2020-05-11 20:46:30,Data Centric Milestone Project
+5,236574617,AWSBOTOQuickStart,236574617,2020-05-22 02:13:43,2020-01-27 19:27:50,Provision Throw Away Services 
+6,262761514,pulumi-python-webapp-sql,262761514,2020-05-22 04:47:10,2020-05-10 10:24:03,Secure Azure App Services + SQL PaaS stack using pulumi 
+7,265973460,Sosa-local,265973460,2020-05-21 23:33:00,2020-05-21 23:29:47,Psychological assessment web application
+8,240637945,cl-stocks,240637945,2020-05-21 19:46:29,2020-02-15 03:21:10,💰A command line program for buying and selling stocks
+9,265911749,nasdaq_dwh,265911749,2020-05-21 17:51:19,2020-05-21 17:33:25,Udacity Capstone Project: an ELT pipeline that builds a data warehouse of NASDAQ stocks. [POC]
+10,109551372,pyEX,109551372,2020-05-22 11:31:31,2017-11-05 04:21:16,Python interface to IEX and IEX cloud APIs
+11,249802610,cheatsheets,249802610,2020-05-21 14:56:24,2020-03-24 19:46:16,Random pentest notes and tools. Use your Ctrl-F to navigate around
+12,249988626,public-apis,249988626,2020-05-21 13:02:14,2020-03-25 13:40:17,A collective list of free APIs for use in software development
+13,54346799,public-apis,54346799,2020-05-22 12:34:15,2016-03-20 23:49:42,A collective list of free APIs for use in software and web development.
+14,192196238,PyMODA,192196238,2020-05-21 09:37:09,2019-06-16 13:48:06,"Python implementation of MODA, a numerical toolbox developed by the Nonlinear & Biomedical Physics group at Lancaster University."
+15,248373760,bioinfomatics-repositories,248373760,2020-05-21 06:48:25,2020-03-19 00:29:33,Collection of bioinformatician and their repositories.
+16,180769741,Huawei_theme_package_utils_v9.x,180769741,2020-05-21 04:06:45,2019-04-11 10:32:31,华为主题包制作-工具集合
+17,182891925,RegressionStockPredictor,182891925,2020-05-20 23:07:48,2019-04-23 00:53:30,A machine learning program used to make predictions on stock prices. This program uses a regression algorithm 
+18,10786172,unicorn,10786172,2020-05-22 07:21:49,2013-06-19 08:38:06,Unicorn is a simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. Based on Matthew Graeber's powershell attacks and the powershell bypass technique presented by David Kennedy (TrustedSec) and Josh Kelly at Defcon 18.
+19,259501192,iExecCoinbaseOracle,259501192,2020-05-20 21:07:54,2020-04-28 01:39:58,
+20,160553131,pyEX-studies,160553131,2020-05-22 11:32:14,2018-12-05 17:17:46,Predefined financial metrics built on pyEX/IEX
+21,253033607,jrxy_python_course,253033607,2020-05-20 15:46:17,2020-04-04 15:34:56,Python in Finance 
+22,265474390,EasyPowerShell,265474390,2020-05-20 07:14:52,2020-05-20 06:39:54,
+23,186368869,JustTryHarder,186368869,2020-05-22 10:45:07,2019-05-13 07:36:18,"JustTryHarder, a cheat sheet which will aid you through the PWK course & the OSCP Exam. (Inspired by PayloadAllTheThings)"
+24,72815233,oci-cli,72815233,2020-05-21 01:42:09,2016-11-04 04:49:14,Command Line Interface for Oracle Cloud Infrastructure
+25,192984839,pyEX-caching,192984839,2020-05-19 19:49:01,2019-06-20 20:41:17,Library for caching and querying IEX data
+26,262877735,pyGPOAbuse,262877735,2020-05-22 09:27:48,2020-05-10 21:21:27,Partial python implementation of SharpGPOAbuse
+27,247366272,tapdance,247366272,2020-05-19 17:33:08,2020-03-14 22:58:28,Tapdance is an orchestration layer for the open source Singer tap platform.
+28,228921637,grf-bg,228921637,2020-05-19 15:53:51,2019-12-18 21:06:40,Pajton3 skripte za razni proracun i kontrolu betonskih elemenata
+29,84228579,gimme-aws-creds,84228579,2020-05-19 13:15:12,2017-03-07 17:41:23,A CLI that utilizes Okta IdP via SAML to acquire temporary AWS credentials
+30,127658171,acct,127658171,2020-05-17 16:50:23,2018-04-01 18:07:21,A backend accounting system
+31,166878926,shelly,166878926,2020-05-17 07:40:10,2019-01-21 20:51:05,Reverse shell payload generator
+32,186131158,i18n-python,186131158,2020-05-17 03:09:49,2019-05-11 12:37:41,python3 多语言帮助
+33,259057344,quintana,259057344,2020-05-17 02:30:44,2020-04-26 14:56:20,Docker containers for hosting a financial data API
+34,264234088,iexlib,264234088,2020-05-15 16:19:09,2020-05-15 15:46:18,IEX Exchange Data Dumper and Parsers
+35,245306636,Mercury,245306636,2020-05-15 15:30:41,2020-03-06 01:46:07,"We will build up from the simple retriever to the retriever who can persist data, and then we will turn into multithreaded lambda retriever. We will discover nasty surprises along the way and learn how to to builld in python, how run python in AWS, and how to operate python."
+36,264130190,finance,264130190,2020-05-15 07:47:30,2020-05-15 07:45:44,C$50 Finance
+37,264071833,study,264071833,2020-05-15 02:09:24,2020-05-15 02:02:12,study repository
+38,225687780,Black_Tabby,225687780,2020-05-14 19:00:58,2019-12-03 18:22:41,
+39,102221747,dotfiles,102221747,2020-05-14 14:04:33,2017-09-02 20:28:25,
+40,142741112,PowerHub,142741112,2020-05-19 07:56:43,2018-07-29 07:45:05,"A post exploitation tool based on a web application, focusing on bypassing endpoint protection and application whitelisting"
+41,259074871,VulnerabilityScanningSecurityTool,259074871,2020-05-14 02:18:54,2020-04-26 16:10:13,扫描漏洞工具
+42,5689909,FileInsight-plugins,5689909,2020-05-12 08:11:15,2012-09-05 16:22:45,FileInsight-plugins: a decoding toolbox of McAfee FileInsight hex editor for malware analysis
+43,258141423,pandapp,258141423,2020-05-18 19:57:33,2020-04-23 08:31:29,a privacy preserving tracking service to mitigate pandemic spread
+44,149592796,sheetstorm,149592796,2020-05-11 19:42:13,2018-09-20 10:33:23,Web working hours sheet for Code-Poets employees
+45,109605283,CoinBot,109605283,2020-05-11 14:09:13,2017-11-05 18:34:44,Discord Cryptocurrency/Stock Bot 
+46,262874447,stonks-options,262874447,2020-05-18 23:01:12,2020-05-10 20:58:40,
+47,262631088,jinx,262631088,2020-05-17 02:50:18,2020-05-09 18:12:30,jinx (the Json INvestor eXchange package) is a python SDK for getting financial data from IEX (the Investor Exchange) as JSON objects using the IEX Cloud API.
+48,112424608,iexfinance,112424608,2020-05-19 15:17:54,2017-11-29 04:03:01,Python SDK for IEX Cloud
+49,262645338,unicorn,262645338,2020-05-09 19:40:00,2020-05-09 19:37:29,Unicorn is a simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. Based on Matthew Graeber's powershell attacks and the powershell bypass technique presented by David Kennedy (TrustedSec) and Josh Kelly at Defcon 18.
+50,158273046,shellver,158273046,2020-05-12 07:47:11,2018-11-19 18:38:02,Reverse Shell Cheat Sheet TooL
+51,237654685,ctf,237654685,2020-05-08 13:45:05,2020-02-01 17:57:00,For CTFing...
+52,235254423,fingym,235254423,2020-05-08 03:23:30,2020-01-21 04:17:26,A tool for developing reinforcement learning algorithms focused in stock prediction
+53,262191375,StockStatBot,262191375,2020-05-08 01:07:12,2020-05-08 00:50:13,A bot that fetches stats about the markets
+54,261488740,stockticker,261488740,2020-05-05 14:32:10,2020-05-05 14:04:18,Simple tool to show the current stock symbol price and other data sets from IEX
+55,258702063,stock-tracker,258702063,2020-05-03 08:47:14,2020-04-25 06:18:40,"A stock tracker tracking stock price everyday and output to Excel, built using Python"
+56,260718598,StockMarketAlerts,260718598,2020-05-02 17:41:03,2020-05-02 15:38:53,Use your Telegram account to get notified about stock market changes.
+57,260474918,Gringott,260474918,2020-05-02 12:58:22,2020-05-01 14:11:22,BYO Robo Advisor
+58,233670348,ITDataServicesInfra,233670348,2020-05-01 19:59:37,2020-01-13 18:59:31,Master Repository for any and/all Data Services Projects for Data and Internal Integrations with Education Software and Vendors for Schools
+59,235586929,Pentesting,235586929,2020-04-30 14:46:33,2020-01-22 14:08:27,
+60,254438410,Income-Tracker,254438410,2020-04-27 01:49:59,2020-04-09 17:36:58,Tracks and Graphs income progression throughout payperiods
+61,258312455,iexcloud-financials,258312455,2020-04-26 17:30:16,2020-04-23 19:41:42,
+62,258767097,virtual-trading,258767097,2020-04-25 13:18:14,2020-04-25 12:12:29,
+63,205695585,game,205695585,2020-04-24 21:25:10,2019-09-01 15:27:30,Our team's code for the 2020 Botball competition.
+64,858127,pandas,858127,2020-05-22 10:55:00,2010-08-24 01:37:33,"Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more"
+65,211307519,model_bh_plast,211307519,2020-05-22 09:36:02,2019-09-27 11:48:57,
+66,266013527,oanpy,266013527,2020-05-22 03:57:43,2020-05-22 03:57:33,Python Bindings for OANDA Trading API
+67,250695065,TBO-Tree-Gen,250695065,2020-05-21 17:06:41,2020-03-28 02:14:31,An addon for Blender 2.8+ that procedurally generates trees.
+68,127584791,pingouin,127584791,2020-05-21 16:08:27,2018-04-01 01:10:22,Statistical package in Python based on Pandas
+69,260761279,predictit_hedge,260761279,2020-05-20 22:39:17,2020-05-02 19:36:44,Hedge opportunities on PredictIt due to inefficient pricing in correlated markets
+70,239807019,SmartLab,239807019,2020-05-20 20:33:56,2020-02-11 16:15:51,Autonomous Monitoring of Laboratory Equipment with Text Message Notifications
+71,263689165,mask-rcnn,263689165,2020-05-20 17:38:14,2020-05-13 16:47:43,
+72,29220809,proselint,29220809,2020-05-21 09:08:43,2015-01-14 01:24:07,A linter for prose.
+73,265544957,cluster_segmentation,265544957,2020-05-20 11:42:44,2020-05-20 11:32:59,
+74,176906374,basicdiploma,176906374,2020-05-19 18:14:24,2019-03-21 08:55:08,This is the Basic Diploma repository for each class and 32-classes that make up the Basic Diploma.  The entire diploma will be available for download and compilation into a document for ease of use.
+75,260850513,GreenCoverSegmentation,260850513,2020-05-19 10:05:32,2020-05-03 07:28:18,
+76,257122022,financial-data-analysis,257122022,2020-05-19 05:49:07,2020-04-19 23:16:56,"Random array of scripts to price securities, analyse market data, etc.."
+77,265103215,finance_castle_from_the_group,265103215,2020-05-19 01:03:47,2020-05-19 00:58:17,Stock analysis software
+78,265061355,Mask_RCNN,265061355,2020-05-18 22:05:23,2020-05-18 21:03:03,TFV2 Code Supports
+79,265032648,Amer_Op_Neural_Net,265032648,2020-05-20 13:23:41,2020-05-18 18:54:01,Deep Neural Network Framework Based on Backward Stochastic Differential Equations for Pricing and Hedging American Options in High Dimensions: Source Code (CPU version)
+80,259729590,yahoostats,259729590,2020-05-18 18:11:27,2020-04-28 19:17:56,"Webscrape stock statistic data from: yahoo finance, reuters, morningstar, zacks."
+81,104091368,typed_python,104091368,2020-05-18 16:32:57,2017-09-19 15:13:49,An llvm-based framework for generating and calling into high-performance native code from Python.
+82,261327675,Hedge_Fund_Analysis,261327675,2020-05-21 10:07:16,2020-05-05 00:38:47,American University of Paris - BA4020 Computational Finance - Final Project ---- An analysis tool of a hedge fund. What I hope to show with this project is less of conclusive results and more the ability to build scalable analytics tools in short periods of time and deploy them in an effective way.
+83,230655393,BERTUncertaintyDetection,230655393,2020-05-17 12:20:55,2019-12-28 19:28:50,Hedge detection project
+84,264453722,Mask_RCNN,264453722,2020-05-16 20:29:20,2020-05-16 14:22:02,
+85,264409958,Sven_Mask_RCNN,264409958,2020-05-16 18:02:49,2020-05-16 10:12:35,
+86,84409648,MasterLibrary,84409648,2020-05-16 17:48:02,2017-03-09 07:05:32,A candid view of my systems.
+87,264419103,MaskRCNN,264419103,2020-05-16 12:05:14,2020-05-16 11:10:44,
+88,238537344,PortalScraperSuite,238537344,2020-05-15 19:52:56,2020-02-05 20:02:14,Project created for Southern Energy Management that parses other builder's websites for relevant information.
+89,263685476,SimData,263685476,2020-05-15 13:51:53,2020-05-13 16:31:51,"About our simulated world, how read depth maps,  make segmentation labels match with other datasets, and more "
+90,261469835,hedgehog,261469835,2020-05-22 06:33:04,2020-05-05 13:00:36,🦔 Bayesian networks in Python
+91,263862320,MaskRCNN_Imagenetweights,263862320,2020-05-14 09:25:39,2020-05-14 08:47:27,
+92,251111857,FocusTheHedgehog,251111857,2020-05-14 01:57:03,2020-03-29 19:09:32,"This discord bot will help you keep track of tasks, when you should drink water, and when you should stand up. Maybe more features in the future."
+93,262888658,Evaluation-of-Crypto-as-a-currency-hedge,262888658,2020-05-14 01:02:21,2020-05-10 22:42:06,A project evaluating different cryptocurrencies and their effectivity as a potential currency hedge for the future
+94,263709637,Mask_rcnn_mammogram,263709637,2020-05-13 18:19:40,2020-05-13 18:17:45,
+95,178011463,CloudPrismaMarginEstimator,178011463,2020-05-13 14:34:53,2019-03-27 14:29:10,Cloud Prisma Margin Estimator documentation https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/
+96,107595270,Mask_RCNN,107595270,2020-05-22 08:56:35,2017-10-19 20:28:34,Mask R-CNN for object detection and instance segmentation on Keras and TensorFlow
+97,263307764,Mask_R-CNN,263307764,2020-05-12 10:59:50,2020-05-12 10:40:31,
+98,258532008,option_hedging,258532008,2020-05-12 10:48:02,2020-04-24 14:16:35,Plot options graph
+99,237790460,AutonomousRobot-Sensors,237790460,2020-05-11 20:14:24,2020-02-02 15:18:47,"Marvelmind ultrasonic beacon system, BNO055 IMU, Optical flow sensor (from computer mouse via USB to Raspberry Pi)"
+100,247188325,MF796-Computational-Methods-for-Math-Finance,247188325,2020-05-11 15:39:11,2020-03-14 01:00:41,Common algorithmic and numerical schemes for pricing and hedging financial derivative products
+101,262894419,MF796-Computational-Methods,262894419,2020-05-11 03:50:18,2020-05-10 23:30:43,Assignments for MF796-Computational-Methods
+102,235123678,CondensedLibrary,235123678,2020-05-11 03:17:05,2020-01-20 14:42:48,A condensed view of my systems
+103,259186848,gasevo,259186848,2020-05-10 01:55:50,2020-04-27 02:44:18,gasevo: embedded volumetric optionality for ethereum hedging 
+104,155455883,water-sigil,155455883,2020-05-09 22:08:27,2018-10-30 21:02:51,Fire Emblem/Advance Wars mashup built using PyGame
+105,232936644,Factor_funcs,232936644,2020-05-08 01:55:29,2020-01-10 01:03:01,Test Factors including several measurements
+106,57200509,netrunner-cards-json,57200509,2020-05-07 15:30:05,2016-04-27 09:17:28,Android: Netrunner LCG card data in JSON format. Used by http://netrunnerdb.com.
+107,261336234,satellitebuilding,261336234,2020-05-06 22:35:11,2020-05-05 01:38:51,1. Implement the Mask RCNN for Building Localizaion.
+108,80212144,deromanize,80212144,2020-05-06 09:52:25,2017-01-27 14:02:33,"Tools for deromanizing romanized scripts (Hebrew, in this case)."
+109,246910326,Sonic-The-Hedgehog-2-AI,246910326,2020-05-05 11:12:53,2020-03-12 19:00:57,Sonic The Hedgehog 2 AI based on the T-Rex evolutionary neural network
+110,261423739,scourer_or_hedgehog,261423739,2020-05-17 00:49:37,2020-05-05 10:18:44,”たわし”か”ハリネズミ”かを判定（作成中...)
+111,256550911,Energy-Trading-Class-Project,256550911,2020-05-04 15:43:36,2020-04-17 16:11:29,"Oil and Gas Asset Evaluation Project for MBAM 5506 - Energy Finance: Securities, Hedging and Trading"
+112,235281310,Pair-Trading-Stategy,235281310,2020-05-04 02:35:56,2020-01-21 07:34:25,Written in Quantopian
+113,260730029,Metallgesellschaft-AG-Case-Hedging,260730029,2020-05-02 16:41:54,2020-05-02 16:38:03,This projects handles the Metalgesellschaft AG Case You have to hedge oil contracts prices for what you are already compromised. The goal is to test the Full-Stacked Hedge Strategy which consists of covering your positions according  it expires by each delivery that you make.
+114,260078195,HEDGE,260078195,2020-05-14 12:25:36,2020-04-30 00:40:38,"Code for the paper ""Generating Hierarchical Explanations on Text Classification via Feature Interaction Detection"""
+115,260081115,HEDGE,260081115,2020-05-01 21:55:08,2020-04-30 01:01:14,"Code for the paper ""Generating Hierarchical Explanations on Text Classification via Feature Interaction Detection"""
+116,258342612,NELAFeatures,258342612,2020-05-03 01:32:45,2020-04-23 22:10:40,NELA Features for News Veracity
+117,259878966,Using-random-forest-to-model-limit-order-book-dynamic,259878966,2020-05-04 14:14:00,2020-04-29 09:15:48,I use the random forest algorithm to forecast mid price dynamic over short time horizon i.e. a few seconds ahead
+118,260043966,hedge-fund-hotels,260043966,2020-04-30 00:03:59,2020-04-29 20:55:22,Python 3 scraper built to detect popular & talked-about companies from financial / hedge fund quarterly letters. Built with PDFMiner and Google Natural Language API. 
+119,247301498,IrisDataSetProject,247301498,2020-04-28 19:47:22,2020-03-14 15:25:23,Project for Programming and Scripting module - analyzing Iris data set with histograms and scatter plots
+120,222242588,Visual-Tracking-Development,222242588,2020-04-28 02:33:07,2019-11-17 12:11:56,Recent Trackers
+121,252624286,Betting-Against-Beta,252624286,2020-04-28 01:34:38,2020-04-03 03:33:09,"This project is based upon the paper: Frazzini, A. & Pedersen, L. (2014). Betting against beta. "
+122,63827736,scattertext,63827736,2020-05-20 02:30:28,2016-07-21 01:47:12,Beautiful visualizations of how language differs among document types.
+123,259102877,mask-rcnn-labelbox-buildings,259102877,2020-04-26 18:24:49,2020-04-26 18:23:39,A fork of the Mask-RCNN repository with code specific to dealing with custom labeled images from labelbox
+124,238246251,comp424,238246251,2020-04-25 21:20:39,2020-02-04 16:01:54,
+125,257060495,BaseballStatsAnalysis,257060495,2020-04-25 01:00:07,2020-04-19 17:26:47,Analyze baseball data
+126,258132670,crowd-detection,258132670,2020-04-23 08:11:25,2020-04-23 07:52:58,
+127,238147407,reinforcement,238147407,2020-04-23 06:10:06,2020-02-04 07:24:42,RL
+128,266013527,oanpy,266013527,2020-05-22 03:57:43,2020-05-22 03:57:33,Python Bindings for OANDA Trading API
+129,247181239,algo-trading,247181239,2020-05-21 13:29:11,2020-03-13 23:52:49,Financial Analysis and Algorithmic Trading Strategies in Python
+130,264497649,fetch_oandata,264497649,2020-05-19 19:55:35,2020-05-16 18:11:30,Historical price data fetcher from oanda
+131,130068285,financial-data,130068285,2020-05-21 18:55:51,2018-04-18 13:40:29,"Intraday 1 minute pricing data for S&P 500, NIKKEI 225, DAX 30 and more"
+132,123475227,backtrader-oandav20,123475227,2020-05-19 09:11:21,2018-03-01 18:22:26,Support for Oanda-V20 API in backtrader
+133,263691397,RSI_Trading_Strategy,263691397,2020-05-18 03:32:00,2020-05-13 16:57:18,educational purposes only
+134,265088683,StockTrading,265088683,2020-05-20 23:38:39,2020-05-18 23:30:58,Creating a RL Stock Trading Bot
+135,229950992,sendtex_python_programming_for_finance,229950992,2020-05-16 10:53:51,2019-12-24 13:57:36,
+136,264207716,fxrt,264207716,2020-05-19 05:30:23,2020-05-15 13:58:11,Realtime FX prices from the Oanda broker.
+137,167632379,fx_alarm_py,167632379,2020-05-14 11:26:24,2019-01-26 00:31:07,This app alarm you when you have to see FX chart. (is being developed ...)
+138,263017519,oanda_tut,263017519,2020-05-12 11:16:32,2020-05-11 11:01:55,
+139,149004225,oanda-cli,149004225,2020-05-11 17:48:55,2018-09-16 14:36:37,Command Line Interface for Oanda V20 REST API
+140,96734019,tax-itemizer,96734019,2020-05-09 05:52:16,2017-07-10 03:56:27,Itemizes transaction records into tax categories
+141,210349326,fx-crypto-levels,210349326,2020-05-08 22:46:57,2019-09-23 12:26:53,"Auto detection of Support and Resistance on FX/Crypto pairs, with addition to SRSI/BBPB divergences."
+142,260386449,OANDA_REST_API_BOT,260386449,2020-05-08 05:11:12,2020-05-01 05:27:16,
+143,240128756,filib,240128756,2020-05-07 10:02:23,2020-02-12 22:30:40,Factor Investing Library
+144,29050338,backtrader,29050338,2020-05-22 10:28:56,2015-01-10 07:14:52,Python Backtesting library for trading strategies
+145,221055850,tomato_oanda_api,221055850,2020-05-01 09:25:08,2019-11-11 19:37:19,
+146,168117840,FX-trading-bot,168117840,2020-05-09 18:52:40,2019-01-29 08:26:03,
+147,259248968,Heptet,259248968,2020-04-29 11:45:29,2020-04-27 08:13:23,
+148,218331206,portfolio-management-project,218331206,2020-04-23 11:13:19,2019-10-29 16:19:30,A basic porfolio management system that uses Alpha Vantage to view graphs and Oanda REST API to execute trades.
+149,258565252,Big-Data,258565252,2020-05-22 11:48:46,2020-04-24 16:27:49,
+150,6297520,zipline,6297520,2020-05-22 07:51:10,2012-10-19 15:50:29,"Zipline, a Pythonic Algorithmic Trading Library"
+151,250682343,quantitative_trading_strategy_project,250682343,2020-05-21 21:17:27,2020-03-28 00:41:49,Final Project for Regression Analysis & Quantitative Trading Strategies Course - FINM33150
+152,249988626,public-apis,249988626,2020-05-21 13:02:14,2020-03-25 13:40:17,A collective list of free APIs for use in software development
+153,265767760,osint,265767760,2020-05-21 12:51:57,2020-05-21 06:01:40,Quandl alternative data pull to CSV with Pandas
+154,54346799,public-apis,54346799,2020-05-22 13:08:27,2016-03-20 23:49:42,A collective list of free APIs for use in software and web development.
+155,174022595,Analysis-of-financial-data-,174022595,2020-05-20 20:38:04,2019-03-05 21:21:37,Analysis all of the polish companies from the Warsaw Stock Exchange 
+156,245709197,neuralsort,245709197,2020-05-20 18:12:31,2020-03-07 21:37:48,
+157,219420947,pyRTL-dev,219420947,2020-05-20 04:29:50,2019-11-04 05:02:01,
+158,258083234,stockmarket,258083234,2020-05-19 22:37:11,2020-04-23 03:22:24,
+159,246074890,profit-analysis-backend,246074890,2020-05-19 12:54:07,2020-03-09 15:38:47,This repo contains the data analysis for WIT intermediate oil using the ARIMA time series analysis model. It also serves a RESTful API to package the predicted data and profit analysis carried out by the app.
+160,257122022,financial-data-analysis,257122022,2020-05-19 05:49:07,2020-04-19 23:16:56,"Random array of scripts to price securities, analyse market data, etc.."
+161,264956158,AutoSmoothers,264956158,2020-05-18 14:46:33,2020-05-18 13:58:40,
+162,46975254,pysystemtrade,46975254,2020-05-19 21:44:10,2015-11-27 10:49:08,Systematic Trading in python
+163,264136904,sharadar-download-manager,264136904,2020-05-18 13:06:42,2020-05-15 08:16:51,a Python tool for downloading sharadar data from Quandl.
+164,264492869,TimeSeries_Analysis_Tesla_GM,264492869,2020-05-18 00:16:13,2020-05-16 17:45:34,"Time series are one of the most common data types encountered in daily life. Financial prices, weather, home energy usage, and even weight are all examples of data that can be collected at regular intervals. Almost every data scientist will encounter time series in their daily work and learning how to model them is an important skill in the data science toolbox. One powerful yet simple method for analyzing and predicting periodic data is the additive model. This post will walk through an introductory example of creating an additive model for financial time-series data using Python and the Prophet forecasting package developed by Facebook. Along the way, we will cover some data manipulation using pandas, accessing financial data using the Quandl library and, and plotting with matplotlib. To make forecasts, we need to create what is called a future dataframe. We specify the number of future periods to predict (two years) and the frequency of predictions (daily)."
+165,159492922,zipline_algo,159492922,2020-05-17 15:00:32,2018-11-28 11:41:33,
+166,197043014,Stock-Predictor-9000,197043014,2020-05-17 05:26:20,2019-07-15 17:26:50,Interactive machine learning-based stock prediction tool
+167,247175480,sharadar_db_bundle,247175480,2020-05-16 23:09:35,2020-03-13 22:59:07,
+168,262068748,sf,262068748,2020-05-15 18:33:04,2020-05-07 14:11:00,Plotting Stock-to-flow model in Python
+169,264226414,zipline,264226414,2020-05-15 15:31:29,2020-05-15 15:14:08,
+170,264071833,study,264071833,2020-05-15 02:09:24,2020-05-15 02:02:12,study repository
+171,166674659,FinQuant,166674659,2020-05-18 18:44:35,2019-01-20 15:07:19,"A program for financial portfolio management, analysis and optimisation."
+172,221751952,functions-quandl,221751952,2020-05-13 20:43:48,2019-11-14 17:29:19,"Import live, refreshable data from Quandl into Microsoft Excel and Google Sheets."
+173,236852287,rely,236852287,2020-05-12 22:35:49,2020-01-28 22:04:05,A Flask web app that forecast today's stock market prices.
+174,253953659,pro3-News,253953659,2020-05-12 22:02:46,2020-04-08 01:26:22,
+175,247827134,BigDataPortfolioManagement,247827134,2020-05-12 17:57:08,2020-03-16 22:18:56,CSCI 6520 Course Project
+176,261950475,StockPriceAPIs,261950475,2020-05-12 17:03:45,2020-05-07 04:37:12,
+177,262878058,Prediction_with_Trends,262878058,2020-05-12 00:58:13,2020-05-10 21:23:45,
+178,234974981,Machine-Learning-and-Stock-Prices,234974981,2020-05-10 20:38:56,2020-01-19 22:05:28,"Machine learning models to forecast stock prices in Python (NumPy, Pandas, Matplotlib, SciPy, Quandl)."
+179,262800368,Ziplineme,262800368,2020-05-10 14:16:25,2020-05-10 14:05:30,
+180,262765207,fxstress,262765207,2020-05-10 10:55:57,2020-05-10 10:46:02,Use Quandl data to calculate log currency movements
+181,261389572,stock-prediction-on-kubernetes,261389572,2020-05-09 02:40:33,2020-05-05 07:32:08,
+182,261581304,Stock-Market-Model,261581304,2020-05-07 17:28:38,2020-05-05 20:56:15,
+183,31042585,finmarketpy,31042585,2020-05-21 14:37:19,2015-02-19 23:32:03,Python library for backtesting trading strategies & analyzing financial markets (formerly pythalesians)
+184,240128756,filib,240128756,2020-05-07 10:02:23,2020-02-12 22:30:40,Factor Investing Library
+185,132714778,hsstock,132714778,2020-05-07 03:43:31,2018-05-09 06:55:55,
+186,236277533,Net-Asset-Value-calculation,236277533,2020-05-06 19:01:45,2020-01-26 06:48:58,
+187,64882291,findatapy,64882291,2020-05-18 13:39:53,2016-08-03 21:58:54,"Python library to download market data via Bloomberg, Quandl, Yahoo etc."
+188,147879542,Quandl-Stock-Price,147879542,2020-05-05 17:19:42,2018-09-07 22:10:33,
+189,3644516,pyalgotrade,3644516,2020-05-22 02:10:02,2012-03-07 01:09:54,Python Algorithmic Trading Library
+190,261320762,machine-learning-algorithm,261320762,2020-05-04 23:49:18,2020-05-04 23:48:49,
+191,260528048,MLPractice,260528048,2020-05-04 18:02:02,2020-05-01 18:16:41,This repo includes different machine learning example for practice
+192,36506399,arctic,36506399,2020-05-21 18:45:00,2015-05-29 13:37:30,High performance datastore for time series and tick data 
+193,261076396,Machine-Learning-Multi-linear-Regression-stock-Price-Prediction-multiple-Macro-factors-using-python,261076396,2020-05-04 07:08:56,2020-05-04 03:59:45,PREDICTING STOCK PRICE BY USING VARIOUS MACRO FACTORS USING PYTHON
+194,127918080,quant-trading,127918080,2020-05-22 04:12:22,2018-04-03 14:08:14,"Python quantitative trading strategies including MACD, Pair Trading, Heikin-Ashi, London Breakout, Awesome, Dual Thrust, Parabolic SAR, Bollinger Bands, RSI, Pattern Recognition, CTA, Monte Carlo, Options Straddle"
+195,247319550,stockBot,247319550,2020-05-16 09:11:18,2020-03-14 17:12:14,stockBot is a gentle automatic trader bot 
+196,252608110,LazyProphet,252608110,2020-05-03 15:48:08,2020-04-03 01:51:22,
+197,260803268,financial_statement_analysis_automation,260803268,2020-05-03 01:01:04,2020-05-03 00:56:33,Automation of personal patterns for financial statement analysis
+198,260474918,Gringott,260474918,2020-05-02 12:58:22,2020-05-01 14:11:22,BYO Robo Advisor
+199,260498672,zipline,260498672,2020-05-01 16:13:15,2020-05-01 15:53:01,
+200,71022193,ipython-leanhogs,71022193,2020-04-30 02:59:22,2016-10-16 00:49:09,Python experiments with analysis & plotting of CME lean hog futures using IPython/Jupyter Notebook
+201,95251498,flask-lme-chart,95251498,2020-04-29 16:16:47,2017-06-23 19:47:58,London Metal Exchange com Flask
+202,35782788,python-examples,35782788,2020-04-28 18:25:28,2015-05-17 21:00:44,Examples for some key libraries in Python that I use all the time. A way for me to remember and hopefully get others started. 
+203,259388067,TheCountrynomics,259388067,2020-04-28 18:22:30,2020-04-27 16:24:23,
+204,259121153,SMA_crossover,259121153,2020-04-26 20:06:09,2020-04-26 19:58:04,
+205,92904911,Stock_Market_Forecast,92904911,2020-04-26 19:42:29,2017-05-31 04:40:01,Using machine learning to forcast the stock market
+206,243811593,ethereum-data-analysis,243811593,2020-04-26 17:03:56,2020-02-28 16:54:12,Analysis over some SAI's stablecoin transactions on the Ethereum blockchain. Join data with dollar's exchanges rates for differents currencies to know if some of this affect to DAI's transactions and values.
+207,258846210,dend-covid19,258846210,2020-04-25 19:41:44,2020-04-25 18:29:55,Capstone project from Udacity's Data Engineer Nanodegree program.
+208,118230456,stock_ticker_python_pi,118230456,2020-04-25 19:54:43,2018-01-20 09:55:02,How to utilize a raspberry pi without a monitor + using it as stock ticker 
+209,140381817,ExhangeRate,140381817,2020-04-25 01:33:46,2018-07-10 05:33:39,JPY to USD from 3/3/2017 - 7/3/2018. I used quandl and pyplot to show the change in exchange rate from JPY to USD since I've been in Japan.
+210,238534903,StockHistoryGrapher,238534903,2020-04-23 15:08:31,2020-02-05 19:48:50,
+211,202696503,qf-lib,202696503,2020-04-23 09:38:08,2019-08-16 09:10:20,Modular Python library that provides an advanced event driven backtester and a set of high quality tools for quantitative finance.
+212,265216728,simple-back,265216728,2020-05-22 10:34:46,2020-05-19 10:29:11,A simple daily python backtester that works out of the box.
+213,261447632,pyfmpcloud,261447632,2020-05-19 18:18:30,2020-05-05 11:40:08,A python wrapper for the Financial Model Prep API for analysis of public companies
+214,259660258,Noticias_y_Bolsa,259660258,2020-05-19 14:58:12,2020-04-28 14:27:26,Predicción de mercados de valores en base a análisis de sentimiento de prensa financiera.
+215,190918487,Stock-Market-Dashboard,190918487,2020-05-19 10:56:23,2019-06-08 17:52:19,Creating a stock market dashboard from an external API that tracks daily performance of stocks
+216,264896200,reddit-stock-bot,264896200,2020-05-18 14:57:55,2020-05-18 09:48:38,"A Reddit-based bot that when invoked, provides information including daily highs/lows of a stock, information about the company and recent recommendations on whether to buy or sell the stock."
+217,250090436,Time-Series-Forecasting-with-Deep-Learning,250090436,2020-05-18 12:05:25,2020-03-25 21:01:06,
+218,250926640,get_all_tickers,250926640,2020-05-18 23:31:25,2020-03-29 01:02:53,Get all publicly traded tickers with this library
+219,19918845,High-Frequency-Trading-Model-with-IB,19918845,2020-05-22 02:23:17,2014-05-18 19:20:13,A high-frequency trading model using Interactive Brokers API with pairs and mean-reversion in Python
+220,258863760,TickerBell,258863760,2020-05-16 01:06:35,2020-04-25 20:06:28,TickerBell - a NYSE monitoring system. Beginning Development 4/25/20
+221,263350288,FINRA_topics,263350288,2020-05-15 21:40:43,2020-05-12 13:49:42,
+222,263504916,EAP-2020,263504916,2020-05-13 03:17:43,2020-05-13 02:27:47,자산가격실증연구 수업 과제 제출용 저장소
+223,261950475,StockPriceAPIs,261950475,2020-05-12 17:03:45,2020-05-07 04:37:12,
+224,93340736,yahoo_fin,93340736,2020-05-21 18:02:58,2017-06-04 20:51:51,Scrape stock price history from new (Spring 2017) Yahoo Finance layout
+225,253458275,finance,253458275,2020-05-11 11:54:38,2020-04-06 09:59:00,
+226,257684269,Stock-Analyzer,257684269,2020-05-10 23:30:39,2020-04-21 18:40:31,
+227,133286480,stock_analyzer,133286480,2020-05-10 06:16:30,2018-05-14 00:45:57,
+228,75791177,pandas_market_calendars,75791177,2020-05-14 23:01:28,2016-12-07 02:28:15,Exchange calendars to use with pandas for trading applications
+229,259778509,SamplePythonWork,259778509,2020-05-07 18:31:44,2020-04-28 23:51:26,Some Python Scripts to Sample
+230,261652928,pandemair,261652928,2020-05-07 04:14:23,2020-05-06 04:37:56,Airline stocks since Covid-19 Pandemic began
+231,256810324,StockAnalysis,256810324,2020-05-04 03:21:31,2020-04-18 17:16:00,Exploring new and old approaches to navigating financial risk with meaningful data analysis.
+232,261038480,portfolio-scripts,261038480,2020-05-03 23:44:12,2020-05-03 23:12:09,
+233,216926433,stonks_ftw,216926433,2020-05-03 05:45:34,2019-10-22 23:15:20,A project to build a stock data pipeline and ML recommendation system.
+234,259924326,Financial-Planner,259924326,2020-04-30 17:19:20,2020-04-29 12:52:33,WebApp based on Django Framework
+235,110866117,finviz,110866117,2020-05-21 01:54:42,2017-11-15 17:41:08,Unofficial API for finviz.com
+236,252862524,Semantic_Web_Mining_Project,252862524,2020-04-30 01:02:28,2020-04-03 23:10:52,Semantic Web Mining Project(Group 3).
+237,257078888,worldIndicesScraper,257078888,2020-04-29 12:46:30,2020-04-19 18:58:37,
+238,248259647,market,248259647,2020-04-28 15:25:07,2020-03-18 14:49:30,Stock market recording
+239,256198068,si507_final,256198068,2020-04-28 10:04:04,2020-04-16 11:43:09,
+240,257562198,Stocks-and-Shared-Dynatrace-Plugin,257562198,2020-04-26 12:04:00,2020-04-21 10:39:21,
+241,258600958,MonteCarloStockSimulator,258600958,2020-04-25 01:41:38,2020-04-24 19:09:38,Monte Carlo simulator built in Python 3 to analyze and predict stock prices
+242,254204685,irpf-cei,254204685,2020-05-22 09:22:16,2020-04-08 21:28:44,"Programa auxiliar gratuito para calcular custos de ações, ETFs e FIIs."
+243,180685810,SecuritiesAnalysisTools,180685810,2020-05-22 03:48:22,2019-04-11 00:44:25,"Analysis tools for securities (funds, stocks, bonds, equities)"
+244,266006637,baskets,266006637,2020-05-22 03:29:47,2020-05-22 03:11:29,Break down ETFs and report aggregated exposure to individual instruments
+245,249551566,volume-candles,249551566,2020-05-22 02:53:35,2020-03-23 21:48:25,"Creating Candles as Volume, not time."
+246,191271780,awesome,191271780,2020-05-22 00:04:02,2019-06-11 01:35:48,manage my github star
+247,174647959,irc-rss-feed-bot,174647959,2020-05-21 22:58:06,2019-03-09 04:28:28,IRC bot to post RSS/Atom and scraped HTML/JSON/CSV feeds to channels
+248,265414063,beestStonks,265414063,2020-05-21 19:09:42,2020-05-20 01:27:26,Limnoria plugin for retrieving market data
+249,260981565,fine,260981565,2020-05-21 17:59:50,2020-05-03 17:16:16,it is fine.. 
+250,201514579,trendet,201514579,2020-05-21 07:30:50,2019-08-09 17:40:41,:chart_with_upwards_trend: Python package for trend detection on stock time series data :chart_with_downwards_trend:
+251,264474986,StonksBot,264474986,2020-05-20 16:20:42,2020-05-16 16:09:05,Telegram Bot for Stocks
+252,47397646,qstrader,47397646,2020-05-21 14:48:31,2015-12-04 10:32:46,QuantStart.com - QSTrader backtesting simulation engine.
+253,256034151,MA_Backtester,256034151,2020-05-19 22:45:57,2020-04-15 20:52:59,"MA_Backtester, a Moving Average Strategy Backtester and Optimizer"
+254,264313304,portfolio_optimization,264313304,2020-05-19 19:23:30,2020-05-15 22:38:27,Portfolio Optimization in Python
+255,124940520,python-sdk,124940520,2020-05-19 19:17:59,2018-03-12 19:29:32,The Official Intrinio API Python SDK
+256,261447632,pyfmpcloud,261447632,2020-05-19 18:18:30,2020-05-05 11:40:08,A python wrapper for the Financial Model Prep API for analysis of public companies
+257,200260797,EAF_builder_scripts,200260797,2020-05-19 15:02:35,2019-08-02 15:47:43,Repository for scripts that make eaf files for the Random Sampling and High-Volubility ACLEW datasets
+258,265065769,AAM_Trade,265065769,2020-05-18 22:39:42,2020-05-18 21:24:23,Asset Allocation with Momentum trading strategy design
+259,238458120,asset-allocation,238458120,2020-05-18 19:31:06,2020-02-05 13:35:27,RL-based asset allocation and recommendation system on AWS
+260,235230884,anti-fragility,235230884,2020-05-18 17:09:25,2020-01-21 01:20:46,Data for our anti-fragility research project 
+261,138532234,portfolios,138532234,2020-05-18 02:56:23,2018-06-25 02:07:24,"Manage your portfolios, analyze securities, build your own ETF-like mix of securities, and conveniently trade them on Robinhood"
+262,255180308,ofxdb,255180308,2020-05-18 01:09:09,2020-04-12 22:18:23,DB Generator for OFX Financial Statement Data
+263,260066184,nlp_news,260066184,2020-05-17 22:00:56,2020-04-29 23:13:14,
+264,260002000,DGPC,260002000,2020-05-17 18:39:30,2020-04-29 17:58:13,DGPC: DeGiro Performance Charts
+265,159351583,investpy,159351583,2020-05-21 22:34:39,2018-11-27 14:51:47,Financial Data Extraction from Investing.com with Python
+266,195661856,beancount-boilerplate-cn,195661856,2020-05-18 01:58:38,2019-07-07 14:36:44,
+267,263659588,Fund-Analysis,263659588,2020-05-15 14:37:22,2020-05-13 14:50:28,Building an Fund Analysis Template & Fund Manager behaviour Analysis（Window Dressing/Herding）& Fund family (Star Strategy)
+268,263786829,202005-13-Asset-Allocation-and-Recommendation-US,263786829,2020-05-15 13:47:52,2020-05-14 01:42:01,
+269,181160088,xianglong,181160088,2020-05-16 07:08:34,2019-04-13 11:21:04,资产配置方案
+270,263845689,cn-indice-funds,263845689,2020-05-15 06:09:14,2020-05-14 07:28:41,抓取中国沪深股市所有指数关联的公募基金含ETF、增强类和分级等基金
+271,261891195,476_FinalProject,261891195,2020-05-15 02:51:44,2020-05-06 22:19:43,A securities price predicting NN for Applied Machine Leaning Final Project
+272,262449047,Yahoo-Finance,262449047,2020-05-14 22:07:02,2020-05-08 23:29:29,Webscrape Yahoo Finance
+273,260556951,spy_strat,260556951,2020-05-14 14:50:52,2020-05-01 20:56:55,Bot that monitors SPY ETF price and sends notifications when to trade based on strategy found at https://docs.google.com/spreadsheets/d/1W4urh_UTyEB5Ml4bpCbVwWwiHO6rCV8MMD-Tp67PV0U/edit#gid=1183289947
+274,181217598,degiro-api,181217598,2020-05-21 09:19:34,2019-04-13 19:13:47,An unofficial DeGiro API module for Python.
+275,263424566,Sector-Performance,263424566,2020-05-12 18:58:16,2020-05-12 18:55:53,
+276,262821729,MOEX_ETFs,262821729,2020-05-11 08:54:10,2020-05-10 15:51:22,Получение котировок ETF Мосбиржи
+277,262888538,MF803-Advanced-Programming,262888538,2020-05-10 23:27:46,2020-05-10 22:41:00,Assignments for MF803-Advanced-Programming
+278,175636612,CBA-toolkit,175636612,2020-05-10 23:01:58,2019-03-14 14:19:16,"The Conversation Behavior Analysis toolkit aims at offering the means for analyzing phenomena occurring in conversations such as mimicry, overlapping expressions, expressions timing, etc."
+279,262681854,StashPortfolioOptimization,262681854,2020-05-10 00:11:39,2020-05-10 00:10:27,optimize portfolio of Stash ETFs for monthly re-balancing 
+280,112424608,iexfinance,112424608,2020-05-19 15:17:54,2017-11-29 04:03:01,Python SDK for IEX Cloud
+281,244563554,Trade-with-a-smile,244563554,2020-05-09 13:34:21,2020-03-03 06:54:41,Master Thesis
+282,255293893,RoboAdvisor,255293893,2020-05-08 13:34:28,2020-04-13 10:19:03,
+283,261138374,spy-time-series-analysis,261138374,2020-05-11 18:40:47,2020-05-04 10:02:19,Getting insights from SPY time-series financial data by data & statistical analysis and forecasting with regression and classification.
+284,240361984,AlgoTrading,240361984,2020-05-05 14:50:03,2020-02-13 21:10:12,
+285,176679216,gugu,176679216,2020-05-05 07:33:38,2019-03-20 07:33:59,
+286,256810324,StockAnalysis,256810324,2020-05-04 03:21:31,2020-04-18 17:16:00,Exploring new and old approaches to navigating financial risk with meaningful data analysis.
+287,217415561,sentimentrader-project,217415561,2020-05-04 02:28:12,2019-10-24 23:58:51,SentimenTrader Backtesting Project
+288,257275206,Coauthorship-Network-Analysis,257275206,2020-05-03 22:58:33,2020-04-20 12:33:58,
+289,260610533,ethical_etf_comparison,260610533,2020-05-03 02:55:05,2020-05-02 04:03:52,Comparing various ethical ETFs available on the ASX
+290,175537107,muarch,175537107,2020-05-20 06:37:56,2019-03-14 02:52:52,Multiple Univariate AR-GARCH Modelling with Copula marginals for simulation
+291,217812359,wnf,217812359,2020-05-02 07:50:53,2019-10-27 06:04:51,Follow my WealthNavi transactions and trade via SBI
+292,167253109,etfBalance,167253109,2020-05-01 12:25:12,2019-01-23 20:58:02,
+293,259022466,Portfolio_Backtesting,259022466,2020-05-01 08:32:55,2020-04-26 12:16:20,
+294,250429189,disclosure-monitor,250429189,2020-05-01 02:56:30,2020-03-27 03:16:52,한국거래소 상장종목 공시 및 가격변화 실시간 모니터링
+295,254706913,World-Bond-Stock-Portfolio,254706913,2020-05-10 05:04:49,2020-04-10 18:27:48,Creating the World Bond Stock Portfolio using Vanguard ETFs.
+296,254632474,Iris_Project_2020,254632474,2020-04-29 15:45:56,2020-04-10 12:45:36,Programming and Scripting Module Final Project
+297,259893348,opcvmScrap,259893348,2020-05-03 00:08:27,2020-04-29 10:21:41,A python script to get all daily/weekly reports of UCITS performance in Morocco
+298,258124683,portfolio-analyzer,258124683,2020-04-26 19:28:39,2020-04-23 07:16:34,"Analyzes stock portfolio, suggest trades to rebalance"
+299,109895505,Financials-Extension,109895505,2020-04-26 13:53:25,2017-11-07 21:55:05,Extension for LibreOffice Calc to access stock market data
+300,243413043,pymarkowitz,243413043,2020-04-26 01:14:49,2020-02-27 02:31:14,Mean Variance (Markowitz) Portfolio Optimization and Beyond
+301,245959963,portfolio-purchase,245959963,2020-04-28 01:25:33,2020-03-09 06:27:18,Identify purchases to make to track a portfolio
+302,107833499,yahoofinancials,107833499,2020-05-22 11:13:18,2017-10-22 03:10:57,"A powerful financial data module used for pulling data from Yahoo Finance. This module can pull fundamental and technical data for stocks, indexes, currencies, cryptos, ETFs, Mutual Funds, U.S. Treasuries, and commodity futures."
+303,230666930,ETFC_Scheduler,230666930,2020-04-23 18:47:52,2019-12-28 21:02:57,
+304,257372360,CS455_Project,257372360,2020-04-23 15:20:29,2020-04-20 18:39:17,
+305,257318180,etf-rest-client,257318180,2020-04-23 07:25:59,2020-04-20 15:07:59,REST client for ETF INSPIRE validator
+306,236320056,stock-advisor-software,236320056,2020-05-22 13:06:23,2020-01-26 14:02:46,An algorithmic trading platform for US Equities that can select stocks and trade them using a personal TDAmeritrade account
+307,65635555,awesome-microbit,65635555,2020-05-22 11:56:55,2016-08-13 20:26:15,A curated list of BBC micro:bit resources.
+308,33331247,china-dictatorship,33331247,2020-05-22 06:42:49,2015-04-02 20:51:50,"Chinese ""Communist"" ""Dictatorship"" ""facts"". 中国《共产主义》《独裁统治》的《事实》。Home to the mega-FAQ, news compilation, restaurant and music recommendations. 常见问答集，新闻集和饭店和音乐建议。Heil Xi 卐. 习万岁。"
+309,266024743,yfinanceng,266024743,2020-05-22 06:27:31,2020-05-22 05:18:42,Yahoo! Finance next gen python 3 / pandas market data downloader
+310,191271780,awesome,191271780,2020-05-22 00:04:02,2019-06-11 01:35:48,manage my github star
+311,265937654,Pricing-analysis-and-prediction-of-Airbnb-in-Seattle,265937654,2020-05-21 23:55:46,2020-05-21 19:46:38,This is a project which my teammates and me did in IST 718(Big Data Analytics) at Syracuse University. 
+312,174647959,irc-rss-feed-bot,174647959,2020-05-21 22:58:06,2019-03-09 04:28:28,IRC bot to post RSS/Atom and scraped HTML/JSON/CSV feeds to channels
+313,168780018,awesome-ios-star,168780018,2020-05-21 18:13:13,2019-02-02 01:07:41,All data is from https://github.com/vsouza/awesome-ios. I attached github star count to this list.  Update everyday.
+314,262549611,leetcode,262549611,2020-05-21 14:14:36,2020-05-09 10:49:19,
+315,241451600,milestone-4-walkabout,241451600,2020-05-21 13:31:28,2020-02-18 19:42:17,"Walkabout is an app for managing leafleting, canvassing and surveying campaigns."
+316,237344783,CAPOW_jaw,237344783,2020-05-21 13:09:25,2020-01-31 02:16:17,California and West Coast Power System Model - Projections to 2050
+317,249988626,public-apis,249988626,2020-05-21 13:02:14,2020-03-25 13:40:17,A collective list of free APIs for use in software development
+318,265838637,PythonEveApiClient,265838637,2020-05-21 12:37:49,2020-05-21 12:07:44,Python Eve Api Client(Automatically generated)
+319,54346799,public-apis,54346799,2020-05-22 13:08:27,2016-03-20 23:49:42,A collective list of free APIs for use in software and web development.
+320,265752255,yfinance,265752255,2020-05-21 04:17:39,2020-05-21 04:13:00,
+321,91948540,yfinance,91948540,2020-05-22 12:23:02,2017-05-21 10:16:15,Yahoo! Finance market data downloader (+faster Pandas Datareader)
+322,124611126,alpaca-trade-api-python,124611126,2020-05-21 23:40:29,2018-03-10 01:29:06,Python client for Alpaca's trade API
+323,265053952,yfinanceDB-blobConnect,265053952,2020-05-19 21:38:01,2020-05-18 20:28:06,
+324,248034258,Capstone_Projects,248034258,2020-05-19 13:52:03,2020-03-17 17:39:09,
+325,263956736,QREDIS,263956736,2020-05-18 15:54:06,2020-05-14 15:44:21,
+326,137908395,awesome-recruitment,137908395,2020-05-18 15:17:22,2018-06-19 15:09:59,List of my favourite recruitment things 💫
+327,206462776,GitHub-Chinese-Top-Charts,206462776,2020-05-22 10:25:18,2019-09-05 03:01:56,:cn: GitHub中文排行榜，帮助你发现高分优秀中文项目、更高效地吸收国人的优秀经验成果；榜单每周更新一次，敬请关注！（中国加油！世界加油！）
+328,247444291,gugol-search-engine,247444291,2020-05-17 04:59:28,2020-03-15 10:27:41,Search engine project
+329,116209983,Alexa-Stuff,116209983,2020-05-16 12:27:38,2018-01-04 03:27:39,A dumping ground for anything Alexa-related
+330,264071833,study,264071833,2020-05-15 02:09:24,2020-05-15 02:02:12,study repository
+331,261902738,python-projects,261902738,2020-05-14 21:49:06,2020-05-06 23:33:26,
+332,88957320,tox1key,88957320,2020-05-13 12:14:35,2017-04-21 07:51:07,Using the Tox.Chat p2p network for a decentralized access permission control system
+333,65083316,Awesome-Linux-Software,65083316,2020-05-22 10:11:39,2016-08-06 13:16:29,"A list of awesome applications, software, tools and other materials for Linux distros. "
+334,101783135,minsk-geek-eventer,101783135,2020-05-10 14:52:15,2017-08-29 16:31:28,Script that parse multiple sites and add events into google calendar
+335,75791177,pandas_market_calendars,75791177,2020-05-14 23:01:28,2016-12-07 02:28:15,Exchange calendars to use with pandas for trading applications
+336,249596169,DataFactory,249596169,2020-05-07 05:57:28,2020-03-24 02:43:16,爬虫数据--加工--线上可用业务数据库
+337,64882291,findatapy,64882291,2020-05-18 13:39:53,2016-08-03 21:58:54,"Python library to download market data via Bloomberg, Quandl, Yahoo etc."
+338,261399575,yfinance,261399575,2020-05-05 08:24:04,2020-05-05 08:23:36,
+339,29050338,backtrader,29050338,2020-05-22 10:28:56,2015-01-10 07:14:52,Python Backtesting library for trading strategies
+340,149924023,challenges,149924023,2020-05-01 16:18:23,2018-09-22 21:55:39,
+341,259845636,S-P_Public,259845636,2020-04-29 06:40:23,2020-04-29 06:40:09,
+342,77211223,yahoo-earnings-calendar,77211223,2020-05-18 15:50:55,2016-12-23 08:36:43,Scrapes Yahoo! Finance earnings calendar to get data for a specific date or a date range.
+343,258616328,yfinance-master,258616328,2020-04-24 20:24:38,2020-04-24 20:24:29,
+344,236320056,stock-advisor-software,236320056,2020-05-22 13:06:23,2020-01-26 14:02:46,An algorithmic trading platform for US Equities that can select stocks and trade them using a personal TDAmeritrade account
+345,266045504,fetch_mops,266045504,2020-05-22 09:06:21,2020-05-22 07:22:26,Fetch financial reports and informations from MOPS (https://mops.twse.com.tw/)
+346,245116671,Estimate-Options-Premium,245116671,2020-05-22 09:19:58,2020-03-05 09:12:03,
+347,92693016,lieu,92693016,2020-05-22 06:38:57,2017-05-28 23:26:30,Dedupe/batch geocode addresses and venues around the world with libpostal
+348,254822285,questrade-api-wrapper,254822285,2020-05-22 02:34:58,2020-04-11 08:13:45,A custom Python wrapper for the Questrade API that retrieves and analyzes key information from your trading account
+349,258605790,pymeritrade,258605790,2020-05-22 00:58:11,2020-04-24 19:32:34,A python interface for using the TD Ameritrade API.
+350,192225348,PortfolioManagement,192225348,2020-05-22 00:31:22,2019-06-16 18:46:44,This is a repo for my personal portfolio management
+351,250682343,quantitative_trading_strategy_project,250682343,2020-05-21 21:17:27,2020-03-28 00:41:49,Final Project for Regression Analysis & Quantitative Trading Strategies Course - FINM33150
+352,249988626,public-apis,249988626,2020-05-21 13:02:14,2020-03-25 13:40:17,A collective list of free APIs for use in software development
+353,54346799,public-apis,54346799,2020-05-22 13:08:27,2016-03-20 23:49:42,A collective list of free APIs for use in software and web development.
+354,263795706,Fairness,263795706,2020-05-21 03:23:19,2020-05-14 02:32:21,
+355,258384472,sec-parse,258384472,2020-05-21 00:14:23,2020-04-24 02:30:15,Scrape SEC website to gather and parse Company 10-K filings
+356,234154819,RL-DeepQLearning-Trading,234154819,2020-05-20 23:02:31,2020-01-15 19:19:20,An RL model that uses double deep Q learning to generate an optimal policy of stock market trades
+357,217872093,FinancePy,217872093,2020-05-20 22:35:18,2019-10-27 15:04:56,"A Python Finance Library that covers Pricing, Risk and Asset Allocation"
+358,208483174,SpeechShifter,208483174,2020-05-20 17:28:55,2019-09-14 18:14:24,Hack MIT Project 2019
+359,253779590,voltrad1,253779590,2020-05-20 16:45:23,2020-04-07 11:59:18,Collection of utilities for options data analytics
+360,163788469,backtesting.py,163788469,2020-05-22 03:35:50,2019-01-02 03:11:32,:mag_right: :chart_with_upwards_trend: :snake: :moneybag:  Backtest trading strategies in Python.
+361,75784220,investment_lookup,75784220,2020-05-20 10:42:49,2016-12-07 00:37:54,
+362,179866800,alice_blue,179866800,2020-05-21 08:16:14,2019-04-06 17:45:10,Python library for Alice Blue API trading
+363,263201725,Equities-Market-Analyzer,263201725,2020-05-19 21:15:01,2020-05-12 01:34:21,Simple programs to analyze equity markets
+364,265345367,Restaurant-Visitor-Forecasting,265345367,2020-05-19 20:08:20,2020-05-19 19:32:39,
+365,227721998,yahooquery,227721998,2020-05-22 12:54:26,2019-12-13 00:29:16,"Python wrapper for an unofficial Yahoo Finance API.  Available data matches what is available through the different tabs seen through the Yahoo Finance front-end (Summary, Chart, Statistics, Historical Data, Profile, FInancials, Analysis, Options, Holders, and Sustainability).  Also, Premium data is available to YF Premium subscribers."
+366,253762562,Market-Agent-Simulation,253762562,2020-05-19 15:59:44,2020-04-07 10:36:44,
+367,122248350,gender-bias,122248350,2020-05-19 13:55:54,2018-02-20 19:54:38,Reading for gender bias
+368,262758691,screener,262758691,2020-05-19 12:58:41,2020-05-10 10:06:31,
+369,248942624,iTrader,248942624,2020-05-19 12:28:49,2020-03-21 09:18:36,iTrader is a backtesting system that give uses a maximum flexibility to test their advanced trading strategy
+370,262656363,EquityExplorer,262656363,2020-05-19 00:48:39,2020-05-09 20:48:50,
+371,121229896,django-jacc,121229896,2020-05-18 22:48:59,2018-02-12 10:02:20,Simple double entry accounting system (debits/credits) for Django projects.
+372,174236038,abides,174236038,2020-05-20 12:30:39,2019-03-06 23:20:48,ABIDES: Agent-Based Interactive Discrete Event Simulation
+373,265063543,Credit-Risk-Predictive-Analysis,265063543,2020-05-18 21:28:07,2020-05-18 21:13:35,develop a predictive model and a decision support system (DSS) that evaluates the risk of Home Equity Line of Credit (HELOC) applications
+374,259729590,yahoostats,259729590,2020-05-18 18:11:27,2020-04-28 19:17:56,"Webscrape stock statistic data from: yahoo finance, reuters, morningstar, zacks."
+375,143319472,pylivetrader,143319472,2020-05-18 22:14:31,2018-08-02 16:26:17,Python live trade execution library with zipline interface.
+376,206572567,tap-mambu,206572567,2020-05-18 14:23:10,2019-09-05 13:37:13,
+377,264930311,Accounting,264930311,2020-05-18 12:47:50,2020-05-18 12:18:41,An accounting cycle project based on GUI using python tkinter.
+378,157477269,xbbg,157477269,2020-05-22 07:52:19,2018-11-14 02:19:24,Intuitive Bloomberg data API
+379,149065149,Poker,149065149,2020-05-17 19:41:18,2018-09-17 03:41:54,
+380,264740442,Robinhood-bot,264740442,2020-05-17 21:52:56,2020-05-17 19:23:30,
+381,237749212,Warren_Buffett,237749212,2020-05-17 13:31:16,2020-02-02 09:45:28,Make One Million $$ A Day
+382,214753483,KoALA,214753483,2020-05-17 09:57:58,2019-10-13 03:17:06,This tool is built to support a rational decision-making process for optimal supply and management of neighborhood SOC in South Korea.
+383,208411422,stock-research,208411422,2020-05-17 09:56:44,2019-09-14 08:27:05,
+384,213646949,IB_Flex,213646949,2020-05-22 01:26:07,2019-10-08 13:18:30,Assorted python scripts for downloading IB flex query and saving and analyzing them
+385,134917026,python_finance_tracking,134917026,2020-05-17 00:44:05,2018-05-26 00:40:19,
+386,213098996,example-scalping,213098996,2020-05-19 11:57:52,2019-10-06 02:32:36,A working example algorithm for scalping strategy trading multiple stocks concurrently using python asyncio
+387,236396115,Past-Projects,236396115,2020-05-16 07:21:51,2020-01-27 00:25:32,
+388,264296353,tradier-api,264296353,2020-05-18 12:53:45,2020-05-15 20:52:04,Basic Tradier API examples for equity and option orders
+389,137685326,libkloudtrader,137685326,2020-05-15 11:34:55,2018-06-17 20:36:23,KloudTrader's in-house library designed for rapid prototyping and development of trading strategies.  📈📊📉
+390,154011289,ADViCE,154011289,2020-05-15 11:19:17,2018-10-21 13:28:32,Explainable Machine Learning tool
+391,257738084,stock-trading,257738084,2020-05-15 03:10:40,2020-04-21 23:16:43,
+392,264071833,study,264071833,2020-05-15 02:09:24,2020-05-15 02:02:12,study repository
+393,263632394,equity-models,263632394,2020-05-14 19:29:12,2020-05-13 13:06:53,Equity trading and investment models
+394,178011463,CloudPrismaMarginEstimator,178011463,2020-05-13 14:34:53,2019-03-27 14:29:10,Cloud Prisma Margin Estimator documentation https://deutsche-boerse-risk.github.io/CloudPrismaMarginEstimator/
+395,257578740,notequity.com,257578740,2020-05-13 12:45:29,2020-04-21 11:50:24,
+396,144783622,betterbloomberg,144783622,2020-05-13 04:05:35,2018-08-14 23:53:56,A better interface for the Bloomberg Desktop Python API
+397,263413230,josvin92.github.io,263413230,2020-05-13 03:53:56,2020-05-12 18:04:41,
+398,262220751,Charles,262220751,2020-05-13 01:39:01,2020-05-08 03:46:30,
+399,263393477,secdef-parser,263393477,2020-05-12 16:50:52,2020-05-12 16:37:21,Demo showing how to parse secdef files
+400,24036336,poker,24036336,2020-05-13 01:54:49,2014-09-14 23:41:43,Poker framework for Python
+401,262580605,scrape-equity-data,262580605,2020-05-12 11:46:39,2020-05-09 13:47:29,Scrape equity data from online sources
+402,209128657,Portfolio_Monthly_Report,209128657,2020-05-12 05:39:22,2019-09-17 18:28:32,
+403,263159906,Agile_project_1,263159906,2020-05-12 04:50:01,2020-05-11 21:15:34,
+404,183965895,PyTAS,183965895,2020-05-11 21:55:30,2019-04-28 22:36:40,
+405,253458275,finance,253458275,2020-05-11 11:54:38,2020-04-06 09:59:00,
+406,260609989,robinhood-dividends,260609989,2020-05-11 21:41:32,2020-05-02 03:59:23,
+407,262700525,Algorithms-Lab-10,262700525,2020-05-10 07:59:33,2020-05-10 02:55:48, Two modifications of the Cross-sectional Equity Template Example including minimum 6 variables to create a combined factor and a report that includes the backtesting for the past 6 months and 2 years.
+408,262707861,Lab-10---Cross-sectional-Equity-Template-modifications,262707861,2020-05-10 07:06:11,2020-05-10 03:56:50,
+409,210440776,expunger-platform,210440776,2020-05-09 23:19:49,2019-09-23 19:56:13,"Expunger web platform, on Django"
+410,260548534,robinhood_parser,260548534,2020-05-09 19:38:54,2020-05-01 20:06:49,A selenium-based Robinhood parser for collecting trading history
+411,202927395,kubernetes-workshop,202927395,2020-05-22 11:14:46,2019-08-17 20:14:22,⚙️ A Gentle introduction to Kubernetes with more than just the basics. 🌟 Give it a star if you like it.
+412,180137089,FundamentalAnalysis,180137089,2020-05-21 23:51:27,2019-04-08 11:44:25,"Fully-fledged Fundamental Analysis package capable of collecting 10 years of Company Profiles, Financial Statements, Ratios and Stock Data of 13.000+ companies."
+413,262500797,Auto_AA_SO,262500797,2020-05-09 06:14:42,2020-05-09 06:01:11,Auto copying HK Equity shares outstanding from AAstock website
+414,261849715,StockChecker,261849715,2020-05-08 15:49:14,2020-05-06 18:46:25,A simple Robinhood stock checker built on the robin_stocks module.
+415,247154199,Applied_DataScience_Coursework,247154199,2020-05-08 13:45:38,2020-03-13 20:15:09,
+416,261136401,Kalman4SberBank,261136401,2020-05-08 06:56:59,2020-05-04 09:52:34,Optimization of UKF (Kalman) for Sberbank equity price prediction
+417,232936644,Factor_funcs,232936644,2020-05-08 01:55:29,2020-01-10 01:03:01,Test Factors including several measurements
+418,262141000,QuantopianCrossSectionalEquity,262141000,2020-05-07 20:25:59,2020-05-07 19:31:40,modified template to Quantopian cross sectional equity having more combined facotors
+419,261832592,Stock-Data-Retriever-and-Trend-Analysis-Application,261832592,2020-05-07 16:47:51,2020-05-06 17:32:04,A python console application where it uses APIs to pull market data and analyze trends
+420,261874007,Risk-of-Home-Equity-Line-of-Credit-machine-learning-project,261874007,2020-05-07 03:14:18,2020-05-06 20:42:05,Risk of Home Equity Line of Credit (HELOC) FICO Community machine learning project
+421,230625960,Personal-Finance,230625960,2020-05-06 16:46:21,2019-12-28 15:12:37,Personal equity tracker
+422,134838778,clamc_trustee,134838778,2020-05-05 09:55:35,2018-05-25 10:01:15,
+423,261291425,Invertir,261291425,2020-05-05 02:23:56,2020-05-04 20:43:24,Valuación acciones
+424,259785131,Poker-Short-Deck-Equity-Calculator,259785131,2020-05-04 16:59:20,2020-04-29 00:35:32,
+425,233578381,ValSys_technical_challenge,233578381,2020-05-04 06:43:44,2020-01-13 11:18:15,
+426,261076396,Machine-Learning-Multi-linear-Regression-stock-Price-Prediction-multiple-Macro-factors-using-python,261076396,2020-05-04 07:08:56,2020-05-04 03:59:45,PREDICTING STOCK PRICE BY USING VARIOUS MACRO FACTORS USING PYTHON
+427,35051500,pyrh,35051500,2020-05-21 21:50:21,2015-05-04 18:20:47,Python Framework to make trades with the unofficial Robinhood API
+428,240049347,Finance-Backtesting-And-Historical-Analysis,240049347,2020-05-03 05:24:16,2020-02-12 15:40:33,Finance Backtesting and Historical Data Analysis
+429,251082165,equity,251082165,2020-05-03 03:54:38,2020-03-29 16:46:15,
+430,240371026,TransitCenterProject,240371026,2020-05-02 15:56:14,2020-02-13 21:50:17,Accessibility analysis to determine transit equity in major U.S. cities
+431,233176380,equity-research,233176380,2020-05-02 14:40:41,2020-01-11 04:33:06,Python application to retrieve and process asset price information
+432,27291222,quantdigger,27291222,2020-05-20 04:52:32,2014-11-29 04:26:59,基于python的量化交易平台
+433,259333146,free-Springer-books,259333146,2020-05-01 21:52:00,2020-04-27 13:37:35,Automatic download of all the free-access books provided by Springer during the global lockdown.
+434,260544825,Thesis,260544825,2020-05-01 21:17:28,2020-05-01 19:45:54,Thesis codes
+435,260496019,trading-server,260496019,2020-05-01 15:41:36,2020-05-01 15:41:23,
+436,254853396,preferred,254853396,2020-05-01 08:41:23,2020-04-11 11:30:31,"Track changes to ""Most Preferred"" lists by equity analysts"
+437,95448634,ValueInvesting,95448634,2020-05-18 17:18:24,2017-06-26 13:21:09,For value investing dashboard
+438,195511076,beancount_asset_allocation,195511076,2020-05-04 02:26:46,2019-07-06 07:27:40,Asset allocation analysis tool for Beancount (Personal accounting software)
+439,260310769,Qs,260310769,2020-04-30 20:25:35,2020-04-30 20:23:32,
+440,259128824,QuantFront,259128824,2020-04-30 19:09:26,2020-04-26 20:41:12,Fundamental stock market valuation tools. Work in progress.
+441,258990294,Nonlinear_SVM-Long_Short_Equity,258990294,2020-04-30 15:53:14,2020-04-26 09:28:42,This repository aims to implement the ideas from the Nonlinear support vector machines can systematically identify stocks with high and low future returns (paper) https://content.iospress.com/download/algorithmic-finance/af016?id=algorithmic-finance%2Faf016
+442,254706913,World-Bond-Stock-Portfolio,254706913,2020-05-10 05:04:49,2020-04-10 18:27:48,Creating the World Bond Stock Portfolio using Vanguard ETFs.
+443,200886755,fast-trade,200886755,2020-04-29 18:17:49,2019-08-06 16:22:53,backtesting library utilizing pandas and technical analysis indicators
+444,173863164,trading-server,173863164,2020-05-17 10:40:45,2019-03-05 03:06:19,"Multi-asset, multi-strategy, event-driven trade execution and management platform (OEMS) for trading common markets."
+445,256045777,Salinas,256045777,2020-04-28 23:58:11,2020-04-15 21:56:52,Webscraper for Land grant university course catalogs.
+446,235443219,MarketBot,235443219,2020-04-28 20:07:33,2020-01-21 21:16:03,"Ever wanted to trade stocks programmatically?  Here at MarketBot, we plan on creating a tool to analyze the equities market and execute orders via code.  Our vision is to learn about technical indicators and attempt to employ them in the creation of a profitable, automated trader."
+447,257864966,fundmaster,257864966,2020-04-28 18:20:16,2020-04-22 10:15:55,Experiment in Indian market to predict the stock price from the fundamental results 
+448,259692407,qrobo,259692407,2020-04-28 16:29:23,2020-04-28 16:29:08,
+449,257077333,finance-technical-analysis,257077333,2020-04-28 04:46:40,2020-04-19 18:50:24,
+450,252624286,Betting-Against-Beta,252624286,2020-04-28 01:34:38,2020-04-03 03:33:09,"This project is based upon the paper: Frazzini, A. & Pedersen, L. (2014). Betting against beta. "
+451,112309638,degiro,112309638,2020-05-19 12:31:15,2017-11-28 08:45:54,Very basic unofficial Python API for DeGiro
+452,228199429,matrix,228199429,2020-04-27 13:30:57,2019-12-15 14:41:02,matrix - a lightweight modular framework for prototyping and backtesting trading strategies
+453,258888895,octave,258888895,2020-04-27 13:06:55,2020-04-25 22:41:24,
+454,238962338,valinvest,238962338,2020-05-05 06:13:23,2020-02-07 15:49:10,"A value investing tool based on Warren Buffett, Joseph Piotroski and Benjamin Graham thoughts"
+455,193956118,neuron_poker,193956118,2020-05-20 02:46:23,2019-06-26 18:15:38,"Texas holdem OpenAi gym poker environment, including virtual rendering and montecarlo for equity (python and c++ version)"
+456,258960137,bsestocksensex,258960137,2020-04-26 06:47:37,2020-04-26 06:46:34,
+457,258656612,springer_books,258656612,2020-05-01 06:34:40,2020-04-25 00:48:20,
+458,235181742,bhavcopy,235181742,2020-04-25 19:05:22,2020-01-20 19:29:10,A website to list top 10 BSE stocks for the day. 
+459,258607943,Stock-Market-Watcher,258607943,2020-04-24 19:47:53,2020-04-24 19:43:15,Follow an equity with a visual LED representation using a few LEDs and a raspberry pi!
+460,107833499,yahoofinancials,107833499,2020-05-22 11:13:18,2017-10-22 03:10:57,"A powerful financial data module used for pulling data from Yahoo Finance. This module can pull fundamental and technical data for stocks, indexes, currencies, cryptos, ETFs, Mutual Funds, U.S. Treasuries, and commodity futures."
+461,258287208,equity-analysis,258287208,2020-04-23 17:55:30,2020-04-23 17:54:33,
+462,258158272,ML_Model_for_predict_clients_who_default_on_their_loans,258158272,2020-04-23 11:17:47,2020-04-23 09:42:42,Decision Tree Algorithm
+463,212625482,WaporTranslator,212625482,2020-04-23 06:18:26,2019-10-03 16:23:26,"Python module for calculating Climate, Drought, Food Security, Irrigation, and Water Productivity indicators mostly based on the FAO's WaPOR datasets."
+464,72790118,awesome-hacking,72790118,2020-05-22 11:35:26,2016-11-03 21:51:08,Awesome hacking is an awesome collection of hacking tools.
+465,79458,pyenchant,79458,2020-05-22 10:10:29,2008-11-22 11:54:59,spellchecking library for python
+466,92693016,lieu,92693016,2020-05-22 06:38:57,2017-05-28 23:26:30,Dedupe/batch geocode addresses and venues around the world with libpostal
+467,170113482,vocabularies,170113482,2020-05-22 02:27:25,2019-02-11 10:55:43,"A collection of GSQ's vocabularies, formulated using SKOS, serialised as RDF (turtle) files."
+468,26967517,calc,26967517,2020-05-22 00:32:07,2014-11-21 16:22:24,An estimator for hourly rates on professional services contracts
+469,44349932,ADSOrcid,44349932,2020-05-21 19:40:59,2015-10-15 22:49:28,ORCID worker integrated into the ADS Pipeline
+470,159696142,xiaomi_mi_scale,159696142,2020-05-21 18:23:37,2018-11-29 16:30:36,Connector for Xiaomi Mi Scale
+471,223449647,TFG,223449647,2020-05-21 17:21:55,2019-11-22 17:07:18,"Proyecto Fin de Carrera - Ingeniería Informática, rama Computación"
+472,229329674,hypermapper,229329674,2020-05-21 12:33:45,2019-12-20 20:10:54,Black-box Optimizer based on Bayesian Optimization
+473,264433390,python,264433390,2020-05-20 23:03:06,2020-05-16 12:36:07,⚡️Official Image-charts Python library
+474,10786172,unicorn,10786172,2020-05-22 07:21:49,2013-06-19 08:38:06,Unicorn is a simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. Based on Matthew Graeber's powershell attacks and the powershell bypass technique presented by David Kennedy (TrustedSec) and Josh Kelly at Defcon 18.
+475,11000666,contact-congress,11000666,2020-05-20 14:23:30,2013-06-27 15:32:03,Sending electronic written messages to members of Congress by reverse engineering their contact forms.
+476,53143022,ipwb,53143022,2020-05-19 20:26:06,2016-03-04 15:01:33,InterPlanetary Wayback: A distributed and persistent archive replay system using IPFS
+477,255581196,PyLoreKelly,255581196,2020-05-19 18:32:44,2020-04-14 10:41:42,
+478,18644765,contact-states,18644765,2020-05-19 14:33:52,2014-04-10 17:11:42,Sending electronic written messages to members of Congress by reverse engineering their contact forms.
+479,29439879,programming-talks,29439879,2020-05-19 12:12:03,2015-01-18 20:29:42,Awesome & interesting talks about programming
+480,258124814,excel-magic,258124814,2020-05-19 02:07:20,2020-04-23 07:17:08,Do magic to your excel file!
+481,70920962,pyfilesystem2,70920962,2020-05-21 13:57:20,2016-10-14 15:05:27,Python's Filesystem abstraction layer
+482,264975134,QuickTutor,264975134,2020-05-18 15:43:50,2020-05-18 15:05:41,"Quick Tutor Application was developed as part of CS3240 Adv. Software Development with Mark Sherriff. Created with Harrison Clark, Kelly Chen, Harshita Pathipati, and Pablo Weber in Spring 2020"
+483,217638001,GUI,217638001,2020-05-18 11:35:21,2019-10-26 01:10:12,
+484,203971806,transferNILM,203971806,2020-05-18 08:32:44,2019-08-23 09:52:36,Transfer Learning for Non-Intrusive Load Monitoring
+485,175446824,meta-repo,175446824,2020-05-18 05:14:52,2019-03-13 15:18:53,A meta-repository to organize my public projects.
+486,23886834,personal-sites,23886834,2020-05-19 22:54:05,2014-09-10 18:32:08,List of Hackathon Hackers' personal sites.
+487,186687718,qiskit-qrack-provider,186687718,2020-05-16 02:59:17,2019-05-14 19:34:28,Qrack provider for Qiskit
+488,161249744,analyze,161249744,2020-05-15 21:05:59,2018-12-10 23:24:43,Review and Analyze NSF Horn Radio Astronomy Data
+489,162440437,progenomics,162440437,2020-05-14 13:25:19,2018-12-19 13:20:57,A toolkit for prokaryotic comparative genomics
+490,151846526,develop-python-case,151846526,2020-05-14 10:10:12,2018-10-06 14:13:33,python case
+491,254778713,trade_stat_logger,254778713,2020-05-14 06:43:12,2020-04-11 02:38:12,"Log trades of any type of security, and then get an analysis of your strategy!"
+492,237903520,puma,237903520,2020-05-13 00:53:50,2020-02-03 06:55:34,
+493,69761580,Autopilot-TensorFlow,69761580,2020-05-21 16:54:35,2016-10-01 20:18:23,A TensorFlow implementation of this Nvidia paper: https://arxiv.org/pdf/1604.07316.pdf with some changes

@@ -33,7 +33,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['30.12.2019', '10.01.2020'];Douala;last-minute;2019-12;529;Africa;24/12/2019;529
 ['13.08.2020', '27.08.2020'];Enfidha;sommerferien;2020-08;432;Africa;03/02/2020;410
 ['20.08.2020', '03.09.2020'];Enfidha;sommerferien;2020-08;410;Africa;08/01/2020;410
-['31.12.2019', '21.01.2020'];Entebbe;last-minute;2019-12;522;Africa;24/12/2019;522
+['31.12.2019', '21.01.2020'];Entebbe;last-minute;2019-12;522;Africa;24/12/2019;412
+['24.12.2020', '03.01.2021'];Entebbe;weihnachtsferien;2020-12;412;Africa;2020-06-06;412
 ['02.12.2019', '23.12.2019'];Johannesburg;fernreisen;2019-12;397;Africa;20/10/2019;365
 ['07.12.2019', '22.12.2019'];Johannesburg;fernreisen;2019-12;378;Africa;26/10/2019;365
 ['07.12.2019', '22.12.2019'];Johannesburg;fernreisen;2019-12;387;Africa;22/10/2019;365
@@ -42,6 +43,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['21.04.2020', '05.05.2020'];Johannesburg;fernreisen;2020-04;391;Africa;08/12/2019;365
 ['28.04.2020', '26.05.2020'];Johannesburg;fernreisen;2020-04;394;Africa;07/12/2019;365
 ['26.03.2020', '02.04.2020'];Johannesburg;fernreisen;2020-03;365;Africa;2020-03-14;365
+['15.09.2020', '09.10.2020'];Johannesburg;fernreisen;2020-09;370;Africa;2020-06-06;365
 ['16.08.2020', '05.09.2020'];Kapstadt;sommerferien;2020-08;508;Africa;07/10/2019;490
 ['11.08.2020', '01.09.2020'];Kapstadt;sommerferien;2020-08;490;Africa;07/02/2020;490
 ['11.08.2020', '01.09.2020'];Kapstadt;sommerferien;2020-08;490;Africa;2020-02-10;490
@@ -124,6 +126,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['15.02.2020', '10.03.2020'];Bangkok Don Mueang;last-minute;2020-02;576;Asia;07/02/2020;527
 ['05.12.2019', '14.12.2019'];Beijing International;fernreisen;2019-12;393;Asia;09/10/2019;393
 ['01.07.2020', '18.07.2020'];Beijing International;fernreisen;2020-07;414;Asia;20/10/2019;393
+['01.12.2020', '20.12.2020'];Colombo;warme-reiseziele;2020-12;438;Asia;2020-03-13;438
 ['01.12.2019', '08.12.2019'];Hanoi;fernreisen;2019-12;392;Asia;26/10/2019;253
 ['01.12.2019', '08.12.2019'];Hanoi;fernreisen;2019-12;393;Asia;22/10/2019;253
 ['04.12.2019', '31.12.2019'];Hanoi;fernreisen;2019-12;393;Asia;18/10/2019;253
@@ -158,6 +161,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['31.03.2020', '23.04.2020'];Hanoi;fernreisen;2020-03;256;Asia;2020-03-06;253
 ['29.03.2020', '12.04.2020'];Hanoi;fernreisen;2020-03;253;Asia;2020-03-14;253
 ['31.03.2020', '16.04.2020'];Hanoi;fernreisen;2020-03;261;Asia;2020-03-16;253
+['13.11.2020', '24.11.2020'];Hanoi;fernreisen;2020-11;280;Asia;2020-06-06;253
 ['01.12.2019', '08.12.2019'];Hongkong;fernreisen;2019-12;340;Asia;22/10/2019;315
 ['03.12.2019', '12.12.2019'];Hongkong;fernreisen;2019-12;340;Asia;19/10/2019;315
 ['04.12.2019', '12.12.2019'];Hongkong;fernreisen;2019-12;340;Asia;09/10/2019;315
@@ -192,6 +196,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['22.11.2020', '29.11.2020'];Hongkong;fernreisen;2020-11;330;Asia;2020-03-06;315
 ['06.11.2020', '19.11.2020'];Hongkong;fernreisen;2020-11;323;Asia;2020-03-14;315
 ['30.05.2020', '14.06.2020'];Hongkong;fernreisen;2020-05;343;Asia;2020-03-16;315
+['12.06.2020', '20.06.2020'];Hongkong;fernreisen;2020-06;331;Asia;2020-06-06;315
 ['21.02.2020', '13.03.2020'];Kathmandu;last-minute;2020-02;436;Asia;07/02/2020;424
 ['23.02.2020', '07.03.2020'];Kathmandu;last-minute;2020-02;424;Asia;2020-02-10;424
 ['02.12.2019', '15.12.2019'];Kuala Lumpur;fernreisen;2019-12;389;Asia;18/10/2019;386
@@ -365,6 +370,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['01.06.2020', '10.06.2020'];Taipei Songshan;fernreisen;2020-06;325;Asia;2020-03-06;304
 ['06.11.2020', '14.11.2020'];Taipei Songshan;fernreisen;2020-11;324;Asia;2020-03-14;304
 ['06.11.2020', '14.11.2020'];Taipei Songshan;fernreisen;2020-11;324;Asia;2020-03-16;304
+['06.11.2020', '14.11.2020'];Taipei Songshan;fernreisen;2020-11;324;Asia;2020-06-06;304
 ['05.08.2020', '24.08.2020'];Taschkent;sommerferien;2020-08;442;Asia;04/10/2019;442
 ['20.02.2020', '19.03.2020'];Trat;last-minute;2020-02;545;Asia;07/02/2020;545
 ['21.05.2020', '03.06.2020'];Yangon;fernreisen;2020-05;416;Asia;08/12/2019;416
@@ -382,6 +388,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['17.03.2020', '31.03.2020'];Calgary;fernreisen;2020-03;386;Canada;07/02/2020;329
 ['17.03.2020', '31.03.2020'];Calgary;fernreisen;2020-03;386;Canada;2020-02-10;329
 ['20.03.2020', '29.03.2020'];Calgary;fernreisen;2020-03;381;Canada;2020-02-25;329
+['11.08.2020', '20.08.2020'];Calgary;fernreisen;2020-08;371;Canada;2020-06-06;329
+['25.12.2020', '04.01.2021'];Calgary;weihnachtsferien;2020-12;466;Canada;2020-06-06;329
 ['21.08.2020', '01.09.2020'];Edmonton;sommerferien;2020-08;468;Canada;05/02/2020;440
 ['13.02.2020', '19.02.2020'];Edmonton;last-minute;2020-02;440;Canada;05/02/2020;440
 ['13.02.2020', '19.02.2020'];Edmonton;last-minute;2020-02;440;Canada;07/02/2020;440
@@ -430,6 +438,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['19.03.2020', '24.03.2020'];Montreal Pierre Elliott Trudeau;fernreisen;2020-03;351;Canada;2020-03-06;332
 ['31.03.2020', '07.04.2020'];Montreal Pierre Elliott Trudeau;fernreisen;2020-03;352;Canada;2020-03-14;332
 ['31.03.2020', '07.04.2020'];Montreal Pierre Elliott Trudeau;fernreisen;2020-03;352;Canada;2020-03-16;332
+['03.08.2020', '11.08.2020'];Montreal Pierre Elliott Trudeau;fernreisen;2020-08;350;Canada;2020-06-06;332
+['26.12.2020', '09.01.2021'];Montreal Pierre Elliott Trudeau;weihnachtsferien;2020-12;474;Canada;2020-06-06;332
 ['28.01.2020', '11.02.2020'];Ottawa;fernreisen;2020-01;414;Canada;07/12/2019;330
 ['28.01.2020', '11.02.2020'];Ottawa;fernreisen;2020-01;415;Canada;08/12/2019;330
 ['04.02.2020', '18.02.2020'];Ottawa;fernreisen;2020-02;359;Canada;24/12/2019;330
@@ -442,6 +452,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['17.08.2020', '01.09.2020'];Ottawa;sommerferien;2020-08;445;Canada;05/02/2020;330
 ['17.08.2020', '01.09.2020'];Ottawa;sommerferien;2020-08;445;Canada;07/02/2020;330
 ['17.08.2020', '01.09.2020'];Ottawa;sommerferien;2020-08;445;Canada;2020-02-10;330
+['06.07.2020', '17.07.2020'];Ottawa;fernreisen;2020-07;341;Canada;2020-06-06;330
 ['24.11.2019', '29.11.2019'];Toronto;fernreisen;2019-11;283;Canada;07/10/2019;283
 ['24.11.2019', '30.11.2019'];Toronto;fernreisen;2019-11;283;Canada;06/10/2019;283
 ['24.11.2019', '30.11.2019'];Toronto;fernreisen;2019-11;303;Canada;18/10/2019;283
@@ -481,6 +492,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['17.03.2020', '25.03.2020'];Toronto;fernreisen;2020-03;317;Canada;2020-03-06;283
 ['15.03.2020', '24.03.2020'];Toronto;fernreisen;2020-03;320;Canada;2020-03-14;283
 ['26.04.2020', '05.05.2020'];Toronto;fernreisen;2020-04;328;Canada;2020-03-16;283
+['08.07.2020', '05.08.2020'];Toronto;fernreisen;2020-07;335;Canada;2020-06-06;283
+['27.12.2020', '04.01.2021'];Toronto;weihnachtsferien;2020-12;391;Canada;2020-06-06;283
 ['14.01.2020', '22.01.2020'];Vancouver;fernreisen;2020-01;289;Canada;05/10/2019;289
 ['14.01.2020', '22.01.2020'];Vancouver;fernreisen;2020-01;290;Canada;04/10/2019;289
 ['21.01.2020', '29.01.2020'];Vancouver;fernreisen;2020-01;333;Canada;19/10/2019;289
@@ -563,6 +576,10 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['12.05.2020', '19.05.2020'];Athen;warme-reiseziele;2020-05;38;Europe;2020-03-16;38
 ['12.05.2020', '19.05.2020'];Athen;staedtereisen;2020-05;38;Europe;2020-03-16;38
 ['04.08.2020', '18.08.2020'];Athen;sommerferien;2020-08;81;Europe;2020-03-16;38
+['11.07.2020', '21.07.2020'];Athen;staedtereisen;2020-07;46;Europe;2020-06-06;38
+['11.07.2020', '21.07.2020'];Athen;warme-reiseziele;2020-07;46;Europe;2020-06-06;38
+['04.07.2020', '07.07.2020'];Athen;kurzurlaub;2020-07;67;Europe;2020-06-06;38
+['04.08.2020', '18.08.2020'];Athen;sommerferien;2020-08;81;Europe;2020-06-06;38
 ['21.11.2019', '25.11.2019'];Birmingham;kurzurlaub;2019-11;90;Europe;20/10/2019;90
 ['23.07.2020', '27.07.2020'];Birmingham;kurzurlaub;2020-07;123;Europe;05/02/2020;90
 ['28.05.2020', '01.06.2020'];Birmingham;kurzurlaub;2020-05;116;Europe;07/02/2020;90
@@ -597,6 +614,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['29.07.2020', '05.08.2020'];Brindisi;sommerferien;2020-07;104;Europe;2020-03-06;30
 ['29.07.2020', '05.08.2020'];Brindisi;sommerferien;2020-07;94;Europe;2020-03-14;30
 ['29.07.2020', '05.08.2020'];Brindisi;sommerferien;2020-07;94;Europe;2020-03-16;30
+['13.06.2020', '27.06.2020'];Brindisi;staedtereisen;2020-06;59;Europe;2020-06-06;30
+['13.06.2020', '27.06.2020'];Brindisi;last-minute;2020-06;59;Europe;2020-06-06;30
+['29.07.2020', '05.08.2020'];Brindisi;sommerferien;2020-07;94;Europe;2020-06-06;30
 ['29.03.2020', '05.04.2020'];Chania;staedtereisen;2020-03;51;Europe;08/01/2020;35
 ['01.04.2020', '08.04.2020'];Chania;staedtereisen;2020-04;60;Europe;03/02/2020;35
 ['19.04.2020', '22.04.2020'];Chania;kurzurlaub;2020-04;65;Europe;08/01/2020;35
@@ -655,6 +675,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['05.12.2019', '08.12.2019'];Dublin;kurzurlaub;2019-12;36;Europe;20/10/2019;36
 ['14.12.2019', '17.12.2019'];Dublin;kurzurlaub;2019-12;37;Europe;26/10/2019;36
 ['24.01.2020', '26.01.2020'];Dublin;kurzurlaub;2020-01;36;Europe;19/10/2019;36
+['17.08.2020', '31.08.2020'];Dublin;staedtereisen;2020-08;59;Europe;2020-06-06;36
+['21.08.2020', '24.08.2020'];Dublin;kurzurlaub;2020-08;68;Europe;2020-06-06;36
+['17.08.2020', '31.08.2020'];Dublin;sommerferien;2020-08;59;Europe;2020-06-06;36
 ['19.10.2019', '26.10.2019'];Dubrovnik;last-minute;2019-10;90;Europe;18/10/2019;90
 ['22.10.2019', '26.10.2019'];Edinburgh;staedtereisen;2019-10;30;Europe;04/10/2019;30
 ['22.10.2019', '26.10.2019'];Edinburgh;kurzurlaub;2019-10;52;Europe;18/10/2019;30
@@ -672,6 +695,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['01.09.2020', '11.09.2020'];Edinburgh;staedtereisen;2020-09;79;Europe;05/02/2020;30
 ['01.09.2020', '11.09.2020'];Edinburgh;staedtereisen;2020-09;75;Europe;07/02/2020;30
 ['01.09.2020', '11.09.2020'];Edinburgh;staedtereisen;2020-09;75;Europe;2020-02-10;30
+['25.07.2020', '04.08.2020'];Edinburgh;staedtereisen;2020-07;37;Europe;2020-06-06;30
+['01.08.2020', '13.08.2020'];Edinburgh;sommerferien;2020-08;68;Europe;2020-06-06;30
+['13.08.2020', '27.08.2020'];Edinburgh;sommerferien;2020-08;99;Europe;2020-06-06;30
 ['13.07.2020', '23.07.2020'];Eriwan;warme-reiseziele;2020-07;249;Europe;05/10/2019;249
 ['13.07.2020', '23.07.2020'];Eriwan;warme-reiseziele;2020-07;250;Europe;04/10/2019;249
 ['20.10.2019', '23.10.2019'];Fes;kurzurlaub;2019-10;11;Europe;04/10/2019;11
@@ -692,29 +718,34 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['18.06.2020', '30.06.2020'];Karpathos;warme-reiseziele;2020-06;232;Europe;18/10/2019;220
 ['24.10.2019', '07.11.2019'];Kerry County;last-minute;2019-10;350;Europe;19/10/2019;350
 ['24.10.2019', '07.11.2019'];Kerry County;last-minute;2019-10;380;Europe;20/10/2019;350
-['28.11.2019', '03.12.2019'];Kiew;kurzurlaub;2019-11;76;Europe;05/10/2019;57
-['28.11.2019', '03.12.2019'];Kiew;kurzurlaub;2019-11;77;Europe;04/10/2019;57
-['01.12.2019', '08.12.2019'];Kiew;staedtereisen;2019-12;77;Europe;07/10/2019;57
-['01.12.2019', '08.12.2019'];Kiew;staedtereisen;2019-12;78;Europe;09/10/2019;57
-['03.12.2019', '05.12.2019'];Kiew;kurzurlaub;2019-12;83;Europe;19/10/2019;57
-['03.12.2019', '07.12.2019'];Kiew;kurzurlaub;2019-12;68;Europe;20/10/2019;57
-['03.12.2019', '07.12.2019'];Kiew;kurzurlaub;2019-12;69;Europe;22/10/2019;57
-['25.01.2020', '09.02.2020'];Kiew;staedtereisen;2020-01;63;Europe;23/01/2020;57
-['25.01.2020', '09.02.2020'];Kiew;last-minute;2020-01;70;Europe;24/01/2020;57
-['09.02.2020', '23.02.2020'];Kiew;last-minute;2020-02;65;Europe;03/02/2020;57
-['19.03.2020', '26.03.2020'];Kiew;staedtereisen;2020-03;57;Europe;03/02/2020;57
-['09.02.2020', '23.02.2020'];Kiew;staedtereisen;2020-02;67;Europe;05/02/2020;57
-['09.02.2020', '23.02.2020'];Kiew;last-minute;2020-02;67;Europe;05/02/2020;57
-['19.03.2020', '26.03.2020'];Kiew;staedtereisen;2020-03;85;Europe;07/02/2020;57
-['02.04.2020', '06.04.2020'];Kiew;kurzurlaub;2020-04;90;Europe;2020-02-28;57
-['23.04.2020', '26.04.2020'];Kiew;kurzurlaub;2020-04;85;Europe;2020-03-02;57
-['07.03.2020', '14.03.2020'];Kiew;last-minute;2020-03;62;Europe;2020-03-02;57
-['07.03.2020', '14.03.2020'];Kiew;staedtereisen;2020-03;62;Europe;2020-03-02;57
-['10.03.2020', '24.03.2020'];Kiew;last-minute;2020-03;73;Europe;2020-03-06;57
-['23.04.2020', '26.04.2020'];Kiew;kurzurlaub;2020-04;78;Europe;2020-03-06;57
-['15.05.2020', '17.05.2020'];Kiew;kurzurlaub;2020-05;70;Europe;2020-03-14;57
-['29.04.2020', '04.05.2020'];Kiew;kurzurlaub;2020-04;67;Europe;2020-03-16;57
-['16.04.2020', '22.04.2020'];Kiew;staedtereisen;2020-04;67;Europe;2020-03-16;57
+['28.11.2019', '03.12.2019'];Kiew;kurzurlaub;2019-11;76;Europe;05/10/2019;43
+['28.11.2019', '03.12.2019'];Kiew;kurzurlaub;2019-11;77;Europe;04/10/2019;43
+['01.12.2019', '08.12.2019'];Kiew;staedtereisen;2019-12;77;Europe;07/10/2019;43
+['01.12.2019', '08.12.2019'];Kiew;staedtereisen;2019-12;78;Europe;09/10/2019;43
+['03.12.2019', '05.12.2019'];Kiew;kurzurlaub;2019-12;83;Europe;19/10/2019;43
+['03.12.2019', '07.12.2019'];Kiew;kurzurlaub;2019-12;68;Europe;20/10/2019;43
+['03.12.2019', '07.12.2019'];Kiew;kurzurlaub;2019-12;69;Europe;22/10/2019;43
+['25.01.2020', '09.02.2020'];Kiew;staedtereisen;2020-01;63;Europe;23/01/2020;43
+['25.01.2020', '09.02.2020'];Kiew;last-minute;2020-01;70;Europe;24/01/2020;43
+['09.02.2020', '23.02.2020'];Kiew;last-minute;2020-02;65;Europe;03/02/2020;43
+['19.03.2020', '26.03.2020'];Kiew;staedtereisen;2020-03;57;Europe;03/02/2020;43
+['09.02.2020', '23.02.2020'];Kiew;staedtereisen;2020-02;67;Europe;05/02/2020;43
+['09.02.2020', '23.02.2020'];Kiew;last-minute;2020-02;67;Europe;05/02/2020;43
+['19.03.2020', '26.03.2020'];Kiew;staedtereisen;2020-03;85;Europe;07/02/2020;43
+['02.04.2020', '06.04.2020'];Kiew;kurzurlaub;2020-04;90;Europe;2020-02-28;43
+['23.04.2020', '26.04.2020'];Kiew;kurzurlaub;2020-04;85;Europe;2020-03-02;43
+['07.03.2020', '14.03.2020'];Kiew;last-minute;2020-03;62;Europe;2020-03-02;43
+['07.03.2020', '14.03.2020'];Kiew;staedtereisen;2020-03;62;Europe;2020-03-02;43
+['10.03.2020', '24.03.2020'];Kiew;last-minute;2020-03;73;Europe;2020-03-06;43
+['23.04.2020', '26.04.2020'];Kiew;kurzurlaub;2020-04;78;Europe;2020-03-06;43
+['15.05.2020', '17.05.2020'];Kiew;kurzurlaub;2020-05;70;Europe;2020-03-14;43
+['29.04.2020', '04.05.2020'];Kiew;kurzurlaub;2020-04;67;Europe;2020-03-16;43
+['16.04.2020', '22.04.2020'];Kiew;staedtereisen;2020-04;67;Europe;2020-03-16;43
+['12.06.2020', '19.06.2020'];Kiew;staedtereisen;2020-06;43;Europe;2020-06-06;43
+['12.06.2020', '19.06.2020'];Kiew;last-minute;2020-06;43;Europe;2020-06-06;43
+['27.12.2020', '10.01.2021'];Kiew;weihnachtsferien;2020-12;185;Europe;2020-06-06;43
+['08.06.2020', '10.06.2020'];Kiew;kurzurlaub;2020-06;47;Europe;2020-06-06;43
+['03.08.2020', '21.08.2020'];Kiew;sommerferien;2020-08;96;Europe;2020-06-06;43
 ['12.08.2020', '22.08.2020'];Korfu;warme-reiseziele;2020-08;150;Europe;06/10/2019;148
 ['12.09.2020', '19.09.2020'];Korfu;warme-reiseziele;2020-09;148;Europe;03/02/2020;148
 ['07.02.2020', '16.02.2020'];Kos;last-minute;2020-02;119;Europe;24/01/2020;119
@@ -741,6 +772,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['09.03.2020', '16.03.2020'];Kutaisi;last-minute;2020-03;46;Europe;2020-03-02;33
 ['23.03.2020', '30.03.2020'];Kutaisi;last-minute;2020-03;41;Europe;2020-03-14;33
 ['23.03.2020', '30.03.2020'];Kutaisi;last-minute;2020-03;41;Europe;2020-03-16;33
+['07.08.2020', '14.08.2020'];Kutaisi;sommerferien;2020-08;90;Europe;2020-06-06;33
 ['19.12.2019', '31.12.2019'];London City;last-minute;2019-12;112;Europe;08/12/2019;102
 ['29.02.2020', '03.03.2020'];London City;last-minute;2020-02;104;Europe;2020-02-20;102
 ['29.02.2020', '03.03.2020'];London City;last-minute;2020-02;104;Europe;2020-02-21;102
@@ -792,10 +824,12 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['08.08.2020', '22.08.2020'];Malta;sommerferien;2020-08;100;Europe;2020-02-28;82
 ['25.09.2020', '03.10.2020'];Malta;warme-reiseziele;2020-09;92;Europe;2020-03-02;82
 ['08.08.2020', '22.08.2020'];Malta;sommerferien;2020-08;100;Europe;2020-03-02;82
+['08.08.2020', '15.08.2020'];Malta;sommerferien;2020-08;100;Europe;2020-06-06;82
 ['22.11.2019', '25.11.2019'];Ohrid;kurzurlaub;2019-11;42;Europe;26/10/2019;40
 ['22.11.2019', '29.11.2019'];Ohrid;staedtereisen;2019-11;40;Europe;26/10/2019;40
 ['11.09.2020', '14.09.2020'];Oslo;kurzurlaub;2020-09;81;Europe;08/01/2020;69
 ['14.03.2020', '21.03.2020'];Oslo;staedtereisen;2020-03;69;Europe;2020-02-28;69
+['17.08.2020', '24.08.2020'];Oslo;sommerferien;2020-08;97;Europe;2020-06-06;69
 ['28.12.2019', '09.01.2020'];Paphos;last-minute;2019-12;475;Europe;24/12/2019;232
 ['30.01.2020', '06.02.2020'];Paphos;last-minute;2020-01;232;Europe;25/01/2020;232
 ['03.07.2020', '10.07.2020'];Ponta Delgada;warme-reiseziele;2020-07;170;Europe;18/10/2019;170
@@ -810,33 +844,34 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['14.07.2020', '21.07.2020'];Ponta Delgada;warme-reiseziele;2020-07;215;Europe;05/02/2020;170
 ['14.07.2020', '21.07.2020'];Ponta Delgada;warme-reiseziele;2020-07;215;Europe;07/02/2020;170
 ['14.07.2020', '21.07.2020'];Ponta Delgada;warme-reiseziele;2020-07;215;Europe;2020-02-10;170
-['13.08.2020', '20.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;210;Europe;04/10/2019;207
-['13.08.2020', '20.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;214;Europe;06/10/2019;207
-['13.08.2020', '24.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;241;Europe;07/12/2019;207
-['20.08.2020', '02.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;218;Europe;24/12/2019;207
-['20.08.2020', '02.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;221;Europe;08/12/2019;207
-['21.08.2020', '03.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;214;Europe;26/10/2019;207
-['21.08.2020', '03.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;227;Europe;22/10/2019;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;219;Europe;23/01/2020;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;219;Europe;28/01/2020;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;224;Europe;28/01/2020;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;235;Europe;03/02/2020;207
-['25.08.2020', '01.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;221;Europe;18/10/2019;207
-['29.08.2020', '05.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;207;Europe;08/01/2020;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;232;Europe;05/02/2020;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;07/02/2020;207
-['23.10.2020', '28.10.2020'];Reykjavik Keflavik;kurzurlaub;2020-10;214;Europe;2020-02-10;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-10;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-20;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-21;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-23;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-25;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-28;207
-['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-03-02;207
-['25.08.2020', '05.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;218;Europe;2020-03-06;207
-['08.04.2020', '16.04.2020'];Reykjavik Keflavik;osterferien;2020-04;217;Europe;2020-03-06;207
-['20.08.2020', '02.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;217;Europe;2020-03-14;207
-['20.08.2020', '02.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;222;Europe;2020-03-16;207
+['13.08.2020', '20.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;210;Europe;04/10/2019;186
+['13.08.2020', '20.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;214;Europe;06/10/2019;186
+['13.08.2020', '24.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;241;Europe;07/12/2019;186
+['20.08.2020', '02.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;218;Europe;24/12/2019;186
+['20.08.2020', '02.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;221;Europe;08/12/2019;186
+['21.08.2020', '03.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;214;Europe;26/10/2019;186
+['21.08.2020', '03.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;227;Europe;22/10/2019;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;219;Europe;23/01/2020;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;219;Europe;28/01/2020;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;224;Europe;28/01/2020;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;235;Europe;03/02/2020;186
+['25.08.2020', '01.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;221;Europe;18/10/2019;186
+['29.08.2020', '05.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;207;Europe;08/01/2020;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;232;Europe;05/02/2020;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;07/02/2020;186
+['23.10.2020', '28.10.2020'];Reykjavik Keflavik;kurzurlaub;2020-10;214;Europe;2020-02-10;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-10;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-20;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-21;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-23;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-25;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-02-28;186
+['21.08.2020', '31.08.2020'];Reykjavik Keflavik;sommerferien;2020-08;212;Europe;2020-03-02;186
+['25.08.2020', '05.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;218;Europe;2020-03-06;186
+['08.04.2020', '16.04.2020'];Reykjavik Keflavik;osterferien;2020-04;217;Europe;2020-03-06;186
+['20.08.2020', '02.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;217;Europe;2020-03-14;186
+['20.08.2020', '02.09.2020'];Reykjavik Keflavik;sommerferien;2020-08;222;Europe;2020-03-16;186
+['03.01.2021', '10.01.2021'];Reykjavik Keflavik;weihnachtsferien;2021-01;186;Europe;2020-06-06;186
 ['02.05.2020', '09.05.2020'];Rhodos;warme-reiseziele;2020-05;198;Europe;24/12/2019;133
 ['02.05.2020', '12.05.2020'];Rhodos;warme-reiseziele;2020-05;163;Europe;28/01/2020;133
 ['07.05.2020', '12.05.2020'];Rhodos;warme-reiseziele;2020-05;133;Europe;28/01/2020;133
@@ -942,6 +977,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['23.07.2020', '30.07.2020'];Thessaloniki;warme-reiseziele;2020-07;94;Europe;2020-03-16;20
 ['30.04.2020', '09.05.2020'];Thessaloniki;staedtereisen;2020-04;41;Europe;2020-03-16;20
 ['11.08.2020', '21.08.2020'];Thessaloniki;sommerferien;2020-08;107;Europe;2020-03-16;20
+['20.06.2020', '27.06.2020'];Thessaloniki;last-minute;2020-06;75;Europe;2020-06-06;20
+['23.06.2020', '25.06.2020'];Thessaloniki;warme-reiseziele;2020-06;71;Europe;2020-06-06;20
+['27.06.2020', '11.07.2020'];Thessaloniki;warme-reiseziele;2020-06;78;Europe;2020-06-06;20
 ['19.10.2019', '26.10.2019'];Tivat;last-minute;2019-10;173;Europe;05/10/2019;168
 ['02.08.2020', '16.08.2020'];Tivat;sommerferien;2020-08;195;Europe;23/01/2020;168
 ['13.08.2020', '23.08.2020'];Tivat;sommerferien;2020-08;195;Europe;25/01/2020;168
@@ -1020,6 +1058,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['04.07.2020', '11.07.2020'];Zadar;warme-reiseziele;2020-07;62;Europe;2020-03-14;17
 ['04.07.2020', '11.07.2020'];Zadar;warme-reiseziele;2020-07;62;Europe;2020-03-16;17
 ['23.05.2020', '30.05.2020'];Zadar;staedtereisen;2020-05;38;Europe;2020-03-16;17
+['04.07.2020', '11.07.2020'];Zadar;warme-reiseziele;2020-07;62;Europe;2020-06-06;17
 ['11.04.2020', '18.04.2020'];Zakynthos;osterferien;2020-04;196;Europe;28/01/2020;196
 ['05.07.2020', '11.07.2020'];Bastia;warme-reiseziele;2020-07;186;Europe France;23/01/2020;186
 ['08.08.2020', '22.08.2020'];Biarritz;sommerferien;2020-08;161;Europe France;04/10/2019;161
@@ -1065,53 +1104,55 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['17.08.2020', '24.08.2020'];Cagliari;sommerferien;2020-08;141;Europe Italy;26/10/2019;134
 ['01.03.2020', '13.03.2020'];Cagliari;last-minute;2020-03;142;Europe Italy;2020-02-20;134
 ['01.03.2020', '13.03.2020'];Cagliari;last-minute;2020-03;142;Europe Italy;2020-02-21;134
-['13.10.2019', '16.10.2019'];Florenz;last-minute;2019-10;92;Europe Italy;04/10/2019;59
-['23.10.2019', '06.11.2019'];Florenz;last-minute;2019-10;68;Europe Italy;22/10/2019;59
-['23.10.2019', '06.11.2019'];Florenz;last-minute;2019-10;75;Europe Italy;19/10/2019;59
-['28.11.2019', '29.11.2019'];Florenz;kurzurlaub;2019-11;75;Europe Italy;06/10/2019;59
-['13.12.2019', '15.12.2019'];Florenz;kurzurlaub;2019-12;75;Europe Italy;04/10/2019;59
-['07.02.2020', '09.02.2020'];Florenz;last-minute;2020-02;95;Europe Italy;25/01/2020;59
-['07.02.2020', '17.02.2020'];Florenz;last-minute;2020-02;95;Europe Italy;28/01/2020;59
-['14.02.2020', '17.02.2020'];Florenz;kurzurlaub;2020-02;70;Europe Italy;08/01/2020;59
-['19.02.2020', '23.02.2020'];Florenz;kurzurlaub;2020-02;73;Europe Italy;03/02/2020;59
-['24.02.2020', '26.02.2020'];Florenz;osterferien;2020-02;73;Europe Italy;24/12/2019;59
-['26.02.2020', '27.02.2020'];Florenz;osterferien;2020-02;73;Europe Italy;08/01/2020;59
-['26.02.2020', '27.02.2020'];Florenz;osterferien;2020-02;85;Europe Italy;07/12/2019;59
-['26.02.2020', '27.02.2020'];Florenz;kurzurlaub;2020-02;85;Europe Italy;08/12/2019;59
-['09.03.2020', '12.03.2020'];Florenz;kurzurlaub;2020-03;70;Europe Italy;24/12/2019;59
-['13.03.2020', '15.03.2020'];Florenz;kurzurlaub;2020-03;85;Europe Italy;07/12/2019;59
-['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;75;Europe Italy;23/01/2020;59
-['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;75;Europe Italy;28/01/2020;59
-['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;85;Europe Italy;28/01/2020;59
-['10.09.2020', '20.09.2020'];Florenz;warme-reiseziele;2020-09;73;Europe Italy;07/12/2019;59
-['10.09.2020', '20.09.2020'];Florenz;warme-reiseziele;2020-09;73;Europe Italy;08/12/2019;59
-['19.02.2020', '23.02.2020'];Florenz;kurzurlaub;2020-02;73;Europe Italy;05/02/2020;59
-['19.02.2020', '23.02.2020'];Florenz;staedtereisen;2020-02;73;Europe Italy;05/02/2020;59
-['19.02.2020', '23.02.2020'];Florenz;last-minute;2020-02;73;Europe Italy;05/02/2020;59
-['16.03.2020', '20.03.2020'];Florenz;staedtereisen;2020-03;75;Europe Italy;07/02/2020;59
-['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;75;Europe Italy;07/02/2020;59
-['16.03.2020', '20.03.2020'];Florenz;staedtereisen;2020-03;75;Europe Italy;2020-02-10;59
-['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;75;Europe Italy;2020-02-10;59
-['09.03.2020', '12.03.2020'];Florenz;kurzurlaub;2020-03;84;Europe Italy;2020-02-20;59
-['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;60;Europe Italy;2020-02-21;59
-['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;60;Europe Italy;2020-02-21;59
-['08.03.2020', '13.03.2020'];Florenz;last-minute;2020-03;94;Europe Italy;2020-02-23;59
-['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-02-23;59
-['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-02-25;59
-['05.03.2020', '06.03.2020'];Florenz;last-minute;2020-03;94;Europe Italy;2020-02-25;59
-['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-02-25;59
-['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;60;Europe Italy;2020-02-28;59
-['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;60;Europe Italy;2020-02-28;59
-['04.03.2020', '18.03.2020'];Florenz;last-minute;2020-03;73;Europe Italy;2020-02-28;59
-['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-03-02;59
-['08.03.2020', '13.03.2020'];Florenz;last-minute;2020-03;94;Europe Italy;2020-03-02;59
-['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-03-02;59
-['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-03-06;59
-['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-03-06;59
-['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-03-14;59
-['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-03-14;59
-['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-03-16;59
-['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-03-16;59
+['13.10.2019', '16.10.2019'];Florenz;last-minute;2019-10;92;Europe Italy;04/10/2019;58
+['23.10.2019', '06.11.2019'];Florenz;last-minute;2019-10;68;Europe Italy;22/10/2019;58
+['23.10.2019', '06.11.2019'];Florenz;last-minute;2019-10;75;Europe Italy;19/10/2019;58
+['28.11.2019', '29.11.2019'];Florenz;kurzurlaub;2019-11;75;Europe Italy;06/10/2019;58
+['13.12.2019', '15.12.2019'];Florenz;kurzurlaub;2019-12;75;Europe Italy;04/10/2019;58
+['07.02.2020', '09.02.2020'];Florenz;last-minute;2020-02;95;Europe Italy;25/01/2020;58
+['07.02.2020', '17.02.2020'];Florenz;last-minute;2020-02;95;Europe Italy;28/01/2020;58
+['14.02.2020', '17.02.2020'];Florenz;kurzurlaub;2020-02;70;Europe Italy;08/01/2020;58
+['19.02.2020', '23.02.2020'];Florenz;kurzurlaub;2020-02;73;Europe Italy;03/02/2020;58
+['24.02.2020', '26.02.2020'];Florenz;osterferien;2020-02;73;Europe Italy;24/12/2019;58
+['26.02.2020', '27.02.2020'];Florenz;osterferien;2020-02;73;Europe Italy;08/01/2020;58
+['26.02.2020', '27.02.2020'];Florenz;osterferien;2020-02;85;Europe Italy;07/12/2019;58
+['26.02.2020', '27.02.2020'];Florenz;kurzurlaub;2020-02;85;Europe Italy;08/12/2019;58
+['09.03.2020', '12.03.2020'];Florenz;kurzurlaub;2020-03;70;Europe Italy;24/12/2019;58
+['13.03.2020', '15.03.2020'];Florenz;kurzurlaub;2020-03;85;Europe Italy;07/12/2019;58
+['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;75;Europe Italy;23/01/2020;58
+['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;75;Europe Italy;28/01/2020;58
+['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;85;Europe Italy;28/01/2020;58
+['10.09.2020', '20.09.2020'];Florenz;warme-reiseziele;2020-09;73;Europe Italy;07/12/2019;58
+['10.09.2020', '20.09.2020'];Florenz;warme-reiseziele;2020-09;73;Europe Italy;08/12/2019;58
+['19.02.2020', '23.02.2020'];Florenz;kurzurlaub;2020-02;73;Europe Italy;05/02/2020;58
+['19.02.2020', '23.02.2020'];Florenz;staedtereisen;2020-02;73;Europe Italy;05/02/2020;58
+['19.02.2020', '23.02.2020'];Florenz;last-minute;2020-02;73;Europe Italy;05/02/2020;58
+['16.03.2020', '20.03.2020'];Florenz;staedtereisen;2020-03;75;Europe Italy;07/02/2020;58
+['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;75;Europe Italy;07/02/2020;58
+['16.03.2020', '20.03.2020'];Florenz;staedtereisen;2020-03;75;Europe Italy;2020-02-10;58
+['16.03.2020', '20.03.2020'];Florenz;kurzurlaub;2020-03;75;Europe Italy;2020-02-10;58
+['09.03.2020', '12.03.2020'];Florenz;kurzurlaub;2020-03;84;Europe Italy;2020-02-20;58
+['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;60;Europe Italy;2020-02-21;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;60;Europe Italy;2020-02-21;58
+['08.03.2020', '13.03.2020'];Florenz;last-minute;2020-03;94;Europe Italy;2020-02-23;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-02-23;58
+['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-02-25;58
+['05.03.2020', '06.03.2020'];Florenz;last-minute;2020-03;94;Europe Italy;2020-02-25;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-02-25;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;60;Europe Italy;2020-02-28;58
+['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;60;Europe Italy;2020-02-28;58
+['04.03.2020', '18.03.2020'];Florenz;last-minute;2020-03;73;Europe Italy;2020-02-28;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-03-02;58
+['08.03.2020', '13.03.2020'];Florenz;last-minute;2020-03;94;Europe Italy;2020-03-02;58
+['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-03-02;58
+['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-03-06;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-03-06;58
+['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-03-14;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-03-14;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-03-16;58
+['08.10.2020', '09.10.2020'];Florenz;staedtereisen;2020-10;59;Europe Italy;2020-03-16;58
+['13.10.2020', '20.10.2020'];Florenz;staedtereisen;2020-10;58;Europe Italy;2020-06-06;58
+['08.10.2020', '09.10.2020'];Florenz;kurzurlaub;2020-10;59;Europe Italy;2020-06-06;58
 ['16.10.2019', '23.10.2019'];Girona;staedtereisen;2019-10;45;Europe Italy;04/10/2019;38
 ['20.10.2019', '23.10.2019'];Girona;kurzurlaub;2019-10;38;Europe Italy;18/10/2019;38
 ['07.06.2020', '28.06.2020'];Girona;staedtereisen;2020-06;50;Europe Italy;25/01/2020;38
@@ -1156,6 +1197,10 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['14.06.2020', '17.06.2020'];Girona;warme-reiseziele;2020-06;49;Europe Italy;2020-03-16;38
 ['14.06.2020', '17.06.2020'];Girona;kurzurlaub;2020-06;49;Europe Italy;2020-03-16;38
 ['14.06.2020', '17.06.2020'];Girona;staedtereisen;2020-06;49;Europe Italy;2020-03-16;38
+['14.06.2020', '17.06.2020'];Girona;staedtereisen;2020-06;48;Europe Italy;2020-06-06;38
+['14.06.2020', '17.06.2020'];Girona;last-minute;2020-06;48;Europe Italy;2020-06-06;38
+['14.06.2020', '17.06.2020'];Girona;warme-reiseziele;2020-06;48;Europe Italy;2020-06-06;38
+['14.06.2020', '17.06.2020'];Girona;kurzurlaub;2020-06;48;Europe Italy;2020-06-06;38
 ['10.10.2019', '24.10.2019'];Lamezia Terme;last-minute;2019-10;111;Europe Italy;05/10/2019;108
 ['10.10.2019', '24.10.2019'];Lamezia Terme;last-minute;2019-10;112;Europe Italy;07/10/2019;108
 ['12.10.2019', '17.10.2019'];Lamezia Terme;last-minute;2019-10;108;Europe Italy;04/10/2019;108
@@ -1186,6 +1231,10 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['16.05.2020', '05.06.2020'];Mailand Malpensa;staedtereisen;2020-05;59;Europe Italy;2020-02-20;45
 ['06.10.2020', '16.10.2020'];Mailand Malpensa;staedtereisen;2020-10;62;Europe Italy;2020-02-25;45
 ['06.10.2020', '16.10.2020'];Mailand Malpensa;staedtereisen;2020-10;62;Europe Italy;2020-02-28;45
+['21.08.2020', '23.08.2020'];Mailand Malpensa;staedtereisen;2020-08;57;Europe Italy;2020-06-06;45
+['30.12.2020', '02.01.2021'];Mailand Malpensa;weihnachtsferien;2020-12;60;Europe Italy;2020-06-06;45
+['21.08.2020', '23.08.2020'];Mailand Malpensa;warme-reiseziele;2020-08;57;Europe Italy;2020-06-06;45
+['21.08.2020', '23.08.2020'];Mailand Malpensa;kurzurlaub;2020-08;57;Europe Italy;2020-06-06;45
 ['17.10.2019', '23.10.2019'];Olbia;last-minute;2019-10;103;Europe Italy;06/10/2019;103
 ['17.10.2019', '23.10.2019'];Olbia;last-minute;2019-10;104;Europe Italy;07/10/2019;103
 ['17.10.2019', '24.10.2019'];Palermo;last-minute;2019-10;94;Europe Italy;05/10/2019;18
@@ -1242,6 +1291,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['28.06.2020', '12.07.2020'];Palermo;staedtereisen;2020-06;60;Europe Italy;2020-03-06;18
 ['20.03.2020', '29.03.2020'];Palermo;last-minute;2020-03;126;Europe Italy;2020-03-14;18
 ['20.03.2020', '29.03.2020'];Palermo;last-minute;2020-03;126;Europe Italy;2020-03-16;18
+['14.06.2020', '21.06.2020'];Palermo;last-minute;2020-06;69;Europe Italy;2020-06-06;18
 ['06.02.2020', '09.02.2020'];Pisa;kurzurlaub;2020-02;86;Europe Italy;08/12/2019;86
 ['06.02.2020', '11.02.2020'];Pisa;kurzurlaub;2020-02;86;Europe Italy;07/12/2019;86
 ['14.02.2020', '16.02.2020'];Pisa;kurzurlaub;2020-02;94;Europe Italy;09/10/2019;86
@@ -1273,6 +1323,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['18.07.2020', '25.07.2020'];Rom Fiumicino;warme-reiseziele;2020-07;88;Europe Italy;18/10/2019;74
 ['01.07.2020', '08.07.2020'];Rom Fiumicino;warme-reiseziele;2020-07;84;Europe Italy;2020-03-14;74
 ['01.07.2020', '08.07.2020'];Rom Fiumicino;warme-reiseziele;2020-07;84;Europe Italy;2020-03-16;74
+['09.06.2020', '17.06.2020'];Rom Fiumicino;last-minute;2020-06;84;Europe Italy;2020-06-06;74
+['08.07.2020', '15.07.2020'];Rom Fiumicino;warme-reiseziele;2020-07;84;Europe Italy;2020-06-06;74
+['11.08.2020', '25.08.2020'];Rom Fiumicino;sommerferien;2020-08;86;Europe Italy;2020-06-06;74
 ['27.12.2019', '30.12.2019'];Triest;weihnachtsferien;2019-12;160;Europe Italy;07/12/2019;103
 ['27.12.2019', '30.12.2019'];Triest;weihnachtsferien;2019-12;160;Europe Italy;08/12/2019;103
 ['21.01.2020', '28.01.2020'];Triest;last-minute;2020-01;134;Europe Italy;08/01/2020;103
@@ -1368,6 +1421,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['30.08.2020', '12.09.2020'];Alicante;warme-reiseziele;2020-08;108;Europe Spain;2020-03-16;47
 ['14.07.2020', '16.07.2020'];Alicante;kurzurlaub;2020-07;87;Europe Spain;2020-03-16;47
 ['01.08.2020', '11.08.2020'];Alicante;sommerferien;2020-08;126;Europe Spain;2020-03-16;47
+['20.06.2020', '27.06.2020'];Alicante;last-minute;2020-06;77;Europe Spain;2020-06-06;47
+['07.07.2020', '14.07.2020'];Alicante;warme-reiseziele;2020-07;66;Europe Spain;2020-06-06;47
+['14.08.2020', '21.08.2020'];Alicante;sommerferien;2020-08;102;Europe Spain;2020-06-06;47
 ['15.10.2019', '22.10.2019'];Barcelona;staedtereisen;2019-10;57;Europe Spain;07/10/2019;50
 ['15.10.2019', '22.10.2019'];Barcelona;last-minute;2019-10;67;Europe Spain;09/10/2019;50
 ['16.10.2019', '23.10.2019'];Barcelona;staedtereisen;2019-10;60;Europe Spain;05/10/2019;50
@@ -1403,6 +1459,10 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['09.11.2020', '13.11.2020'];Barcelona;kurzurlaub;2020-11;66;Europe Spain;2020-03-02;50
 ['10.12.2020', '12.12.2020'];Barcelona;kurzurlaub;2020-12;76;Europe Spain;2020-03-14;50
 ['10.12.2020', '12.12.2020'];Barcelona;kurzurlaub;2020-12;76;Europe Spain;2020-03-16;50
+['07.01.2021', '14.01.2021'];Barcelona;staedtereisen;2021-01;54;Europe Spain;2020-06-06;50
+['20.06.2020', '30.06.2020'];Barcelona;last-minute;2020-06;73;Europe Spain;2020-06-06;50
+['20.06.2020', '30.06.2020'];Barcelona;warme-reiseziele;2020-06;73;Europe Spain;2020-06-06;50
+['19.10.2020', '21.10.2020'];Barcelona;kurzurlaub;2020-10;59;Europe Spain;2020-06-06;50
 ['05.08.2020', '12.08.2020'];Bilbao;sommerferien;2020-08;145;Europe Spain;22/10/2019;118
 ['05.08.2020', '12.08.2020'];Bilbao;sommerferien;2020-08;149;Europe Spain;26/10/2019;118
 ['05.08.2020', '12.08.2020'];Bilbao;sommerferien;2020-08;150;Europe Spain;07/12/2019;118
@@ -1430,6 +1490,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['29.03.2020', '08.04.2020'];Faro;last-minute;2020-03;61;Europe Spain;2020-03-16;38
 ['22.07.2020', '26.07.2020'];Faro;warme-reiseziele;2020-07;89;Europe Spain;2020-03-16;38
 ['22.07.2020', '26.07.2020'];Faro;kurzurlaub;2020-07;89;Europe Spain;2020-03-16;38
+['08.07.2020', '15.07.2020'];Faro;warme-reiseziele;2020-07;57;Europe Spain;2020-06-06;38
 ['01.09.2020', '15.09.2020'];Funchal;warme-reiseziele;2020-09;161;Europe Spain;18/10/2019;124
 ['01.09.2020', '15.09.2020'];Funchal;warme-reiseziele;2020-09;164;Europe Spain;07/10/2019;124
 ['02.09.2020', '16.09.2020'];Funchal;warme-reiseziele;2020-09;161;Europe Spain;19/10/2019;124
@@ -1470,11 +1531,15 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['16.03.2020', '30.03.2020'];Jerez de la Frontera;last-minute;2020-03;102;Europe Spain;2020-03-02;75
 ['09.03.2020', '16.03.2020'];Jerez de la Frontera;last-minute;2020-03;113;Europe Spain;2020-03-06;75
 ['16.03.2020', '23.03.2020'];Jerez de la Frontera;last-minute;2020-03;75;Europe Spain;2020-03-14;75
+['28.12.2020', '08.01.2021'];Jerez de la Frontera;weihnachtsferien;2020-12;215;Europe Spain;2020-06-06;75
 ['06.10.2020', '20.10.2020'];Lanzarote;warme-reiseziele;2020-10;158;Europe Spain;24/12/2019;158
-['30.11.2019', '07.12.2019'];Las Palmas;warme-reiseziele;2019-11;88;Europe Spain;26/10/2019;88
-['15.03.2020', '22.03.2020'];Las Palmas;last-minute;2020-03;121;Europe Spain;2020-03-06;88
-['02.06.2020', '10.06.2020'];Las Palmas;warme-reiseziele;2020-06;129;Europe Spain;2020-03-14;88
-['02.06.2020', '10.06.2020'];Las Palmas;warme-reiseziele;2020-06;129;Europe Spain;2020-03-16;88
+['30.11.2019', '07.12.2019'];Las Palmas;warme-reiseziele;2019-11;88;Europe Spain;26/10/2019;33
+['15.03.2020', '22.03.2020'];Las Palmas;last-minute;2020-03;121;Europe Spain;2020-03-06;33
+['02.06.2020', '10.06.2020'];Las Palmas;warme-reiseziele;2020-06;129;Europe Spain;2020-03-14;33
+['02.06.2020', '10.06.2020'];Las Palmas;warme-reiseziele;2020-06;129;Europe Spain;2020-03-16;33
+['21.07.2020', '25.07.2020'];Las Palmas;staedtereisen;2020-07;33;Europe Spain;2020-06-06;33
+['21.07.2020', '25.07.2020'];Las Palmas;warme-reiseziele;2020-07;33;Europe Spain;2020-06-06;33
+['21.07.2020', '25.07.2020'];Las Palmas;kurzurlaub;2020-07;33;Europe Spain;2020-06-06;33
 ['26.10.2019', '01.11.2019'];Lissabon;staedtereisen;2019-10;10;Europe Spain;22/10/2019;10
 ['24.11.2019', '29.11.2019'];Lissabon;staedtereisen;2019-11;35;Europe Spain;04/10/2019;10
 ['01.12.2019', '06.12.2019'];Lissabon;kurzurlaub;2019-12;24;Europe Spain;26/10/2019;10
@@ -1577,6 +1642,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['03.07.2020', '12.07.2020'];Lissabon;warme-reiseziele;2020-07;133;Europe Spain;2020-03-16;10
 ['24.05.2020', '27.05.2020'];Lissabon;kurzurlaub;2020-05;62;Europe Spain;2020-03-16;10
 ['15.04.2020', '22.04.2020'];Lissabon;staedtereisen;2020-04;55;Europe Spain;2020-03-16;10
+['19.06.2020', '27.06.2020'];Lissabon;last-minute;2020-06;81;Europe Spain;2020-06-06;10
+['03.07.2020', '07.07.2020'];Lissabon;warme-reiseziele;2020-07;77;Europe Spain;2020-06-06;10
+['31.07.2020', '14.08.2020'];Lissabon;sommerferien;2020-07;86;Europe Spain;2020-06-06;10
 ['09.10.2019', '23.10.2019'];Madrid;last-minute;2019-10;69;Europe Spain;04/10/2019;60
 ['16.10.2019', '23.10.2019'];Madrid;staedtereisen;2019-10;60;Europe Spain;05/10/2019;60
 ['05.02.2020', '16.02.2020'];Madrid;last-minute;2020-02;70;Europe Spain;24/01/2020;60
@@ -1588,6 +1656,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['29.08.2020', '06.09.2020'];Madrid;sommerferien;2020-08;178;Europe Spain;2020-02-25;60
 ['29.08.2020', '06.09.2020'];Madrid;sommerferien;2020-08;178;Europe Spain;2020-02-28;60
 ['29.08.2020', '06.09.2020'];Madrid;sommerferien;2020-08;178;Europe Spain;2020-03-02;60
+['18.07.2020', '01.08.2020'];Madrid;warme-reiseziele;2020-07;69;Europe Spain;2020-06-06;60
+['26.09.2020', '30.09.2020'];Madrid;kurzurlaub;2020-09;66;Europe Spain;2020-06-06;60
+['18.08.2020', '25.08.2020'];Madrid;sommerferien;2020-08;86;Europe Spain;2020-06-06;60
 ['02.12.2019', '09.12.2019'];Malaga;staedtereisen;2019-12;48;Europe Spain;26/10/2019;48
 ['06.12.2019', '09.12.2019'];Malaga;kurzurlaub;2019-12;66;Europe Spain;18/10/2019;48
 ['20.04.2020', '24.04.2020'];Malaga;kurzurlaub;2020-04;66;Europe Spain;24/12/2019;48
@@ -1606,6 +1677,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['21.09.2020', '28.09.2020'];Malaga;warme-reiseziele;2020-09;130;Europe Spain;2020-02-23;48
 ['13.07.2020', '24.07.2020'];Malaga;warme-reiseziele;2020-07;93;Europe Spain;2020-03-06;48
 ['12.03.2020', '26.03.2020'];Malaga;last-minute;2020-03;104;Europe Spain;2020-03-06;48
+['03.07.2020', '10.07.2020'];Malaga;warme-reiseziele;2020-07;88;Europe Spain;2020-06-06;48
+['18.08.2020', '26.08.2020'];Malaga;sommerferien;2020-08;92;Europe Spain;2020-06-06;48
 ['21.10.2019', '24.10.2019'];Mallorca;kurzurlaub;2019-10;31;Europe Spain;18/10/2019;8
 ['13.11.2019', '16.11.2019'];Mallorca;kurzurlaub;2019-11;35;Europe Spain;26/10/2019;8
 ['23.11.2019', '24.11.2019'];Mallorca;kurzurlaub;2019-11;20;Europe Spain;05/10/2019;8
@@ -1639,6 +1712,10 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['15.06.2020', '17.06.2020'];Mallorca;warme-reiseziele;2020-06;57;Europe Spain;2020-03-16;8
 ['15.06.2020', '17.06.2020'];Mallorca;kurzurlaub;2020-06;57;Europe Spain;2020-03-16;8
 ['11.08.2020', '19.08.2020'];Mallorca;sommerferien;2020-08;67;Europe Spain;2020-03-16;8
+['15.06.2020', '17.06.2020'];Mallorca;last-minute;2020-06;57;Europe Spain;2020-06-06;8
+['27.07.2020', '04.08.2020'];Mallorca;warme-reiseziele;2020-07;55;Europe Spain;2020-06-06;8
+['15.06.2020', '17.06.2020'];Mallorca;kurzurlaub;2020-06;57;Europe Spain;2020-06-06;8
+['27.07.2020', '04.08.2020'];Mallorca;sommerferien;2020-07;55;Europe Spain;2020-06-06;8
 ['13.12.2019', '24.12.2019'];Menorca;last-minute;2019-12;215;Europe Spain;08/12/2019;133
 ['13.06.2020', '20.06.2020'];Menorca;warme-reiseziele;2020-06;139;Europe Spain;08/01/2020;133
 ['30.03.2020', '06.04.2020'];Menorca;last-minute;2020-03;133;Europe Spain;2020-03-16;133
@@ -1692,6 +1769,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['16.04.2020', '21.04.2020'];Porto;kurzurlaub;2020-04;57;Europe Spain;2020-03-16;20
 ['16.04.2020', '25.04.2020'];Porto;staedtereisen;2020-04;53;Europe Spain;2020-03-16;20
 ['12.08.2020', '19.08.2020'];Porto;sommerferien;2020-08;111;Europe Spain;2020-03-16;20
+['18.06.2020', '02.07.2020'];Porto;last-minute;2020-06;63;Europe Spain;2020-06-06;20
 ['04.03.2020', '25.03.2020'];Porto Alegre;fernreisen;2020-03;366;Europe Spain;28/01/2020;366
 ['13.12.2019', '27.12.2019'];Santander;last-minute;2019-12;220;Europe Spain;08/12/2019;220
 ['13.12.2019', '18.12.2019'];Sevilla;last-minute;2019-12;146;Europe Spain;07/12/2019;27
@@ -1742,8 +1820,13 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['11.05.2020', '18.05.2020'];Sevilla;warme-reiseziele;2020-05;50;Europe Spain;2020-03-16;27
 ['16.04.2020', '20.04.2020'];Sevilla;kurzurlaub;2020-04;55;Europe Spain;2020-03-16;27
 ['11.05.2020', '18.05.2020'];Sevilla;staedtereisen;2020-05;50;Europe Spain;2020-03-16;27
+['01.09.2020', '08.09.2020'];Sevilla;sommerferien;2020-09;101;Europe Spain;2020-06-06;27
 ['30.10.2019', '07.11.2019'];Teneriffa Süd;warme-reiseziele;2019-10;163;Europe Spain;05/10/2019;73
 ['01.02.2020', '04.02.2020'];Teneriffa Süd;kurzurlaub;2020-02;73;Europe Spain;26/10/2019;73
+['28.03.2020', '04.04.2020'];Teneriffa Süd;last-minute;2020-03;94;Europe Spain;2020-03-14;73
+['28.03.2020', '04.04.2020'];Teneriffa Süd;last-minute;2020-03;118;Europe Spain;2020-03-14;73
+['17.03.2020', '04.04.2020'];Teneriffa Süd;last-minute;2020-03;112;Europe Spain;2020-03-16;73
+['18.03.2020', '01.04.2020'];Teneriffa Süd;last-minute;2020-03;118;Europe Spain;2020-03-16;73
 ['04.07.2020', '11.07.2020'];Valencia;warme-reiseziele;2020-07;95;Europe Spain;22/10/2019;86
 ['09.07.2020', '16.07.2020'];Valencia;warme-reiseziele;2020-07;86;Europe Spain;26/10/2019;86
 ['15.03.2020', '26.03.2020'];Nagoya;fernreisen;2020-03;409;Japan;08/12/2019;409
@@ -1781,6 +1864,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['11.02.2020', '26.02.2020'];Tokio Narita;fernreisen;2020-02;376;Japan;20/10/2019;364
 ['09.04.2020', '16.04.2020'];Tokio Narita;osterferien;2020-04;411;Japan;2020-03-02;364
 ['07.04.2020', '16.04.2020'];Tokio Narita;osterferien;2020-04;416;Japan;2020-03-06;364
+['15.03.2020', '02.04.2020'];Asuncion;warme-reiseziele;2020-03;511;Karibik;2020-03-13;511
 ['28.07.2020', '20.08.2020'];Belem;sommerferien;2020-07;738;Karibik;09/10/2019;738
 ['28.07.2020', '24.08.2020'];Belem;sommerferien;2020-07;738;Karibik;20/10/2019;738
 ['25.10.2019', '13.11.2019'];Boa Vista Kap Verde;last-minute;2019-10;363;Karibik;19/10/2019;217
@@ -1790,35 +1874,38 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['11.12.2019', '25.12.2019'];Boa Vista Kap Verde;last-minute;2019-12;227;Karibik;07/12/2019;217
 ['08.04.2020', '15.04.2020'];Boa Vista Kap Verde;osterferien;2020-04;342;Karibik;2020-03-14;217
 ['08.04.2020', '15.04.2020'];Boa Vista Kap Verde;osterferien;2020-04;342;Karibik;2020-03-16;217
-['25.02.2020', '10.03.2020'];Cancun;fernreisen;2020-02;362;Karibik;03/02/2020;343
-['29.02.2020', '08.03.2020'];Cancun;fernreisen;2020-02;343;Karibik;23/01/2020;343
-['03.03.2020', '10.03.2020'];Cancun;fernreisen;2020-03;343;Karibik;24/01/2020;343
-['03.03.2020', '17.03.2020'];Cancun;fernreisen;2020-03;343;Karibik;28/01/2020;343
-['04.03.2020', '18.03.2020'];Cancun;fernreisen;2020-03;343;Karibik;25/01/2020;343
-['11.03.2020', '23.03.2020'];Cancun;fernreisen;2020-03;355;Karibik;28/01/2020;343
-['06.04.2020', '18.04.2020'];Cancun;osterferien;2020-04;434;Karibik;23/01/2020;343
-['12.08.2020', '26.08.2020'];Cancun;sommerferien;2020-08;391;Karibik;24/01/2020;343
-['24.08.2020', '31.08.2020'];Cancun;sommerferien;2020-08;400;Karibik;03/02/2020;343
-['25.08.2020', '06.09.2020'];Cancun;sommerferien;2020-08;385;Karibik;25/01/2020;343
-['25.08.2020', '06.09.2020'];Cancun;sommerferien;2020-08;392;Karibik;23/01/2020;343
-['30.08.2020', '06.09.2020'];Cancun;sommerferien;2020-08;399;Karibik;28/01/2020;343
-['25.08.2020', '04.09.2020'];Cancun;sommerferien;2020-08;381;Karibik;05/02/2020;343
-['25.02.2020', '10.03.2020'];Cancun;fernreisen;2020-02;362;Karibik;05/02/2020;343
-['07.11.2020', '14.11.2020'];Cancun;fernreisen;2020-11;375;Karibik;07/02/2020;343
-['21.02.2020', '01.03.2020'];Cancun;last-minute;2020-02;424;Karibik;07/02/2020;343
-['25.08.2020', '04.09.2020'];Cancun;sommerferien;2020-08;390;Karibik;07/02/2020;343
-['22.02.2020', '07.03.2020'];Cancun;last-minute;2020-02;387;Karibik;2020-02-10;343
-['05.05.2020', '13.05.2020'];Cancun;fernreisen;2020-05;369;Karibik;2020-02-10;343
-['25.08.2020', '04.09.2020'];Cancun;sommerferien;2020-08;386;Karibik;2020-02-10;343
-['05.03.2020', '26.03.2020'];Cancun;fernreisen;2020-03;375;Karibik;2020-02-20;343
-['07.11.2020', '29.11.2020'];Cancun;fernreisen;2020-11;376;Karibik;2020-02-21;343
-['30.08.2020', '14.09.2020'];Cancun;fernreisen;2020-08;377;Karibik;2020-02-25;343
-['11.03.2020', '18.03.2020'];Cancun;fernreisen;2020-03;373;Karibik;2020-02-28;343
-['10.03.2020', '31.03.2020'];Cancun;fernreisen;2020-03;364;Karibik;2020-03-02;343
-['18.03.2020', '31.03.2020'];Cancun;fernreisen;2020-03;365;Karibik;2020-03-06;343
-['24.04.2020', '08.05.2020'];Cancun;warme-reiseziele;2020-04;373;Karibik;2020-03-13;343
-['17.04.2020', '02.05.2020'];Cancun;fernreisen;2020-04;373;Karibik;2020-03-14;343
-['01.09.2020', '13.09.2020'];Cancun;fernreisen;2020-09;378;Karibik;2020-03-16;343
+['25.02.2020', '10.03.2020'];Cancun;fernreisen;2020-02;362;Karibik;03/02/2020;314
+['29.02.2020', '08.03.2020'];Cancun;fernreisen;2020-02;343;Karibik;23/01/2020;314
+['03.03.2020', '10.03.2020'];Cancun;fernreisen;2020-03;343;Karibik;24/01/2020;314
+['03.03.2020', '17.03.2020'];Cancun;fernreisen;2020-03;343;Karibik;28/01/2020;314
+['04.03.2020', '18.03.2020'];Cancun;fernreisen;2020-03;343;Karibik;25/01/2020;314
+['11.03.2020', '23.03.2020'];Cancun;fernreisen;2020-03;355;Karibik;28/01/2020;314
+['06.04.2020', '18.04.2020'];Cancun;osterferien;2020-04;434;Karibik;23/01/2020;314
+['12.08.2020', '26.08.2020'];Cancun;sommerferien;2020-08;391;Karibik;24/01/2020;314
+['24.08.2020', '31.08.2020'];Cancun;sommerferien;2020-08;400;Karibik;03/02/2020;314
+['25.08.2020', '06.09.2020'];Cancun;sommerferien;2020-08;385;Karibik;25/01/2020;314
+['25.08.2020', '06.09.2020'];Cancun;sommerferien;2020-08;392;Karibik;23/01/2020;314
+['30.08.2020', '06.09.2020'];Cancun;sommerferien;2020-08;399;Karibik;28/01/2020;314
+['25.08.2020', '04.09.2020'];Cancun;sommerferien;2020-08;381;Karibik;05/02/2020;314
+['25.02.2020', '10.03.2020'];Cancun;fernreisen;2020-02;362;Karibik;05/02/2020;314
+['07.11.2020', '14.11.2020'];Cancun;fernreisen;2020-11;375;Karibik;07/02/2020;314
+['21.02.2020', '01.03.2020'];Cancun;last-minute;2020-02;424;Karibik;07/02/2020;314
+['25.08.2020', '04.09.2020'];Cancun;sommerferien;2020-08;390;Karibik;07/02/2020;314
+['22.02.2020', '07.03.2020'];Cancun;last-minute;2020-02;387;Karibik;2020-02-10;314
+['05.05.2020', '13.05.2020'];Cancun;fernreisen;2020-05;369;Karibik;2020-02-10;314
+['25.08.2020', '04.09.2020'];Cancun;sommerferien;2020-08;386;Karibik;2020-02-10;314
+['05.03.2020', '26.03.2020'];Cancun;fernreisen;2020-03;375;Karibik;2020-02-20;314
+['07.11.2020', '29.11.2020'];Cancun;fernreisen;2020-11;376;Karibik;2020-02-21;314
+['30.08.2020', '14.09.2020'];Cancun;fernreisen;2020-08;377;Karibik;2020-02-25;314
+['11.03.2020', '18.03.2020'];Cancun;fernreisen;2020-03;373;Karibik;2020-02-28;314
+['10.03.2020', '31.03.2020'];Cancun;fernreisen;2020-03;364;Karibik;2020-03-02;314
+['18.03.2020', '31.03.2020'];Cancun;fernreisen;2020-03;365;Karibik;2020-03-06;314
+['24.04.2020', '08.05.2020'];Cancun;warme-reiseziele;2020-04;373;Karibik;2020-03-13;314
+['17.04.2020', '02.05.2020'];Cancun;fernreisen;2020-04;373;Karibik;2020-03-14;314
+['01.09.2020', '13.09.2020'];Cancun;fernreisen;2020-09;378;Karibik;2020-03-16;314
+['05.11.2020', '18.11.2020'];Cancun;fernreisen;2020-11;314;Karibik;2020-06-06;314
+['25.12.2020', '09.01.2021'];Cancun;weihnachtsferien;2020-12;424;Karibik;2020-06-06;314
+['10.10.2020', '20.10.2020'];Caracas;warme-reiseziele;2020-10;505;Karibik;2020-03-13;505
 ['10.04.2020', '17.04.2020'];Cayo Coco;osterferien;2020-04;544;Karibik;24/12/2019;544
 ['30.12.2019', '13.01.2020'];Curacao;last-minute;2019-12;659;Karibik;24/12/2019;659
 ['27.12.2019', '09.01.2020'];Fort de France;last-minute;2019-12;583;Karibik;24/12/2019;583
@@ -1842,6 +1929,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['21.02.2020', '01.03.2020'];Mexico City;last-minute;2020-02;412;Karibik;2020-02-10;412
 ['06.04.2020', '13.04.2020'];Mexico City;osterferien;2020-04;448;Karibik;2020-03-02;412
 ['07.04.2020', '13.04.2020'];Mexico City;osterferien;2020-04;443;Karibik;2020-03-06;412
+['25.12.2020', '09.01.2021'];Mexico City;weihnachtsferien;2020-12;529;Karibik;2020-06-06;412
 ['08.08.2020', '20.08.2020'];Nassau;sommerferien;2020-08;604;Karibik;22/10/2019;604
 ['02.11.2019', '16.11.2019'];Puerto Plata;last-minute;2019-11;583;Karibik;20/10/2019;583
 ['10.10.2019', '24.10.2019'];Quito;last-minute;2019-10;516;Karibik;05/10/2019;511
@@ -1851,9 +1939,10 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['19.08.2020', '01.09.2020'];Recife;sommerferien;2020-08;488;Karibik;04/10/2019;486
 ['19.08.2020', '01.09.2020'];Recife;sommerferien;2020-08;491;Karibik;07/10/2019;486
 ['30.12.2019', '27.01.2020'];Rio de Janeiro Galeao;last-minute;2019-12;540;Karibik;24/12/2019;540
-['17.08.2020', '24.08.2020'];Rio de Janeiro Santos Dumont;sommerferien;2020-08;620;Karibik;18/10/2019;620
-['17.08.2020', '24.08.2020'];Rio de Janeiro Santos Dumont;sommerferien;2020-08;674;Karibik;04/10/2019;620
-['17.08.2020', '24.08.2020'];Rio de Janeiro Santos Dumont;sommerferien;2020-08;675;Karibik;07/10/2019;620
+['17.08.2020', '24.08.2020'];Rio de Janeiro Santos Dumont;sommerferien;2020-08;620;Karibik;18/10/2019;344
+['17.08.2020', '24.08.2020'];Rio de Janeiro Santos Dumont;sommerferien;2020-08;674;Karibik;04/10/2019;344
+['17.08.2020', '24.08.2020'];Rio de Janeiro Santos Dumont;sommerferien;2020-08;675;Karibik;07/10/2019;344
+['25.02.2021', '04.03.2021'];Rio de Janeiro Santos Dumont;fernreisen;2021-02;344;Karibik;2020-06-06;344
 ['21.08.2020', '28.08.2020'];Sal;sommerferien;2020-08;551;Karibik;19/10/2019;421
 ['06.04.2020', '15.04.2020'];Sal;osterferien;2020-04;421;Karibik;2020-02-20;421
 ['06.04.2020', '15.04.2020'];Sal;osterferien;2020-04;421;Karibik;2020-02-21;421
@@ -1865,8 +1954,10 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['28.07.2020', '07.08.2020'];Salvador;sommerferien;2020-07;584;Karibik;06/12/2019;516
 ['11.02.2020', '03.03.2020'];Salvador;last-minute;2020-02;566;Karibik;05/02/2020;516
 ['23.02.2020', '03.03.2020'];San Juan Puerto Rico;last-minute;2020-02;421;Karibik;2020-02-10;421
+['23.12.2020', '07.01.2021'];San Juan Puerto Rico;weihnachtsferien;2020-12;515;Karibik;2020-06-06;421
 ['25.12.2019', '24.01.2020'];Santa Cruz Bolivien;last-minute;2019-12;859;Karibik;24/12/2019;859
 ['26.12.2019', '17.01.2020'];Santiago de Chile;last-minute;2019-12;599;Karibik;24/12/2019;599
+['10.04.2020', '15.04.2020'];São Paulo;osterferien;2020-04;459;Karibik;2020-03-16;459
 ['06.04.2020', '14.04.2020'];São Paulo Congonhas;osterferien;2020-04;600;Karibik;2020-03-06;600
 ['27.01.2020', '10.02.2020'];Varadero;fernreisen;2020-01;401;Karibik;18/10/2019;401
 ['06.04.2020', '18.04.2020'];Varadero;osterferien;2020-04;530;Karibik;24/12/2019;401
@@ -1948,6 +2039,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['20.06.2020', '07.07.2020'];Amman;warme-reiseziele;2020-06;61;MENA;2020-03-14;25
 ['20.06.2020', '07.07.2020'];Amman;warme-reiseziele;2020-06;61;MENA;2020-03-16;25
 ['08.08.2020', '22.08.2020'];Amman;sommerferien;2020-08;133;MENA;2020-03-16;25
+['20.06.2020', '07.07.2020'];Amman;last-minute;2020-06;61;MENA;2020-06-06;25
+['20.06.2020', '07.07.2020'];Amman;warme-reiseziele;2020-06;61;MENA;2020-06-06;25
 ['17.10.2019', '22.10.2019'];Ankara;last-minute;2019-10;121;MENA;04/10/2019;121
 ['26.10.2019', '08.11.2019'];Antalya;warme-reiseziele;2019-10;141;MENA;04/10/2019;141
 ['29.01.2020', '06.02.2020'];Beirut;last-minute;2020-01;180;MENA;25/01/2020;161
@@ -1989,30 +2082,32 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['17.08.2020', '24.08.2020'];Dubai World Central;sommerferien;2020-08;352;MENA;2020-03-14;352
 ['06.04.2020', '16.04.2020'];Dubai World Central;osterferien;2020-04;355;MENA;2020-03-16;352
 ['24.08.2020', '31.08.2020'];Dubai World Central;sommerferien;2020-08;352;MENA;2020-03-16;352
+['23.12.2020', '07.01.2021'];Dubai World Central;weihnachtsferien;2020-12;394;MENA;2020-06-06;352
 ['19.05.2020', '27.05.2020'];Ercan;warme-reiseziele;2020-05;153;MENA;04/10/2019;153
-['28.10.2019', '10.11.2019'];Hurghada;last-minute;2019-10;279;MENA;22/10/2019;90
-['24.11.2019', '15.12.2019'];Hurghada;warme-reiseziele;2019-11;202;MENA;20/10/2019;90
-['29.11.2019', '20.12.2019'];Hurghada;warme-reiseziele;2019-11;140;MENA;22/10/2019;90
-['10.12.2019', '24.12.2019'];Hurghada;last-minute;2019-12;109;MENA;08/12/2019;90
-['15.12.2019', '22.12.2019'];Hurghada;last-minute;2019-12;133;MENA;07/12/2019;90
-['07.01.2020', '19.01.2020'];Hurghada;last-minute;2020-01;119;MENA;24/12/2019;90
-['17.01.2020', '06.02.2020'];Hurghada;last-minute;2020-01;90;MENA;08/01/2020;90
-['31.01.2020', '02.02.2020'];Hurghada;last-minute;2020-01;110;MENA;24/01/2020;90
-['02.02.2020', '09.02.2020'];Hurghada;last-minute;2020-02;132;MENA;28/01/2020;90
-['02.02.2020', '09.02.2020'];Hurghada;last-minute;2020-02;134;MENA;23/01/2020;90
-['02.02.2020', '09.02.2020'];Hurghada;last-minute;2020-02;144;MENA;25/01/2020;90
-['17.06.2020', '01.07.2020'];Hurghada;warme-reiseziele;2020-06;308;MENA;22/10/2019;90
-['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;378;MENA;03/02/2020;90
-['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;402;MENA;25/01/2020;90
-['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;402;MENA;28/01/2020;90
-['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;384;MENA;05/02/2020;90
-['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;383;MENA;07/02/2020;90
-['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;383;MENA;2020-02-10;90
-['29.02.2020', '05.03.2020'];Hurghada;last-minute;2020-02;143;MENA;2020-02-20;90
-['29.02.2020', '05.03.2020'];Hurghada;last-minute;2020-02;143;MENA;2020-02-21;90
-['01.03.2020', '05.03.2020'];Hurghada;last-minute;2020-03;134;MENA;2020-02-25;90
-['26.03.2020', '02.04.2020'];Hurghada;last-minute;2020-03;125;MENA;2020-03-14;90
-['26.03.2020', '02.04.2020'];Hurghada;last-minute;2020-03;125;MENA;2020-03-16;90
+['28.10.2019', '10.11.2019'];Hurghada;last-minute;2019-10;279;MENA;22/10/2019;84
+['24.11.2019', '15.12.2019'];Hurghada;warme-reiseziele;2019-11;202;MENA;20/10/2019;84
+['29.11.2019', '20.12.2019'];Hurghada;warme-reiseziele;2019-11;140;MENA;22/10/2019;84
+['10.12.2019', '24.12.2019'];Hurghada;last-minute;2019-12;109;MENA;08/12/2019;84
+['15.12.2019', '22.12.2019'];Hurghada;last-minute;2019-12;133;MENA;07/12/2019;84
+['07.01.2020', '19.01.2020'];Hurghada;last-minute;2020-01;119;MENA;24/12/2019;84
+['17.01.2020', '06.02.2020'];Hurghada;last-minute;2020-01;90;MENA;08/01/2020;84
+['31.01.2020', '02.02.2020'];Hurghada;last-minute;2020-01;110;MENA;24/01/2020;84
+['02.02.2020', '09.02.2020'];Hurghada;last-minute;2020-02;132;MENA;28/01/2020;84
+['02.02.2020', '09.02.2020'];Hurghada;last-minute;2020-02;134;MENA;23/01/2020;84
+['02.02.2020', '09.02.2020'];Hurghada;last-minute;2020-02;144;MENA;25/01/2020;84
+['17.06.2020', '01.07.2020'];Hurghada;warme-reiseziele;2020-06;308;MENA;22/10/2019;84
+['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;378;MENA;03/02/2020;84
+['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;402;MENA;25/01/2020;84
+['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;402;MENA;28/01/2020;84
+['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;384;MENA;05/02/2020;84
+['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;383;MENA;07/02/2020;84
+['30.08.2020', '06.09.2020'];Hurghada;sommerferien;2020-08;383;MENA;2020-02-10;84
+['29.02.2020', '05.03.2020'];Hurghada;last-minute;2020-02;143;MENA;2020-02-20;84
+['29.02.2020', '05.03.2020'];Hurghada;last-minute;2020-02;143;MENA;2020-02-21;84
+['01.03.2020', '05.03.2020'];Hurghada;last-minute;2020-03;134;MENA;2020-02-25;84
+['26.03.2020', '02.04.2020'];Hurghada;last-minute;2020-03;125;MENA;2020-03-14;84
+['26.03.2020', '02.04.2020'];Hurghada;last-minute;2020-03;125;MENA;2020-03-16;84
+['29.10.2020', '05.11.2020'];Hurghada;warme-reiseziele;2020-10;84;MENA;2020-06-06;84
 ['15.07.2020', '22.07.2020'];Istanbul;warme-reiseziele;2020-07;146;MENA;04/10/2019;146
 ['12.10.2019', '24.10.2019'];Istanbul Sabiha Gökcen;last-minute;2019-10;142;MENA;04/10/2019;142
 ['20.05.2020', '24.05.2020'];Izmir;warme-reiseziele;2020-05;99;MENA;04/10/2019;99
@@ -2026,6 +2121,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['11.06.2020', '19.06.2020'];Kairo;warme-reiseziele;2020-06;222;MENA;05/02/2020;209
 ['11.06.2020', '19.06.2020'];Kairo;warme-reiseziele;2020-06;222;MENA;07/02/2020;209
 ['11.06.2020', '19.06.2020'];Kairo;warme-reiseziele;2020-06;222;MENA;2020-02-10;209
+['31.12.2020', '08.01.2021'];Kairo;weihnachtsferien;2020-12;238;MENA;2020-06-06;209
 ['28.10.2019', '11.11.2019'];Luxor;last-minute;2019-10;256;MENA;22/10/2019;256
 ['28.10.2019', '11.11.2019'];Luxor;last-minute;2019-10;326;MENA;26/10/2019;256
 ['15.11.2019', '25.11.2019'];Luxor;warme-reiseziele;2019-11;263;MENA;04/10/2019;256
@@ -2107,6 +2203,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['10.06.2020', '17.06.2020'];Baltimore;warme-reiseziele;2020-06;456;USA;2020-03-13;354
 ['31.03.2020', '08.04.2020'];Baltimore;fernreisen;2020-03;370;USA;2020-03-14;354
 ['31.03.2020', '08.04.2020'];Baltimore;fernreisen;2020-03;370;USA;2020-03-16;354
+['23.12.2020', '08.01.2021'];Baltimore;weihnachtsferien;2020-12;495;USA;2020-06-06;354
 ['08.10.2019', '22.10.2019'];Charleston SC;last-minute;2019-10;433;USA;07/10/2019;408
 ['06.01.2020', '28.01.2020'];Charleston SC;last-minute;2020-01;448;USA;24/12/2019;408
 ['14.01.2020', '29.01.2020'];Charleston SC;fernreisen;2020-01;408;USA;08/12/2019;408
@@ -2123,6 +2220,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['19.05.2020', '03.06.2020'];Dallas;warme-reiseziele;2020-05;351;USA;09/10/2019;324
 ['15.08.2020', '06.09.2020'];Dallas;sommerferien;2020-08;528;USA;07/12/2019;324
 ['10.02.2020', '15.02.2020'];Dallas;last-minute;2020-02;409;USA;05/02/2020;324
+['25.12.2020', '03.01.2021'];Dallas;weihnachtsferien;2020-12;499;USA;2020-06-06;324
 ['11.02.2020', '19.02.2020'];Denver;fernreisen;2020-02;340;USA;04/10/2019;337
 ['01.04.2020', '30.04.2020'];Denver;fernreisen;2020-04;337;USA;22/10/2019;337
 ['23.04.2020', '08.05.2020'];Denver;fernreisen;2020-04;337;USA;20/10/2019;337
@@ -2132,6 +2230,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['05.04.2020', '16.04.2020'];Denver;fernreisen;2020-04;353;USA;2020-03-06;337
 ['04.04.2020', '17.04.2020'];Denver;fernreisen;2020-04;356;USA;2020-03-14;337
 ['04.04.2020', '17.04.2020'];Denver;fernreisen;2020-04;356;USA;2020-03-16;337
+['22.09.2020', '08.10.2020'];Denver;fernreisen;2020-09;353;USA;2020-06-06;337
+['23.12.2020', '08.01.2021'];Denver;weihnachtsferien;2020-12;459;USA;2020-06-06;337
 ['25.10.2019', '08.11.2019'];El Paso;last-minute;2019-10;512;USA;20/10/2019;480
 ['26.10.2019', '03.11.2019'];El Paso;last-minute;2019-10;512;USA;22/10/2019;480
 ['24.08.2020', '07.09.2020'];El Paso;sommerferien;2020-08;480;USA;07/02/2020;480
@@ -2162,6 +2262,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['08.04.2020', '17.04.2020'];Fort Lauderdale;osterferien;2020-04;417;USA;2020-02-28;308
 ['08.04.2020', '17.04.2020'];Fort Lauderdale;osterferien;2020-04;417;USA;2020-03-02;308
 ['22.04.2020', '06.05.2020'];Fort Lauderdale;fernreisen;2020-04;378;USA;2020-03-02;308
+['23.12.2020', '31.12.2020'];Fort Lauderdale;weihnachtsferien;2020-12;403;USA;2020-06-06;308
 ['05.11.2019', '13.11.2019'];Fort Myers;fernreisen;2019-11;316;USA;06/10/2019;249
 ['05.11.2019', '13.11.2019'];Fort Myers;fernreisen;2019-11;317;USA;04/10/2019;249
 ['05.11.2019', '19.11.2019'];Fort Myers;fernreisen;2019-11;316;USA;05/10/2019;249
@@ -2194,6 +2295,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['13.03.2020', '27.03.2020'];Fort Myers;fernreisen;2020-03;367;USA;2020-03-02;249
 ['16.08.2020', '29.08.2020'];Fort Myers;fernreisen;2020-08;367;USA;2020-03-06;249
 ['06.04.2020', '13.04.2020'];Fort Myers;osterferien;2020-04;419;USA;2020-03-06;249
+['25.12.2020', '09.01.2021'];Fort Myers;weihnachtsferien;2020-12;440;USA;2020-06-06;249
 ['16.10.2019', '04.11.2019'];Houston;last-minute;2019-10;404;USA;05/10/2019;328
 ['16.10.2019', '04.11.2019'];Houston;last-minute;2019-10;449;USA;04/10/2019;328
 ['20.10.2019', '28.10.2019'];Houston;last-minute;2019-10;432;USA;07/10/2019;328
@@ -2259,6 +2361,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['04.08.2020', '27.08.2020'];Phoenix;sommerferien;2020-08;584;USA;26/10/2019;336
 ['19.08.2020', '03.09.2020'];Phoenix;sommerferien;2020-08;439;USA;23/01/2020;336
 ['09.04.2020', '15.04.2020'];Phoenix;osterferien;2020-04;424;USA;2020-03-06;336
+['26.12.2020', '09.01.2021'];Salt Lake City;weihnachtsferien;2020-12;530;USA;2020-06-06;530
 ['07.08.2020', '21.08.2020'];San Antonio;sommerferien;2020-08;613;USA;05/10/2019;613
 ['07.08.2020', '21.08.2020'];San Antonio;sommerferien;2020-08;614;USA;04/10/2019;613
 ['21.10.2019', '08.11.2019'];Atlanta;last-minute;2019-10;361;USA East;07/10/2019;361
@@ -2284,6 +2387,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['19.08.2020', '02.09.2020'];Atlanta;warme-reiseziele;2020-08;471;USA East;2020-03-13;361
 ['08.04.2020', '14.04.2020'];Atlanta;osterferien;2020-04;409;USA East;2020-03-14;361
 ['08.04.2020', '15.04.2020'];Atlanta;osterferien;2020-04;409;USA East;2020-03-16;361
+['25.12.2020', '04.01.2021'];Atlanta;weihnachtsferien;2020-12;421;USA East;2020-06-06;361
 ['02.03.2020', '08.03.2020'];Boston;fernreisen;2020-03;255;USA East;28/01/2020;255
 ['05.03.2020', '19.03.2020'];Boston;fernreisen;2020-03;286;USA East;08/01/2020;255
 ['10.03.2020', '17.03.2020'];Boston;fernreisen;2020-03;255;USA East;25/01/2020;255
@@ -2305,19 +2409,21 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['02.05.2020', '10.05.2020'];Boston;fernreisen;2020-05;273;USA East;2020-03-06;255
 ['24.09.2020', '16.10.2020'];Boston;fernreisen;2020-09;290;USA East;2020-03-14;255
 ['25.09.2020', '09.10.2020'];Boston;fernreisen;2020-09;290;USA East;2020-03-16;255
-['21.02.2020', '29.02.2020'];Charlotte;fernreisen;2020-02;391;USA East;07/10/2019;380
-['21.08.2020', '02.09.2020'];Charlotte;sommerferien;2020-08;412;USA East;23/01/2020;380
-['24.08.2020', '05.09.2020'];Charlotte;sommerferien;2020-08;385;USA East;25/01/2020;380
-['24.08.2020', '05.09.2020'];Charlotte;sommerferien;2020-08;435;USA East;24/01/2020;380
-['25.08.2020', '05.09.2020'];Charlotte;sommerferien;2020-08;388;USA East;28/01/2020;380
-['02.10.2020', '17.10.2020'];Charlotte;fernreisen;2020-10;380;USA East;03/02/2020;380
-['23.04.2020', '04.05.2020'];Charlotte;fernreisen;2020-04;382;USA East;05/02/2020;380
-['23.04.2020', '04.05.2020'];Charlotte;fernreisen;2020-04;382;USA East;07/02/2020;380
-['30.07.2020', '23.08.2020'];Charlotte;sommerferien;2020-07;482;USA East;07/02/2020;380
-['23.04.2020', '04.05.2020'];Charlotte;fernreisen;2020-04;382;USA East;2020-02-10;380
-['27.07.2020', '15.08.2020'];Charlotte;sommerferien;2020-07;483;USA East;2020-02-10;380
-['23.04.2020', '04.05.2020'];Charlotte;fernreisen;2020-04;382;USA East;2020-02-25;380
-['29.07.2020', '19.08.2020'];Charlotte;warme-reiseziele;2020-07;478;USA East;2020-03-13;380
+['24.09.2020', '16.10.2020'];Boston;fernreisen;2020-09;290;USA East;2020-06-06;255
+['21.02.2020', '29.02.2020'];Charlotte;fernreisen;2020-02;391;USA East;07/10/2019;373
+['21.08.2020', '02.09.2020'];Charlotte;sommerferien;2020-08;412;USA East;23/01/2020;373
+['24.08.2020', '05.09.2020'];Charlotte;sommerferien;2020-08;385;USA East;25/01/2020;373
+['24.08.2020', '05.09.2020'];Charlotte;sommerferien;2020-08;435;USA East;24/01/2020;373
+['25.08.2020', '05.09.2020'];Charlotte;sommerferien;2020-08;388;USA East;28/01/2020;373
+['02.10.2020', '17.10.2020'];Charlotte;fernreisen;2020-10;380;USA East;03/02/2020;373
+['23.04.2020', '04.05.2020'];Charlotte;fernreisen;2020-04;382;USA East;05/02/2020;373
+['23.04.2020', '04.05.2020'];Charlotte;fernreisen;2020-04;382;USA East;07/02/2020;373
+['30.07.2020', '23.08.2020'];Charlotte;sommerferien;2020-07;482;USA East;07/02/2020;373
+['23.04.2020', '04.05.2020'];Charlotte;fernreisen;2020-04;382;USA East;2020-02-10;373
+['27.07.2020', '15.08.2020'];Charlotte;sommerferien;2020-07;483;USA East;2020-02-10;373
+['23.04.2020', '04.05.2020'];Charlotte;fernreisen;2020-04;382;USA East;2020-02-25;373
+['29.07.2020', '19.08.2020'];Charlotte;warme-reiseziele;2020-07;478;USA East;2020-03-13;373
+['21.09.2020', '12.10.2020'];Charlotte;fernreisen;2020-09;373;USA East;2020-06-06;373
 ['27.02.2020', '08.03.2020'];Daytona Beach;fernreisen;2020-02;252;USA East;08/01/2020;252
 ['08.10.2019', '22.10.2019'];Jacksonville Florida;last-minute;2019-10;433;USA East;07/10/2019;151
 ['10.10.2019', '17.10.2019'];Jacksonville Florida;last-minute;2019-10;565;USA East;04/10/2019;151
@@ -2930,6 +3036,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['18.03.2020', '25.03.2020'];Miami International;fernreisen;2020-03;257;USA East;2020-03-06;253
 ['18.03.2020', '31.03.2020'];Miami International;fernreisen;2020-03;255;USA East;2020-03-14;253
 ['18.03.2020', '31.03.2020'];Miami International;fernreisen;2020-03;255;USA East;2020-03-16;253
+['29.11.2020', '07.12.2020'];Miami International;fernreisen;2020-11;288;USA East;2020-06-06;253
 ['12.12.2019', '26.12.2019'];New York;last-minute;2019-12;260;USA East;08/12/2019;219
 ['12.12.2019', '26.12.2019'];New York;last-minute;2019-12;288;USA East;07/12/2019;219
 ['25.12.2019', '31.12.2019'];New York;weihnachtsferien;2019-12;317;USA East;24/12/2019;219
@@ -2977,6 +3084,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['07.04.2020', '13.04.2020'];New York;osterferien;2020-04;298;USA East;2020-02-21;219
 ['07.04.2020', '13.04.2020'];New York;osterferien;2020-04;298;USA East;2020-02-23;219
 ['31.03.2020', '10.04.2020'];New York;fernreisen;2020-03;226;USA East;2020-02-23;219
+['25.12.2020', '30.12.2020'];New York;weihnachtsferien;2020-12;330;USA East;2020-06-06;219
 ['28.10.2019', '14.11.2019'];New York La Guardia;last-minute;2019-10;272;USA East;26/10/2019;211
 ['30.10.2019', '04.11.2019'];New York La Guardia;last-minute;2019-10;277;USA East;18/10/2019;211
 ['22.11.2019', '29.11.2019'];New York La Guardia;fernreisen;2019-11;269;USA East;18/10/2019;211
@@ -3032,6 +3140,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['06.04.2020', '14.04.2020'];New York La Guardia;osterferien;2020-04;258;USA East;2020-02-23;211
 ['09.03.2020', '23.03.2020'];New York La Guardia;fernreisen;2020-03;223;USA East;2020-02-23;211
 ['10.04.2020', '18.04.2020'];New York La Guardia;osterferien;2020-04;243;USA East;2020-03-06;211
+['13.10.2020', '21.10.2020'];New York La Guardia;fernreisen;2020-10;235;USA East;2020-06-06;211
 ['04.11.2019', '18.11.2019'];Newark;last-minute;2019-11;268;USA East;26/10/2019;205
 ['09.11.2019', '16.11.2019'];Newark;last-minute;2019-11;252;USA East;26/10/2019;205
 ['18.11.2019', '25.11.2019'];Newark;fernreisen;2019-11;275;USA East;22/10/2019;205
@@ -3132,6 +3241,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['07.03.2020', '30.03.2020'];Orlando;fernreisen;2020-03;271;USA East;2020-03-06;259
 ['23.03.2020', '29.03.2020'];Orlando;fernreisen;2020-03;275;USA East;2020-03-14;259
 ['23.03.2020', '29.03.2020'];Orlando;fernreisen;2020-03;275;USA East;2020-03-16;259
+['25.12.2020', '09.01.2021'];Orlando;weihnachtsferien;2020-12;397;USA East;2020-06-06;259
 ['13.10.2019', '19.10.2019'];Philadelphia;last-minute;2019-10;341;USA East;05/10/2019;252
 ['19.10.2019', '06.11.2019'];Philadelphia;last-minute;2019-10;345;USA East;07/10/2019;252
 ['19.10.2019', '06.11.2019'];Philadelphia;last-minute;2019-10;346;USA East;09/10/2019;252
@@ -3163,6 +3273,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['17.08.2020', '31.08.2020'];Philadelphia;fernreisen;2020-08;353;USA East;2020-03-14;252
 ['17.08.2020', '31.08.2020'];Philadelphia;fernreisen;2020-08;353;USA East;2020-03-16;252
 ['17.08.2020', '31.08.2020'];Philadelphia;sommerferien;2020-08;353;USA East;2020-03-16;252
+['17.08.2020', '31.08.2020'];Philadelphia;fernreisen;2020-08;353;USA East;2020-06-06;252
 ['16.10.2019', '23.10.2019'];Portland Oregon;last-minute;2019-10;596;USA East;04/10/2019;498
 ['18.10.2019', '06.11.2019'];Portland Oregon;last-minute;2019-10;557;USA East;07/10/2019;498
 ['06.04.2020', '18.04.2020'];Portland Oregon;osterferien;2020-04;585;USA East;08/12/2019;498
@@ -3226,34 +3337,38 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['21.11.2020', '28.11.2020'];Tampa;fernreisen;2020-11;336;USA East;2020-03-06;242
 ['21.11.2020', '05.12.2020'];Tampa;fernreisen;2020-11;348;USA East;2020-03-14;242
 ['21.11.2020', '05.12.2020'];Tampa;fernreisen;2020-11;348;USA East;2020-03-16;242
-['29.01.2020', '12.02.2020'];Washington DC;fernreisen;2020-01;363;USA East;25/01/2020;343
-['29.01.2020', '12.02.2020'];Washington DC;fernreisen;2020-01;363;USA East;28/01/2020;343
-['31.01.2020', '07.02.2020'];Washington DC;fernreisen;2020-01;343;USA East;23/01/2020;343
-['01.05.2020', '09.05.2020'];Washington DC;fernreisen;2020-05;369;USA East;08/01/2020;343
-['15.08.2020', '29.08.2020'];Washington DC;sommerferien;2020-08;384;USA East;28/01/2020;343
-['15.08.2020', '29.08.2020'];Washington DC;sommerferien;2020-08;427;USA East;03/02/2020;343
-['17.08.2020', '30.08.2020'];Washington DC;sommerferien;2020-08;377;USA East;25/01/2020;343
-['22.08.2020', '03.09.2020'];Washington DC;sommerferien;2020-08;371;USA East;23/01/2020;343
-['24.08.2020', '07.09.2020'];Washington DC;sommerferien;2020-08;392;USA East;28/01/2020;343
-['03.09.2020', '15.09.2020'];Washington DC;fernreisen;2020-09;378;USA East;03/02/2020;343
-['15.08.2020', '29.08.2020'];Washington DC;sommerferien;2020-08;426;USA East;05/02/2020;343
-['03.09.2020', '30.09.2020'];Washington DC;fernreisen;2020-09;377;USA East;05/02/2020;343
-['03.09.2020', '30.09.2020'];Washington DC;fernreisen;2020-09;377;USA East;07/02/2020;343
-['22.08.2020', '03.09.2020'];Washington DC;sommerferien;2020-08;428;USA East;07/02/2020;343
-['03.09.2020', '30.09.2020'];Washington DC;fernreisen;2020-09;377;USA East;2020-02-10;343
-['22.08.2020', '03.09.2020'];Washington DC;sommerferien;2020-08;428;USA East;2020-02-10;343
-['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-20;343
-['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-21;343
-['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-23;343
-['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-25;343
-['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-28;343
-['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-03-02;343
-['21.05.2020', '30.05.2020'];Washington DC;fernreisen;2020-05;372;USA East;2020-03-06;343
-['06.04.2020', '14.04.2020'];Washington DC;osterferien;2020-04;377;USA East;2020-03-06;343
-['06.04.2020', '14.04.2020'];Washington DC;osterferien;2020-04;373;USA East;2020-03-14;343
-['01.05.2020', '14.05.2020'];Washington DC;fernreisen;2020-05;366;USA East;2020-03-14;343
-['06.04.2020', '14.04.2020'];Washington DC;osterferien;2020-04;373;USA East;2020-03-16;343
-['01.05.2020', '14.05.2020'];Washington DC;fernreisen;2020-05;366;USA East;2020-03-16;343
+['21.11.2020', '05.12.2020'];Tampa;fernreisen;2020-11;348;USA East;2020-06-06;242
+['23.12.2020', '09.01.2021'];Tampa;weihnachtsferien;2020-12;408;USA East;2020-06-06;242
+['29.01.2020', '12.02.2020'];Washington DC;fernreisen;2020-01;363;USA East;25/01/2020;333
+['29.01.2020', '12.02.2020'];Washington DC;fernreisen;2020-01;363;USA East;28/01/2020;333
+['31.01.2020', '07.02.2020'];Washington DC;fernreisen;2020-01;343;USA East;23/01/2020;333
+['01.05.2020', '09.05.2020'];Washington DC;fernreisen;2020-05;369;USA East;08/01/2020;333
+['15.08.2020', '29.08.2020'];Washington DC;sommerferien;2020-08;384;USA East;28/01/2020;333
+['15.08.2020', '29.08.2020'];Washington DC;sommerferien;2020-08;427;USA East;03/02/2020;333
+['17.08.2020', '30.08.2020'];Washington DC;sommerferien;2020-08;377;USA East;25/01/2020;333
+['22.08.2020', '03.09.2020'];Washington DC;sommerferien;2020-08;371;USA East;23/01/2020;333
+['24.08.2020', '07.09.2020'];Washington DC;sommerferien;2020-08;392;USA East;28/01/2020;333
+['03.09.2020', '15.09.2020'];Washington DC;fernreisen;2020-09;378;USA East;03/02/2020;333
+['15.08.2020', '29.08.2020'];Washington DC;sommerferien;2020-08;426;USA East;05/02/2020;333
+['03.09.2020', '30.09.2020'];Washington DC;fernreisen;2020-09;377;USA East;05/02/2020;333
+['03.09.2020', '30.09.2020'];Washington DC;fernreisen;2020-09;377;USA East;07/02/2020;333
+['22.08.2020', '03.09.2020'];Washington DC;sommerferien;2020-08;428;USA East;07/02/2020;333
+['03.09.2020', '30.09.2020'];Washington DC;fernreisen;2020-09;377;USA East;2020-02-10;333
+['22.08.2020', '03.09.2020'];Washington DC;sommerferien;2020-08;428;USA East;2020-02-10;333
+['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-20;333
+['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-21;333
+['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-23;333
+['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-25;333
+['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-02-28;333
+['15.04.2020', '14.05.2020'];Washington DC;fernreisen;2020-04;372;USA East;2020-03-02;333
+['21.05.2020', '30.05.2020'];Washington DC;fernreisen;2020-05;372;USA East;2020-03-06;333
+['06.04.2020', '14.04.2020'];Washington DC;osterferien;2020-04;377;USA East;2020-03-06;333
+['06.04.2020', '14.04.2020'];Washington DC;osterferien;2020-04;373;USA East;2020-03-14;333
+['01.05.2020', '14.05.2020'];Washington DC;fernreisen;2020-05;366;USA East;2020-03-14;333
+['06.04.2020', '14.04.2020'];Washington DC;osterferien;2020-04;373;USA East;2020-03-16;333
+['01.05.2020', '14.05.2020'];Washington DC;fernreisen;2020-05;366;USA East;2020-03-16;333
+['03.09.2020', '17.09.2020'];Washington DC;fernreisen;2020-09;333;USA East;2020-06-06;333
+['23.12.2020', '08.01.2021'];Washington DC;weihnachtsferien;2020-12;376;USA East;2020-06-06;333
 ['28.01.2020', '15.02.2020'];Washington DC National;fernreisen;2020-01;351;USA East;23/01/2020;343
 ['10.02.2020', '17.02.2020'];Washington DC National;fernreisen;2020-02;377;USA East;06/10/2019;343
 ['13.02.2020', '07.03.2020'];Washington DC National;last-minute;2020-02;359;USA East;03/02/2020;343
@@ -3288,6 +3403,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['31.10.2020', '13.11.2020'];Washington DC National;fernreisen;2020-10;369;USA East;2020-03-14;343
 ['09.04.2020', '16.04.2020'];Washington DC National;osterferien;2020-04;374;USA East;2020-03-16;343
 ['31.10.2020', '13.11.2020'];Washington DC National;fernreisen;2020-10;369;USA East;2020-03-16;343
+['31.10.2020', '13.11.2020'];Washington DC National;fernreisen;2020-10;369;USA East;2020-06-06;343
+['23.12.2020', '08.01.2021'];Washington DC National;weihnachtsferien;2020-12;461;USA East;2020-06-06;343
 ['21.01.2020', '16.02.2020'];West Palm Beach;last-minute;2020-01;251;USA East;08/01/2020;249
 ['15.02.2020', '29.02.2020'];West Palm Beach;fernreisen;2020-02;309;USA East;23/01/2020;249
 ['10.03.2020', '17.03.2020'];West Palm Beach;fernreisen;2020-03;249;USA East;08/01/2020;249
@@ -3308,6 +3425,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['15.01.2021', '22.01.2021'];West Palm Beach;fernreisen;2021-01;352;USA East;2020-03-06;249
 ['06.04.2020', '22.04.2020'];West Palm Beach;fernreisen;2020-04;359;USA East;2020-03-14;249
 ['06.04.2020', '22.04.2020'];West Palm Beach;fernreisen;2020-04;359;USA East;2020-03-16;249
+['23.12.2020', '07.01.2021'];West Palm Beach;weihnachtsferien;2020-12;420;USA East;2020-06-06;249
 ['14.02.2020', '28.02.2020'];Honolulu;last-minute;2020-02;542;USA West;05/02/2020;542
 ['11.02.2020', '25.02.2020'];Honolulu;last-minute;2020-02;542;USA West;07/02/2020;542
 ['21.10.2019', '27.10.2019'];Las Vegas;last-minute;2019-10;356;USA West;07/10/2019;249
@@ -3371,6 +3489,8 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['27.04.2020', '06.05.2020'];Las Vegas;fernreisen;2020-04;282;USA West;2020-03-14;249
 ['08.04.2020', '15.04.2020'];Las Vegas;osterferien;2020-04;369;USA West;2020-03-16;249
 ['03.11.2020', '12.11.2020'];Las Vegas;fernreisen;2020-11;282;USA West;2020-03-16;249
+['03.11.2020', '12.11.2020'];Las Vegas;fernreisen;2020-11;282;USA West;2020-06-06;249
+['28.12.2020', '04.01.2021'];Las Vegas;weihnachtsferien;2020-12;372;USA West;2020-06-06;249
 ['17.01.2020', '24.01.2020'];Los Angeles;last-minute;2020-01;277;USA West;08/01/2020;234
 ['21.01.2020', '28.01.2020'];Los Angeles;fernreisen;2020-01;321;USA West;22/10/2019;234
 ['22.01.2020', '31.01.2020'];Los Angeles;fernreisen;2020-01;297;USA West;26/10/2019;234
@@ -3419,6 +3539,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['12.05.2020', '26.05.2020'];Los Angeles;fernreisen;2020-05;289;USA West;2020-03-14;234
 ['12.05.2020', '26.05.2020'];Los Angeles;fernreisen;2020-05;289;USA West;2020-03-16;234
 ['17.08.2020', '31.08.2020'];Los Angeles;sommerferien;2020-08;351;USA West;2020-03-16;234
+['14.11.2020', '28.11.2020'];Los Angeles;fernreisen;2020-11;294;USA West;2020-06-06;234
 ['16.10.2019', '31.10.2019'];San Diego;last-minute;2019-10;419;USA West;04/10/2019;344
 ['20.10.2019', '27.10.2019'];San Diego;last-minute;2019-10;438;USA West;06/10/2019;344
 ['21.10.2019', '27.10.2019'];San Diego;last-minute;2019-10;388;USA West;07/10/2019;344
@@ -3472,6 +3593,7 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['17.04.2020', '23.04.2020'];San Francisco;fernreisen;2020-04;336;USA West;2020-03-14;245
 ['21.04.2020', '05.05.2020'];San Francisco;fernreisen;2020-04;332;USA West;2020-03-16;245
 ['20.08.2020', '03.09.2020'];San Francisco;sommerferien;2020-08;346;USA West;2020-03-16;245
+['20.08.2020', '03.09.2020'];San Francisco;fernreisen;2020-08;346;USA West;2020-06-06;245
 ['08.03.2020', '15.03.2020'];San Jose;fernreisen;2020-03;254;USA West;06/10/2019;254
 ['09.03.2020', '23.03.2020'];San Jose;fernreisen;2020-03;271;USA West;05/10/2019;254
 ['09.03.2020', '23.03.2020'];San Jose;fernreisen;2020-03;275;USA West;04/10/2019;254
@@ -3507,13 +3629,9 @@ Dates;Destination;Group;Period;Price;Regio;Status;min_price
 ['09.04.2020', '17.04.2020'];Seattle;osterferien;2020-04;455;USA West;2020-03-02;314
 ['06.04.2020', '13.04.2020'];Seattle;osterferien;2020-04;443;USA West;2020-03-06;314
 ['01.07.2020', '15.07.2020'];Almaty;warme-reiseziele;2020-07;337;;2020-03-13;337
-['15.03.2020', '02.04.2020'];Asuncion;warme-reiseziele;2020-03;511;;2020-03-13;511
-['10.10.2020', '20.10.2020'];Caracas;warme-reiseziele;2020-10;505;;2020-03-13;505
-['01.12.2020', '20.12.2020'];Colombo;warme-reiseziele;2020-12;438;;2020-03-13;438
+['01.01.2021', '03.01.2021'];Brüssel;weihnachtsferien;2021-01;94;;2020-06-06;94
+['23.08.2020', '30.08.2020'];Brüssel;sommerferien;2020-08;96;;2020-06-06;94
 ['30.03.2020', '06.04.2020'];Kayseri;last-minute;2020-03;151;;2020-03-16;151
+['08.08.2020', '15.08.2020'];Larnaca;sommerferien;2020-08;100;;2020-06-06;100
+['29.07.2020', '13.08.2020'];Madras;fernreisen;2020-07;368;;2020-06-06;368
 ['31.07.2020', '11.08.2020'];Sotschi;sommerferien;2020-07;228;;2020-02-25;228
-['10.04.2020', '15.04.2020'];São Paulo;osterferien;2020-04;459;;2020-03-16;459
-['28.03.2020', '04.04.2020'];Teneriffa Süd;last-minute;2020-03;94;;2020-03-14;73
-['28.03.2020', '04.04.2020'];Teneriffa Süd;last-minute;2020-03;118;;2020-03-14;73
-['17.03.2020', '04.04.2020'];Teneriffa Süd;last-minute;2020-03;112;;2020-03-16;73
-['18.03.2020', '01.04.2020'];Teneriffa Süd;last-minute;2020-03;118;;2020-03-16;73

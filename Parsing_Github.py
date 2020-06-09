@@ -6,9 +6,27 @@ from github import Github
 import pandas as pd
 import os
 
-#api_key=open('api_key.txt','r').read()
-#access_token=open('access_token.txt','r').read().strip()
-g = Github("alexanu", "Theanswer1_")
+# The config with tokens is located in the folder which is on the same hierarchy level as current folder
+Path_To_TKNS = os.path.join(os.path.abspath(os.path.join(__file__ ,"../..")), "Python_Trading_Snippets","connections.cfg")
+
+from configparser import ConfigParser
+config = ConfigParser()
+config.read(Path_To_TKNS)
+GHLogin=config['GitHub']['Login']
+GHpswrd=config['GitHub']['Password']
+g = Github(GHLogin, GHpswrd)
+
+
+topsecret = config['GitHub']
+config['GitHub']['Password'] = '50022'     # mutates the parser
+
+from configparser import SafeConfigParser
+parser = SafeConfigParser()
+parser.set('GitHub', 'Password', '15')
+# Writing our configuration file to 'example.ini'
+with open(Path_To_TKNS, 'wb') as configfile:
+    parser.write(configfile)
+
 
 #-------- Parsing my repos --------------------------------------------------------------
 
@@ -62,39 +80,53 @@ my_repos.to_csv("Repos.csv")
 
 #-------- Searching Github --------------------------------------------------------------
 
-# https://python.gotrained.com/search-github-api/
+from df2gspread import gspread2df as g2d
 
-keywords = "IEX, hedge, oanda, quandl, NYSE, FIX, ETF, " \
+from df2gspread import df2gspread as d2g
+
+d2g.upload(pr_instr, gfile='/Trading FXCM/PyData', wks_name='pr_instr')
+weights = g2d.download(gfile="1bmy2DLu5NV5IP-mo9rGWOyHOx7bEfoglVZmzzuHi5zc", wks_name="Weights", col_names=True, row_names=True, credentials=None, start_cell='A1')
+
+
+
+
+
+keywords_all = "IEX, hedge, oanda, quandl, NYSE, ETF, " \
             "market calendar, equity, kelly, arbitrage, backtest, " \
-            "quant, EDGAR, SEC, del Prado, zorro trading"
-keyword = [keyword.strip() for keyword in keywords.split(',')]
+            "quant, EDGAR, del Prado, zorro trading"
+keywords = [keyword.strip() for keyword in keywords_all.split(',')]
 
-exclude_keywords = "ng-zorro, ngx-zorro, ngzorro, CSS, Typescript"
-exclude_keyword = [keyword.strip() for keyword in exclude_keywords.split(',')]
-
-query = '+'.join(keyword) + '+NOT'+ '+'.join(exclude_keyword)+'pushed:>=2019-07-05'+'language:python' +'+in:readme+in:description'
-result = g.search_repositories(query, 'stars', 'desc')
-print(f'Found {result.totalCount} repo(s)')
-
-for repo in result:
-    print(f'{repo.clone_url}, {repo.stargazers_count} stars')
+# exclude_keywords = "ng-zorro, ngx-zorro, ngzorro, CSS, Typescript"
+# exclude_keyword = [keyword.strip() for keyword in exclude_keywords.split(',')]
+# query = '+'.join(keyword) + '+NOT'+ '+'.join(exclude_keyword)+'pushed:>=2019-07-05'+'language:python' +'+in:readme+in:description'
+# result = g.search_repositories(query, 'stars', 'desc')
 
 
-repositories = g.search_repositories(query='language:python', sort='updated')
-# query='good-first-issues:>3'     number of issues
-for repo in repositories[1:10]:
-    print(repo)
-    print(repo.stargazers_count)
+ID_my=[]
+Parent_name=[]
+Parent_id=[]
+Parent_update=[]
+descr_my=[]
+Repo_source=[]
+created_my=[]
 
-# ---------------------------------------------------------------------------------------
+for keyword in keywords:
+    repositories = g.search_repositories(query=keyword+' language:python in:name in:readme in:description pushed:>2020-05-21', sort='updated')
+    print(f'Found {repositories.totalCount} repo(s) for key={keyword}')
+    for repo in repositories:
+        ID_my.append(repo.id)
+        Parent_name.append(repo.name)
+        Parent_id.append(repo.id)
+        Parent_update.append(repo.updated_at)
+        created_my.append(repo.created_at)
+        descr_my.append(repo.description)
 
-def search_github(keywords):
-    query = '+'.join(keywords) + '+in:readme+in:description' # '+in:readme+in:description'  are the qualifiers
-    result = g.search_repositories(query, 'stars', 'desc')
+Search_result = pd.DataFrame({'My_ID': ID_my,
+                            'Parent': Parent_name,
+                            'Parent_ID': Parent_id,
+                            'Parent_Update': Parent_update,
+                            'Created': created_my,
+                            'Descrip': descr_my,
+				    		})
+Search_result.to_csv("GH_Search_Results.csv")
 
-    print(f'Found {result.totalCount} repo(s)')
-
-    for repo in result:
-        print(f'{repo.clone_url}, {repo.stargazers_count} stars')
-
-search_github(keyword)
