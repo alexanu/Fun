@@ -4,7 +4,13 @@ import pandas as pd
 from os import path
 import requests
 
-RAPID_API_KEY = None
+RAPID_API_KEY = '7a3621970amsh9275d1c7c9ed661p15c96ajsnbc45c95d106c'
+country_code = 'DE'
+origin_id = 'MUC-sky'
+destination_id = 'HNL'
+trip_duration_in_dys=10
+outbound_date = '2021-01-30'
+inboundDate = (datetime.strptime(outbound_date, '%Y-%m-%d') + timedelta(days=trip_duration_in_dys)).strftime('%Y-%m-%d')
 
 
 def get_prices_for(origin, destination, departure_date, return_date, country):
@@ -82,53 +88,22 @@ def _request(url_path, method, data=None):
                 'Content-Type': 'application/x-www-form-urlencoded'
             })
 
+df = pd.DataFrame(columns=['origin', 'destination', 'departure_date', 'return_date', 'price', 'country', 'link'])
 
-def build_query_queue(origin, destination, country):
-    travels = product(origin.split(','), destination.split(','))
-    for origin, destination in travels:
-        try:
-            (origin, origin_country) = origin.split("/")
-        except:
-            origin_country = country
+try:
+    time.sleep(1)
+    offers = list(get_prices_for(
+        origin_id,
+        destination_id,
+        outbound_date,
+        inboundDate,
+        country_code
+    ))
+    df = df.append(offers)
+except Exception as e:
+    print(f'EXCEPTION while processing')
+    time.sleep(2)
 
-        if origin == destination:
-            print(f'Skipping same location ({origin} -> {destination}).')
-            continue
-
-        yield (f"{origin.strip()}-sky", origin_country, f"{destination.strip()}-sky")
 
 
-if __name__ == '__main__':
-    sky_scanner_rapid_api.RAPID_API_KEY = args.api_key
-    df = pd.DataFrame(
-        columns=['origin', 'destination', 'departure_date', 'return_date', 'price', 'country', 'link']
-    )
-
-    query_queue = list(build_query_queue(args.origin, args.destination, args.country))
-    while query_queue:
-        (origin, country, destination) = query_queue.pop()
-
-        try:
-            time.sleep(1)
-            offers = list(sky_scanner_rapid_api.get_prices_for(
-                origin,
-                destination,
-                args.departure_date,
-                args.return_date,
-                country
-            ))
-            if offers:
-                df = df.append(offers)
-            else:
-                print(f'No offers found for {query}')
-        except Exception as e:
-            print(f'EXCEPTION while processing {origin} -> {destination} (Enqueing again):: {e}.')
-            query_queue.append((origin, country, destination))
-            time.sleep(2)
-
-    df.to_csv(args.output)
-
-    prices = df.groupby(by=['origin', 'destination'])['price'].nsmallest(30)
-    prices = prices.groupby(by=['origin', 'destination'])
-    prices = prices.median().unstack()
-    prices.to_csv(args.output_summary)
+https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/SFO-sky/JFK-sky/2019-09-01"
