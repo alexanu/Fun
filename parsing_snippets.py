@@ -28,28 +28,25 @@ import re
 proxy_list = open('proxies.txt').read().splitlines()
 
 
-#-------------------------------------------------------------------------------
-#Checking the chapters of Zorro
 
-directory = 'c:\\Users\\oanuf\\GitHub\\Fun\\'
-zorro_content = "http://www.zorro-trader.com/manual/ht_contents.htm"
-page = urlopen(zorro_content)
-soup = bs(page)
-zorro_pages_links = [a.get('href') for a in soup.find_all('a', href=True)]
-zorro_pages_names = [a.get('title') for a in soup.find_all('a')]
-df = pd.DataFrame({'Names':zorro_pages_names,
-				    'Link':zorro_pages_links})
-df["Link"] = 'https://www.zorro-trader.com/manual/' + df["Link"].astype(str)
-df.to_csv(directory+"Zorro_content.csv", # creating new file
-			sep=";", 
-			index=False) # we need to eliminate the index column
+#Checking the chapters of Zorro
+	directory = 'c:\\Users\\oanuf\\GitHub\\Fun\\'
+	zorro_content = "http://www.zorro-trader.com/manual/ht_contents.htm"
+	page = urlopen(zorro_content)
+	soup = bs(page)
+	zorro_pages_links = [a.get('href') for a in soup.find_all('a', href=True)]
+	zorro_pages_names = [a.get('title') for a in soup.find_all('a')]
+	df = pd.DataFrame({'Names':zorro_pages_names,
+						'Link':zorro_pages_links})
+	df["Link"] = 'https://www.zorro-trader.com/manual/' + df["Link"].astype(str)
+	df.to_csv(directory+"Zorro_content.csv", # creating new file
+				sep=";", 
+				index=False) # we need to eliminate the index column
 
 
 
 
 # ----------------------- 1st code block ---------------------------------------
-
-start_time = time.time()
 
 tsmw_url = "http://thestockmarketwatch.com/markets/pre-market/today.aspx"
 # use alternative browser agent to bypass mod_security that blocks known spider/bot user agents
@@ -58,7 +55,7 @@ page = urlopen(url_request).read()
 
 # collect all the text data in a list
 text_data = []
-soup = BeautifulSoup(page, "html.parser")
+soup = bs(page, "html.parser")
 
 # get col data for p_change, tickers, prices and vol 
 p_changes = list(map(lambda x: float(x.get_text()[:-1]), soup.find_all('div', class_ ="chgUp")))[:15]
